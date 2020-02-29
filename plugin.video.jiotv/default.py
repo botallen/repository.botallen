@@ -370,14 +370,13 @@ def pvrsetup():
         pass
     if os.path.exists(pathTOaddon) == True:
         xbmcaddon.Addon(IDdoADDON).setSetting(
-            'm3uPath', xbmc.translatePath('special://home/addons/plugin.video.jiotv/resources/jiotv.m3u').decode('utf-8'))
+            'm3uPath', os.path.join(xbmc.translatePath('special://home/addons/plugin.video.jiotv/resources').decode('utf-8'), 'jiotv.m3u'))
         xbmcaddon.Addon(IDdoADDON).setSetting(
             'epgUrl', "https://kodi.botallen.com/tv/epg.xml")
         xbmcaddon.Addon(IDdoADDON).setSetting(
             'epgPathType', '1')
         xbmcaddon.Addon(IDdoADDON).setSetting(
             'm3uPathType', '0')
-        xbmc.executebuiltin('RunAddon(%s)' % (IDdoADDON))
     else:
         xbmcgui.Dialog().ok("Add-on Error", "Could not install or open add-on. Please try again...")
 
