@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Account">
+        <setting label="Username" type="text" id="username" default=""/>
+        <setting label="Password" type="text" id="password" option="hidden"  enable="!eq(-1,)" default=""/>
+        <setting id="logout" type="action" label="Logout" action="RunPlugin(plugin://plugin.video.jiotv/?action=logout)" option="close"/>
+    </category>
+    <category label="Stream">
+        <setting id="quality" type="select" label="Quality" values="Auto|Low|Medium|High" default="Auto" />
+    </category>
+    <category label="Setup">
+        <setting id="pvrsetup" type="action" label="Setup Simple IPTV PVR" action="RunPlugin(plugin://plugin.video.jiotv/?action=pvrsetup)" option="close"/>
+    </category>
+</settings>
