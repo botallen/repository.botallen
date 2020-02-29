@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.jiotv"
+version="1.0.4"
+name="JioTV"
+provider-name="botallen">
+<requires>
+  <import addon="xbmc.python" version="2.25.0"/>
+  <import addon="script.module.requests" />
+  <import addon="repository.botallen" version="1.0.0" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="default.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">JioTV Kodi Addon</summary>
+    <description lang="en_GB">Unofficial JioTV kodi addon by botallen</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <language>en</language> <!-- the language of the videos or other content the plugin provides, may be omitted in case the addon does not provide any content -->
+    <platform>all</platform>
+    <license>MIT</license>
+    <website></website> <!-- the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
+    <email>kodi@botallen.com</email> <!-- may be left omitted  -->
+    <source>https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv</source>
+    <news></news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <banner></banner>
+        <clearlogo></clearlogo>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="repository.botallen" name="BotAllen Repository" version="1.0.0" provider-name="botallen">
+    <extension point="xbmc.addon.repository" name="BotAllen Repository">
+        <info compressed="false">https://github.com/botallen/repository.botallen/raw/master/addons.xml</info>
+        <checksum>https://github.com/botallen/repository.botallen/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/botallen/repository.botallen/raw/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Addons for Kodi</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo>
+            <screenshot></screenshot>
+        </assets>
+    </extension>
+</addon>
+</addons>
