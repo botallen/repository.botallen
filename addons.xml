@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.jiotv"
-version="1.0.4"
+version="1.0.5"
 name="JioTV"
 provider-name="botallen">
 <requires>
