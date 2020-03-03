@@ -237,11 +237,7 @@ def pvrsetup():
         'special://home/addons'), IDdoADDON)
     pathTOaddon2 = os.path.join(xbmc.translatePath(
         'special://xbmc/addons'), IDdoADDON)
-    if not os.path.exists(pathTOaddon) or not os.path.exists(pathTOaddon2):
-        xbmc.executebuiltin('InstallAddon(%s)' % (IDdoADDON))
-        xbmc.executebuiltin('SendClick(11)'), time.sleep(2), xbmcgui.Dialog().ok(
-            "Add-on Install", "The addon was not present. Please wait for installation to finish and try again.")
-    else:
+    if os.path.exists(pathTOaddon) or os.path.exists(pathTOaddon2):
         xbmcaddon.Addon(IDdoADDON).setSetting(
             'm3uPath', os.path.join(xbmc.translatePath('special://home/addons/plugin.video.jiotv/resources').decode('utf-8'), 'jiotv.m3u'))
         xbmcaddon.Addon(IDdoADDON).setSetting(
@@ -250,6 +246,10 @@ def pvrsetup():
             'epgPathType', '1')
         xbmcaddon.Addon(IDdoADDON).setSetting(
             'm3uPathType', '0')
+    else:
+        xbmc.executebuiltin('InstallAddon(%s)' % (IDdoADDON))
+        xbmc.executebuiltin('SendClick(11)'), time.sleep(2), xbmcgui.Dialog().ok(
+            "Add-on Install", "The addon was not present. Please wait for installation to finish and try again.")
 
 
 if __name__ == '__main__':
