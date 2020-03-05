@@ -16,7 +16,7 @@
 
 ## Download
 
-[**Download**](https://github.com/botallen/repository.botallen/raw/master/plugin.video.jiotv/plugin.video.jiotv-1.0.5.zip) the `.zip` file.
+[**Download**](https://github.com/botallen/repository.botallen/raw/master/plugin.video.jiotv/plugin.video.jiotv-1.0.6.zip) the `.zip` file.
 
 ### PVR Setup
 
