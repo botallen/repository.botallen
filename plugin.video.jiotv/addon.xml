@@ -1,33 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.jiotv"
-version="1.0.5"
-name="JioTV"
-provider-name="botallen">
-<requires>
-  <import addon="xbmc.python" version="2.25.0"/>
-  <import addon="script.module.requests" />
-  <import addon="repository.botallen" version="1.0.0" />
-</requires>
-<extension point="xbmc.python.pluginsource" library="default.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">JioTV Kodi Addon</summary>
-    <description lang="en_GB">Unofficial JioTV kodi addon by botallen</description>
-    <disclaimer lang="en_GB"></disclaimer>
-    <language>en</language> <!-- the language of the videos or other content the plugin provides, may be omitted in case the addon does not provide any content -->
-    <platform>all</platform>
-    <license>MIT</license>
-    <website></website> <!-- the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
-    <email>kodi@botallen.com</email> <!-- may be left omitted  -->
-    <source>https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv</source>
-    <news></news>
-    <assets>
-        <icon>resources/icon.png</icon>
-        <fanart>resources/fanart.jpg</fanart>
-        <banner></banner>
-        <clearlogo></clearlogo>
-        <screenshot></screenshot>
-    </assets>
-  </extension>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.jiotv" name="JioTV" version="1.0.6" provider-name="botallen">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" />
+        <import addon="inputstream.adaptive" version="2.4.3" />
+        <import addon="repository.botallen" version="1.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
+        <description lang="en_GB">Unofficial JioTV kodi addon by botallen</description>
+        <language></language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>kodi.botallen.com</website>
+        <email>kodi@botallen.com</email>
+        <source>https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv</source>
+        <news></news>
+        <disclaimer>This is a third-party add-on and is not affiliated with Jio.</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
