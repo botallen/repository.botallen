@@ -2932,77 +2932,77 @@
   "158": {
     "name": "Star Plus HD IP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Plus_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Plus_HD/Star_Plus_HD.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starplushd/master.m3u8"
   },
   "367": {
     "name": "Star Utsav HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Utsav.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Utsav/Star_Utsav.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starutsav/master.m3u8"
   },
   "443": {
     "name": "Asianet HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet.png",
-    "url": "http://jiotv.live.cdn.jio.com/Asianet/Asianet{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianethd/master.m3u8"
   },
   "368": {
     "name": "Star Vijay HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Vijay.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Vijay/Star_Vijay{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starvijay/master.m3u8"
   },
   "317": {
     "name": "Star Jalsha HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Jalsha.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Jalsha/Star_Jalsha{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starjalsa/master.m3u8"
   },
   "758": {
     "name": "Maa TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maa_TV/Maa_TV.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maatv/master.m3u8"
   },
   "759": {
     "name": "Maa Gold HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_Gold.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maa_Gold/Maa_Gold.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maagold/master.m3u8"
   },
   "931": {
     "name": "Star Bharat HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Bharat_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Bharat_HD/Star_Bharat_HD{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starbharat/master.m3u8"
   },
   "181": {
     "name": "Asianet Plus HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/Asianet_Plus/Asianet_Plus.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianetplus/master.m3u8"
   },
   "336": {
     "name": "Star Pravah HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Pravah.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Pravah/Star_Pravah{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starpravah/master.m3u8"
   },
   "370": {
     "name": "Suvarna HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Suvarna.png",
-    "url": "http://jiotv.live.cdn.jio.com/Suvarna/Suvarna{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarna/master.m3u8"
   },
   "458": {
     "name": "Suvarna Plus HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Suvarna_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Suvarna_Plus_HD/Suvarna_Plus_HD.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarnaplus/master.m3u8"
   },
   "156": {
     "name": "Star Gold HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Gold_HD/Star_Gold_HD.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/stargold/master.m3u8"
   },
   "457": {
     "name": "Jalsha Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jalsa_Movies_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jalsa_Movies_HD/Jalsa_Movies_HD{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/jalsamovies/master.m3u8"
   },
   "760": {
     "name": "Maa Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maa_Movies/Maa_Movies{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maamovies/master.m3u8"
   },
   "247": {
     "name": "Movies OK HD",
@@ -3012,32 +3012,32 @@
   "459": {
     "name": "Asianet Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Movies_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Asianet_Movies_HD/Asianet_Movies_HD.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianetmovies/master.m3u8"
   },
   "460": {
     "name": "Star Sports Select HD1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Sports_Select_HD_1/Star_Sports_Select_HD_1{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/ssselecthd1fp/master.m3u8"
   },
   "159": {
     "name": "Star Sports 1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Sports_HD_1/Star_Sports_HD_1.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshd1livetvfp/master.m3u8"
   },
   "160": {
     "name": "Star Sports 2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Sports_HD_2/Star_Sports_HD_2.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshd2livetvfp/master.m3u8"
   },
   "362": {
     "name": "Star Sports Hindi 1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_3.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Sports_3/Star_Sports_3{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshindifp/master.m3u8"
   },
   "461": {
     "name": "Star Sports Select HD2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Star_Sports_Select_HD_2/Star_Sports_Select_HD_2{q}.m3u8"
+    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/ssselecthd2fp/master.m3u8"
   },
   "439": {
     "name": "Home Shop 18",
