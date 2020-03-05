@@ -19,6 +19,9 @@ try:
 except:
     pass
 
+_STAR_CHANNELS = {160: u'sshd2livetvfp', 368: u'starvijay', 931: u'starbharat', 457: u'jalsamovies', 362: u'sshindifp', 459: u'asianetmovies', 460: u'ssselecthd1fp', 461: u'ssselecthd2fp', 367: u'starutsav', 336: u'starpravah',
+                  370: u'starsuvarna', 317: u'starjalsa', 181: u'asianetplus', 758: u'maatv', 759: u'maagold', 760: u'maamovies', 443: u'asianethd', 156: u'stargold', 458: u'starsuvarnaplus', 158: u'starplushd', 159: u'sshd1livetvfp'}
+
 
 def check_login():
     username = kodiutils.get_setting('username')
@@ -47,7 +50,11 @@ def login(username, password):
             raw = json.load(f)
         with open(ADDONDATA + 'channels.json', 'w+') as f:
             for cid, itm in raw.items():
-                raw[cid]['url'] = itm['url']+"?{token}|appkey=NzNiMDhlYzQyNjJm&lbcookie=1&devicetype=phone&deviceId=6fcadeb7b4b10d77&srno=200206173037&usergroup=tvYR7NSNn7rymo3F&versionCode=226&channelid=100&os=android&User-Agent=plaYtv%2F5.4.0+%28Linux%3BAndroid+8.0.0%29+ExoPlayerLib%2F2.3.0&"+_CREDS
+                if int(cid) in _STAR_CHANNELS.keys():
+                    raw[cid]['url'] = itm['url'] + \
+                        "?hdnea={token}|User-Agent=Hotstar%3Bin.startv.hotstar%2F8.2.4+%28Linux%3BAndroid+8.0.0%29+ExoPlayerLib%2F2.9.5&"+_CREDS
+                else:
+                    raw[cid]['url'] = itm['url']+"?{token}|appkey=NzNiMDhlYzQyNjJm&lbcookie=1&devicetype=phone&deviceId=6fcadeb7b4b10d77&srno=200206173037&usergroup=tvYR7NSNn7rymo3F&versionCode=226&channelid=100&os=android&User-Agent=plaYtv%2F5.4.0+%28Linux%3BAndroid+8.0.0%29+ExoPlayerLib%2F2.3.0&"+_CREDS
             json.dump(raw, f, indent=2)
     else:
         kodiutils.notification('Login Failed', 'Invalid credentials')
