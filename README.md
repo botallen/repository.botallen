@@ -10,6 +10,10 @@
 
 <br>
 
+## Install
+
+![GIF demo](media/install.gif)
+
 ## Highlights
 
 - [JioTV Addon](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv)
