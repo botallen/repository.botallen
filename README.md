@@ -14,6 +14,11 @@
 
 ![GIF demo](media/install.gif)
 
+1. Add this file source in file manager : https://kodi.botallen.com
+2. Click on Install From zip file
+3. Select repository.botallen-x.x.x.zip
+4. Done
+
 ## Highlights
 
 - [JioTV Addon](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv)
