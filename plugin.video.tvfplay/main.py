@@ -2,7 +2,6 @@
 
 from resources.lib import kodilogging
 from resources.lib import plugin
-from resources.lib import proxy
 
 import logging
 import xbmcaddon
@@ -13,3 +12,5 @@ ADDON = xbmcaddon.Addon()
 kodilogging.config()
 
 plugin.run()
+
+

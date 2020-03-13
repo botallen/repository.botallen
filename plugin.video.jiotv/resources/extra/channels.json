@@ -2,3436 +2,3341 @@
   "430": {
     "name": "Jio Cricket English HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd1/Jio_Cricket_HLS/Jio_Cricket{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Cricket?hls=packagerx_mpd1"
   },
   "144": {
     "name": "Colors HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Colors_HD_HLS/Colors_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_HD?hls=packagerx_mpd3"
   },
   "291": {
     "name": "Sony HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Sony_HD_HLS/Sony_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_HD?hls=packagerx_mpd3"
   },
   "167": {
     "name": "Zee TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_TV_HD/Zee_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_TV_HD"
   },
   "476": {
     "name": "Sony Max HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Sony_Max_HD_HLS/Sony_Max_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Max_HD?hls=packagerx_mpd3"
   },
   "833": {
     "name": "HBO HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/HBO_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/HBO_HD/HBO_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/HBO_HD"
   },
   "165": {
     "name": "Zee Cinema HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Cinema_HD/Zee_Cinema_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Cinema_HD"
   },
   "155": {
     "name": "Sony Six HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Six_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Six_HD_HLS/Six_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Six_HD?hls=packagerx_mpd3"
   },
   "383": {
     "name": "Times NOW",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Times_NOW.png",
-    "url": "http://jiotv.live.cdn.jio.com/Times_NOW/Times_NOW{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Times_NOW"
   },
   "162": {
     "name": "Ten 1HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten_HD/Ten_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten_HD"
   },
   "173": {
     "name": "Aaj Tak",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aaj_Tak/Aaj_Tak{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aaj_Tak"
   },
   "1155": {
     "name": "BBC Marathi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Marathi.png",
-    "url": "http://jiotv.live.cdn.jio.com/BBC_Marathi/BBC_Marathi.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/BBC_Marathi"
   },
   "177": {
     "name": "ABP News India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_News_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABP_News_India/ABP_News_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_News_India"
   },
   "891": {
     "name": "Ten2 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten2_HD/Ten2_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten2_HD"
   },
   "492": {
     "name": "CNN NEWS 18",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNN_NEWS_18.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNN_NEWS_18/CNN_NEWS_18{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNN_NEWS_18"
   },
   "1145": {
     "name": "MTV HD Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV_HD_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/MTV_HD_Plus_HLS/MTV_HD_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MTV_HD_Plus?hls=packagerx_mpd3"
   },
   "753": {
     "name": "MTV Beats HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV_Beats_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/MTV_Beats_HD/MTV_Beats_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MTV_Beats_HD"
   },
   "858": {
     "name": "Republic TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Republic_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Republic_TV/Republic_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Republic_TV"
   },
   "584": {
     "name": "Mastiii",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mastiii.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mastiii/Mastiii{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mastiii"
   },
   "612": {
     "name": "ABP Majha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Majha.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABP_Majha/ABP_Majha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_Majha"
   },
   "545": {
     "name": "Nick Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nick_Hindi/Nick_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_Hindi"
   },
   "619": {
     "name": "TV9 Karnataka",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Karnataka.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV9_Karnataka/TV9_Karnataka{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV9_Karnataka"
   },
   "559": {
     "name": "Pogo Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Pogo_Hindi/Pogo_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Pogo_Hindi"
   },
   "636": {
     "name": "Polimer News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Polimer_News/Polimer_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Polimer_News"
   },
   "618": {
     "name": "TV9 Telugu News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Telugu_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV9_Telugu_News/TV9_Telugu_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV9_Telugu_News"
   },
   "816": {
     "name": "Cartoon Network Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Cartoon_Network_Hindi/Cartoon_Network_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Cartoon_Network_Hindi"
   },
   "463": {
     "name": "Discovery HD World",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_HD_World.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_HD_World/Discovery_HD_World{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_HD_World"
   },
   "672": {
     "name": "ABP Ananda",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Ananda.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABP_Ananda/ABP_Ananda{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_Ananda"
   },
   "821": {
     "name": "Sony BBC Earth HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_BBC_Earth_HD/Sony_BBC_Earth_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_BBC_Earth_HD"
   },
   "146": {
     "name": "History TV18 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/History_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/History_HD_HLS/History_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/History_HD?hls=packagerx_mpd3"
   },
   "479": {
     "name": "TLC HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TLC_HD_World.png",
-    "url": "http://jiotv.live.cdn.jio.com/TLC_HD_World/TLC_HD_World{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TLC_HD_World"
   },
   "561": {
     "name": "Food Food",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Food_Food.png",
-    "url": "http://jiotv.live.cdn.jio.com/Food_Food/Food_Food{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Food_Food"
   },
   "560": {
     "name": "GOOD TiMES",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_Good_Times.png",
-    "url": "http://jiotv.live.cdn.jio.com/NDTV_Good_Times/NDTV_Good_Times{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/NDTV_Good_Times"
   },
   "657": {
     "name": "Zee Business",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Business.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Business/Zee_Business{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Business"
   },
   "143": {
     "name": "CNBC Tv18 Prime HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNBC_Tv18_Prime_HD/CNBC_Tv18_Prime_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNBC_Tv18_Prime_HD"
   },
   "259": {
     "name": "NDTV Profit",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_Profit.png",
-    "url": "http://jiotv.live.cdn.jio.com/NDTV_Profit/NDTV_Profit{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/NDTV_Profit"
   },
   "190": {
     "name": "CNBC Awaaz",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Awaaz.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNBC_Awaaz/CNBC_Awaaz{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNBC_Awaaz"
   },
   "595": {
     "name": "Prathana TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prathana_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prathana_TV/Prathana_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prathana_TV"
   },
   "175": {
     "name": "Aastha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aastha/Aastha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aastha"
   },
   "594": {
     "name": "Aastha Bhajan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha_Bhajan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aastha_Bhajan/Aastha_Bhajan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aastha_Bhajan"
   },
   "288": {
     "name": "Sanskar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sanskar.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sanskar/Sanskar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sanskar"
   },
   "968": {
     "name": "Millionlights",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Millionlights.png",
-    "url": "http://jiotv.live.cdn.jio.com/Millionlights/Millionlights.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Millionlights"
   },
   "980": {
     "name": "Swayam Prabha 01",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_01.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_01/Swayam_Prabha_01{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_01"
   },
   "981": {
     "name": "Swayam Prabha 02",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_02.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_02/Swayam_Prabha_02{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_02"
   },
   "982": {
     "name": "Swayam Prabha 03",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_03.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_03/Swayam_Prabha_03{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_03"
   },
   "154": {
     "name": "Sony SAB",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_SAB/Sony_SAB{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_SAB"
   },
   "472": {
     "name": "And TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/And_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/And_TV_HD/And_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/And_TV_HD"
   },
   "866": {
     "name": "Jio Exclusive HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Exclusive.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Exclusive/Jio_Exclusive{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Exclusive"
   },
   "279": {
     "name": "Rishtey",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rishtey/Rishtey{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rishtey"
   },
   "473": {
     "name": "Zee Anmol",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Anmol/Zee_Anmol{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Anmol"
   },
   "474": {
     "name": "Sony Pal",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Pal/Sony_Pal{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Pal"
   },
   "471": {
     "name": "Sony SAB HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Sony_SAB_HD_HLS/Sony_SAB_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_SAB_HD?hls=packagerx_mpd3"
   },
   "445": {
     "name": "Zee Marathi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Marathi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Marathi/Zee_Marathi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Marathi"
   },
   "755": {
     "name": "Colors Marathi HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Marathi_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Colors_Marathi_HD_HLS/Colors_Marathi_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Marathi_HD?hls=packagerx_mpd3"
   },
   "757": {
     "name": "Colors Kannada HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Colors_Kannada_HD_HLS/Colors_Kannada_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Kannada_HD?hls=packagerx_mpd3"
   },
   "689": {
     "name": "Zee Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Kannada/Zee_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Kannada"
   },
   "1157": {
     "name": "Comedy Central HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Comedy_Central_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Comedy_Central_HD/Comedy_Central_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Comedy_Central_HD"
   },
   "638": {
     "name": "Zee Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Telugu/Zee_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Telugu"
   },
   "628": {
     "name": "Zee Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Tamil/Zee_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Tamil"
   },
   "196": {
     "name": "Colors Gujarati",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Gujarati/Colors_Gujarati{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Gujarati"
   },
   "625": {
     "name": "Zee Bangla",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Bangla.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Bangla/Zee_Bangla{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Bangla"
   },
   "756": {
     "name": "Colors Bengali HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bengali_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Bengali_HD/Colors_Bengali_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Bengali_HD"
   },
   "224": {
     "name": "Surya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Surya_TV/Surya_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_TV"
   },
   "481": {
     "name": "Epic",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Epic_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Epic_HD/Epic_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Epic_HD"
   },
   "1158": {
     "name": "Colors Infinity HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Infinity_HD/Colors_Infinity_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Infinity_HD"
   },
   "822": {
     "name": "AXN HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/AXN_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/AXN_HD/AXN_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/AXN_HD"
   },
   "414": {
     "name": "Zee Yuva",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Yuva.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Yuva/Zee_Yuva{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Yuva"
   },
   "1171": {
     "name": "PTC Punjabi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_Punjabi.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_Punjabi/PTC_Punjabi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_Punjabi"
   },
   "527": {
     "name": "Investigation Discovery",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ID.PNG",
-    "url": "http://jiotv.live.cdn.jio.com/ID/ID{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ID"
   },
   "528": {
     "name": "DD India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_India/DD_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_India"
   },
   "202": {
     "name": "DD National",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_National.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_National/DD_National{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_National"
   },
   "532": {
     "name": "Dabangg",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dabangg.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dabangg/Dabangg{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dabangg"
   },
   "429": {
     "name": "Colors Tamil HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Tamil_HD/Colors_Tamil_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Tamil_HD"
   },
   "896": {
     "name": "Sun TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sun_TV_HD/Sun_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sun_TV_HD"
   },
   "536": {
     "name": "DD Madhya Pradesh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Madhya_Pradesh.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Madhya_Pradesh/DD_Madhya_Pradesh{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Madhya_Pradesh"
   },
   "538": {
     "name": "DD Rajasthan (Jaipur)",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajasthan_Jaipur.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Rajasthan_Jaipur/DD_Rajasthan_Jaipur{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Rajasthan_Jaipur"
   },
   "482": {
     "name": "Colors Cineplex",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey_Cineplex.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rishtey_Cineplex/Rishtey_Cineplex{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rishtey_Cineplex"
   },
   "762": {
     "name": "Sony Pix HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Sony_Pix_HD_HLS/Sony_Pix_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Pix_HD?hls=packagerx_mpd3"
   },
   "834": {
     "name": "WB",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/WB.png",
-    "url": "http://jiotv.live.cdn.jio.com/WB/WB{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/WB"
   },
   "483": {
     "name": "Sony MAX2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_MAX2/Sony_MAX2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_MAX2"
   },
   "185": {
     "name": "And Pictures HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/And_Pictures_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/And_Pictures_HD/And_Pictures_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/And_Pictures_HD"
   },
   "484": {
     "name": "Zee Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Cinema/Zee_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Cinema"
   },
   "182": {
     "name": "B4U Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/B4U_Movies/B4U_Movies{q}.m3u8"
-  },
-  "1074": {
-    "name": "JioCinema",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Cinema/Jio_Cinema.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/B4U_Movies"
   },
   "487": {
     "name": "Zee Bollywood",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Classic/Zee_Classic{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Classic"
   },
   "486": {
     "name": "Bhojpuri Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bhojpuri_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bhojpuri_Cinema/Bhojpuri_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bhojpuri_Cinema"
   },
   "894": {
     "name": "KTV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/KTV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/KTV_HD/KTV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/KTV_HD"
   },
   "485": {
     "name": "Enterr 10",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Enterr_10.png",
-    "url": "http://jiotv.live.cdn.jio.com/Enterr_10/Enterr_10{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Enterr_10"
   },
   "488": {
     "name": "Zee Action",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Action.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Action/Zee_Action{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Action"
   },
   "678": {
     "name": "Udaya Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udaya_Movies/Udaya_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udaya_Movies"
   },
   "413": {
     "name": "Zee Cinemalu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinemalu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Cinemalu/Zee_Cinemalu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Cinemalu"
   },
   "680": {
     "name": "K TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/K1_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/K1_TV/K1_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/K1_TV"
   },
   "899": {
     "name": "Gemini Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Movies_HD/Gemini_Movies_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Movies_HD"
   },
   "415": {
     "name": "Zee Anmol Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Anmol_Cinema/Zee_Anmol_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Anmol_Cinema"
   },
   "681": {
     "name": "Gemini Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Movies/Gemini_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Movies"
   },
   "151": {
     "name": "Movies Now HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Movies_Now_HD/Movies_Now_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Movies_Now_HD"
   },
   "231": {
     "name": "News 18 India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/IBN_7.png",
-    "url": "http://jiotv.live.cdn.jio.com/IBN_7/IBN_7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/IBN_7"
   },
   "235": {
     "name": "India TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_TV/India_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_TV"
   },
   "258": {
     "name": "NDTV India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/NDTV_India/NDTV_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/NDTV_India"
   },
   "504": {
     "name": "Zee News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_News/Zee_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_News"
   },
   "876": {
     "name": "Times Now World",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Times_Now_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Times_Now_HD/Times_Now_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Times_Now_HD"
   },
   "255": {
     "name": "NDTV 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/NDTV_24x7/NDTV_24x7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/NDTV_24x7"
   },
   "629": {
     "name": "ETV Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Telugu/ETV_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Telugu"
   },
   "778": {
     "name": "Public TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Public_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Public_TV/Public_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Public_TV"
   },
   "464": {
     "name": "24 Ghanta TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/24_Ghanta_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/24_Ghanta_TV/24_Ghanta_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/24_Ghanta_TV"
   },
   "632": {
     "name": "Sakshi tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sakshi_tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sakshi_tv/Sakshi_tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sakshi_tv"
   },
   "626": {
     "name": "Suvarna News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Suvarna_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Suvarna_News/Suvarna_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Suvarna_News"
   },
   "646": {
     "name": "NTV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NTV.png",
-    "url": "http://jiotv.live.cdn.jio.com/NTV/NTV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/NTV"
   },
   "830": {
     "name": "Thanthi TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Thanthi_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Thanthi_TV/Thanthi_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Thanthi_TV"
   },
   "501": {
     "name": "News 24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_24.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_24/News_24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_24"
   },
   "617": {
     "name": "TV9 Maharashtra",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_Maharashtra.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV9_Maharashtra/TV9_Maharashtra{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV9_Maharashtra"
   },
   "938": {
     "name": "BTV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/BTV.png",
-    "url": "http://jiotv.live.cdn.jio.com/BTV/BTV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/BTV"
   },
   "442": {
     "name": "Zee 24 Taas",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_24_Taas.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_24_Taas/Zee_24_Taas{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_24_Taas"
   },
   "613": {
     "name": "Newslive",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Newslive.png",
-    "url": "http://jiotv.live.cdn.jio.com/Newslive/Newslive{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Newslive"
   },
   "892": {
     "name": "Ten3 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten3_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten3_HD/Ten3_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten3_HD"
   },
   "475": {
     "name": "Sony ESPN HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_ESPN_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_ESPN_HD/Sony_ESPN_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_ESPN_HD"
   },
   "875": {
     "name": "Dsport HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dsports_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Dsports_HD_HLS/Dsports_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dsports_HD?hls=packagerx_mpd3"
   },
   "1156": {
     "name": "Jio Football HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Football.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Football/Jio_Football{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Football"
   },
   "1160": {
     "name": "Jio Cricket 1 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_1_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Cricket_1_HD/Jio_Cricket_1_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Cricket_1_HD"
   },
   "1165": {
     "name": "Jio Football 1 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Football_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Football_1/Jio_Football_1{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Football_1"
   },
   "1167": {
     "name": "Jio Football 2 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Football_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Football_2/Jio_Football_2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Football_2"
   },
   "514": {
     "name": "Ten 1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten_1/Ten_1{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten_1"
   },
   "523": {
     "name": "Ten 2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten_2/Ten_2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten_2"
   },
   "524": {
     "name": "Ten 3",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_3.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ten_3/Ten_3{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ten_3"
   },
   "525": {
     "name": "Sony Six SD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Six_SD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Six_SD/Sony_Six_SD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Six_SD"
   },
   "895": {
     "name": "Sun Music HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Music_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sun_Music_HD/Sun_Music_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sun_Music_HD"
   },
   "585": {
     "name": "Zing",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zing.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zing/Zing{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zing"
   },
   "587": {
     "name": "9XM",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/9XM.png",
-    "url": "http://jiotv.live.cdn.jio.com/9XM/9XM{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/9XM"
   },
   "591": {
     "name": "E 24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/E_24.png",
-    "url": "http://jiotv.live.cdn.jio.com/E_24/E_24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/E_24"
   },
   "183": {
     "name": "B4U Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/B4U_Music/B4U_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/B4U_Music"
   },
   "592": {
     "name": "ZOOM",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ZOOM.png",
-    "url": "http://jiotv.live.cdn.jio.com/ZOOM/ZOOM{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ZOOM"
   },
   "751": {
     "name": "Tarang Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tarang_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tarang_Music/Tarang_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tarang_Music"
   },
   "588": {
     "name": "Sony Mix",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Mix.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Mix/Sony_Mix{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Mix"
   },
   "898": {
     "name": "Gemini Music HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Music_HD/Gemini_Music_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Music_HD"
   },
   "248": {
     "name": "MTV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MTV.png",
-    "url": "http://jiotv.live.cdn.jio.com/MTV/MTV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MTV"
   },
   "744": {
     "name": "Udaya Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udaya_Music/Udaya_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udaya_Music"
   },
   "440": {
     "name": "9X Jalwa",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/9X_Jalwa.png",
-    "url": "http://jiotv.live.cdn.jio.com/9X_Jalwa/9X_Jalwa{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/9X_Jalwa"
   },
   "773": {
     "name": "Public Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Public_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Public_Music/Public_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Public_Music"
   },
   "420": {
     "name": "Jaya Max",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Max.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jaya_Max/Jaya_Max{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jaya_Max"
   },
   "741": {
     "name": "Sangeet Bhojpuri",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sangeet_Bhojpuri.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sangeet_Bhojpuri/Sangeet_Bhojpuri{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sangeet_Bhojpuri"
   },
   "746": {
     "name": "Gemini Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Music/Gemini_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Music"
   },
   "1189": {
     "name": "PTC Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_Music/PTC_Music.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_Music"
   },
   "740": {
     "name": "Sangeet Bangla",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sangeet_Bangla.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sangeet_Bangla/Sangeet_Bangla{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sangeet_Bangla"
   },
   "589": {
     "name": "Zee etc",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/etc.png",
-    "url": "http://jiotv.live.cdn.jio.com/etc/etc{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/etc"
   },
   "815": {
     "name": "Sonic Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/sonic_Hindi/sonic_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/sonic_Hindi"
   },
   "872": {
     "name": "Sony Yay Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Yay_Hindi/Sony_Yay_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Yay_Hindi"
   },
   "547": {
     "name": "Nickelodeon",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nickelodeon.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nickelodeon/Nickelodeon{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nickelodeon"
   },
   "546": {
     "name": "Nick Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nick_Tamil/Nick_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_Tamil"
   },
   "542": {
     "name": "Pogo Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Pogo_Tamil/Pogo_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Pogo_Tamil"
   },
   "1079": {
     "name": "CN HD+ English",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_English.png",
-    "url": "http://jiotv.live.cdn.jio.com/CN_HD_English/CN_HD_English{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CN_HD_English"
   },
   "817": {
     "name": "Cartoon Network Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Cartoon_Network_Tamil/Cartoon_Network_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Cartoon_Network_Tamil"
   },
   "543": {
     "name": "Nick Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nick_Telugu/Nick_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_Telugu"
   },
   "554": {
     "name": "Discovery Kids 2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Kids_2/Discovery_Kids_2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Kids_2"
   },
   "544": {
     "name": "Nick Junior",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Junior.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nick_Junior/Nick_Junior{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_Junior"
   },
   "254": {
     "name": "FYI TV18 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/FYI_TV18.png",
-    "url": "http://jiotv.live.cdn.jio.com/FYI_TV18/FYI_TV18{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/FYI_TV18"
   },
   "286": {
     "name": "Animal Planet HD World",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Animal_Planet_HD/Animal_Planet_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Animal_Planet_HD"
   },
   "164": {
     "name": "Travel XP HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Travel_XP_HD/Travel_XP_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Travel_XP_HD"
   },
   "566": {
     "name": "Animal Planet Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Animal_Planet_Hindi/Animal_Planet_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Animal_Planet_Hindi"
   },
   "575": {
     "name": "Discovery Channel Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Channel_Hindi/Discovery_Channel_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Channel_Hindi"
   },
   "578": {
     "name": "History TV18 HD Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/History_18_Hindi/History_18_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/History_18_Hindi"
   },
   "568": {
     "name": "Discovery Science",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Science.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Science/Discovery_Science{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Science"
   },
   "871": {
     "name": "Jio Events HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Events.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Events/Jio_Events{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Events"
   },
   "576": {
     "name": "Discovery Channel Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Channel_Telugu/Discovery_Channel_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Channel_Telugu"
   },
   "569": {
     "name": "D Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Channel_Tamil/Discovery_Channel_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Channel_Tamil"
   },
   "579": {
     "name": "History TV18 HD Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/History_18_Tamil/History_18_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/History_18_Tamil"
   },
   "577": {
     "name": "History TV18 HD Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/History_18_Telugu/History_18_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/History_18_Telugu"
   },
   "567": {
     "name": "Animal Planet English",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_English.png",
-    "url": "http://jiotv.live.cdn.jio.com/Animal_Planet_English/Animal_Planet_English{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Animal_Planet_English"
   },
   "1073": {
     "name": "Samara News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Samara_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Samara_News/Samara_News.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Samara_News"
   },
   "573": {
     "name": "Discovery Channel Bengali",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Bengali.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Channel_Bengali/Discovery_Channel_Bengali{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Channel_Bengali"
   },
   "814": {
     "name": "Travel XP Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Travel_XP_Tamil/Travel_XP_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Travel_XP_Tamil"
   },
   "854": {
     "name": "Sony BBC Earth HD Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_BBC_Earth_HD_Telugu/Sony_BBC_Earth_HD_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_BBC_Earth_HD_Telugu"
   },
   "242": {
     "name": "Discovery",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery/Discovery{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery"
   },
   "853": {
     "name": "Sony BBC Earth HD Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_BBC_Earth_HD_Tamil/Sony_BBC_Earth_HD_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_BBC_Earth_HD_Tamil"
   },
   "1075": {
     "name": "Ayush TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ayush_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ayush_TV/Ayush_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ayush_TV"
   },
   "906": {
     "name": "Desi Channel",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Desi_Channel.png",
-    "url": "http://jiotv.live.cdn.jio.com/Desi_Channel/Desi_Channel.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Desi_Channel"
   },
   "562": {
     "name": "Travel XP HD Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Travel_XP.png",
-    "url": "http://jiotv.live.cdn.jio.com/Travel_XP/Travel_XP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Travel_XP"
   },
   "574": {
     "name": "TLC English",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TLC_English.png",
-    "url": "http://jiotv.live.cdn.jio.com/TLC_English/TLC_English{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TLC_English"
   },
   "565": {
     "name": "ETV Abhiruchi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Abhiruchi.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Abhiruchi/ETV_Abhiruchi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Abhiruchi"
   },
   "571": {
     "name": "TLC Hindi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TLC_Hindi.png",
-    "url": "http://jiotv.live.cdn.jio.com/TLC_Hindi/TLC_Hindi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TLC_Hindi"
   },
   "1201": {
     "name": "Sadhguru Television HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhguru_Television.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sadhguru_Television/Sadhguru_Television{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sadhguru_Television"
   },
   "563": {
     "name": "Kaumudy TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kaumudy_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kaumudy_TV/Kaumudy_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kaumudy_TV"
   },
   "489": {
     "name": "CNBC Tv 18",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Tv_18.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNBC_Tv_18/CNBC_Tv_18{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNBC_Tv_18"
   },
   "212": {
     "name": "ET Now",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ET_Now.png",
-    "url": "http://jiotv.live.cdn.jio.com/ET_Now/ET_Now{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ET_Now"
   },
   "776": {
     "name": "Bhakti TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bhakti_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bhakti_TV/Bhakti_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bhakti_TV"
   },
   "829": {
     "name": "Sri Sankara",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sri_Sankara.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sri_Sankara/Sri_Sankara{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sri_Sankara"
   },
   "937": {
     "name": "Sai TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SaiTV.png",
-    "url": "http://jiotv.live.cdn.jio.com/SaiTV/SaiTV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/SaiTV"
   },
   "794": {
     "name": "Peace of Mind",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Peace_of_Mind.png",
-    "url": "http://jiotv.live.cdn.jio.com/Peace_of_Mind/Peace_of_Mind{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Peace_of_Mind"
   },
   "609": {
     "name": "mh1 Shraddha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/mh1_Shraddha.png",
-    "url": "http://jiotv.live.cdn.jio.com/mh1_Shraddha/mh1_Shraddha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/mh1_Shraddha"
   },
   "886": {
     "name": "Lakshya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Lakshya_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Lakshya_TV/Lakshya_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Lakshya_TV"
   },
   "598": {
     "name": "Sri Venkateshwar Bhakti",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sri_Venkateshwar_Bhakti.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sri_Venkateshwar_Bhakti/Sri_Venkateshwar_Bhakti{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sri_Venkateshwar_Bhakti"
   },
   "801": {
     "name": "Divya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Divya_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Divya_TV/Divya_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Divya_TV"
   },
   "602": {
     "name": "Paras tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Paras_tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Paras_tv/Paras_tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Paras_tv"
   },
   "593": {
     "name": "Sadhna",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhna.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sadhna/Sadhna{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sadhna"
   },
   "597": {
     "name": "Satsang TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Satsang_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Satsang_TV/Satsang_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Satsang_TV"
   },
   "835": {
     "name": "Angel TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Angel_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Angel_TV_HD/Angel_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Angel_TV_HD"
   },
   "772": {
     "name": "CVR OM Spiritual",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CVR_OM_Spiritual.png",
-    "url": "http://jiotv.live.cdn.jio.com/CVR_OM_Spiritual/CVR_OM_Spiritual{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CVR_OM_Spiritual"
   },
   "777": {
     "name": "Aradhana TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aradhana_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aradhana_TV/Aradhana_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aradhana_TV"
   },
   "596": {
     "name": "Jinvani TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jinvani_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jinvani_TV/Jinvani_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jinvani_TV"
   },
   "1191": {
     "name": "PTC Simran",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_Simran.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_Simran/PTC_Simran.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_Simran"
   },
   "828": {
     "name": "Shubh TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Shubh_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Shubh_TV/Shubh_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Shubh_TV"
   },
   "955": {
     "name": "Hindu Dharmam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hindu_Dharmam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hindu_Dharmam/Hindu_Dharmam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hindu_Dharmam"
   },
   "607": {
     "name": "Subhavartha TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Subhavartha_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Subhavartha_TV/Subhavartha_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Subhavartha_TV"
   },
   "934": {
     "name": "Divya Vani",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Divya_Vani.png",
-    "url": "http://jiotv.live.cdn.jio.com/Divya_Vani/Divya_Vani{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Divya_Vani"
   },
   "466": {
     "name": "Arihant TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Arihant_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Arihant_TV/Arihant_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Arihant_TV"
   },
   "924": {
     "name": "Rujumargam TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rujumargam_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rujumargam_TV/Rujumargam_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rujumargam_TV"
   },
   "977": {
     "name": "Calvary",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Calvary.png",
-    "url": "http://jiotv.live.cdn.jio.com/Calvary/Calvary{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Calvary"
   },
   "984": {
     "name": "Swayam Prabha 04",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_04.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_04/Swayam_Prabha_04{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_04"
   },
   "986": {
     "name": "Swayam Prabha 05",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_05.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_05/Swayam_Prabha_05{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_05"
   },
   "987": {
     "name": "Swayam Prabha 06",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_06.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_06/Swayam_Prabha_06{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_06"
   },
   "985": {
     "name": "Swayam Prabha 07",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_07.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_07/Swayam_Prabha_07{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_07"
   },
   "983": {
     "name": "Swayam Prabha 08",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_08.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_08/Swayam_Prabha_08{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_08"
   },
   "988": {
     "name": "Swayam Prabha 09",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_09.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_09/Swayam_Prabha_09{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_09"
   },
   "989": {
     "name": "Swayam Prabha 10",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_10.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_10/Swayam_Prabha_10{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_10"
   },
   "990": {
     "name": "Swayam Prabha 11",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_11.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_11/Swayam_Prabha_11{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_11"
   },
   "991": {
     "name": "Swayam Prabha 12",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_12.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_12/Swayam_Prabha_12{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_12"
   },
   "992": {
     "name": "Swayam Prabha 13",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_13.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_13/Swayam_Prabha_13{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_13"
   },
   "993": {
     "name": "Swayam Prabha 14",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_14.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_14/Swayam_Prabha_14{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_14"
   },
   "995": {
     "name": "Swayam Prabha 15",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_15.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_15/Swayam_Prabha_15{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_15"
   },
   "994": {
     "name": "Swayam Prabha 16",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_16.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_16/Swayam_Prabha_16{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_16"
   },
   "996": {
     "name": "Swayam Prabha 17",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_17.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_17/Swayam_Prabha_17{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_17"
   },
   "999": {
     "name": "Swayam Prabha 18",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_18.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_18/Swayam_Prabha_18{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_18"
   },
   "401": {
     "name": "Swayam Prabha 19",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_19.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_19/Swayam_Prabha_19{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_19"
   },
   "403": {
     "name": "Swayam Prabha 20",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_20.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_20/Swayam_Prabha_20{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_20"
   },
   "997": {
     "name": "Swayam Prabha 21",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_21.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_21/Swayam_Prabha_21{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_21"
   },
   "998": {
     "name": "Swayam Prabha 22",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_22.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_22/Swayam_Prabha_22{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_22"
   },
   "400": {
     "name": "Swayam Prabha 23",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_23.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_23/Swayam_Prabha_23{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_23"
   },
   "402": {
     "name": "Swayam Prabha 24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_24.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_24/Swayam_Prabha_24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_24"
   },
   "405": {
     "name": "Swayam Prabha 25",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_25.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_25/Swayam_Prabha_25{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_25"
   },
   "406": {
     "name": "Swayam Prabha 26",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_26.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_26/Swayam_Prabha_26{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_26"
   },
   "407": {
     "name": "Swayam Prabha 27",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_27.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_27/Swayam_Prabha_27{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_27"
   },
   "408": {
     "name": "Swayam Prabha 28",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_28.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_28/Swayam_Prabha_28{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_28"
   },
   "404": {
     "name": "Swayam Prabha 29",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_29.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_29/Swayam_Prabha_29{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_29"
   },
   "533": {
     "name": "Raj Pariwar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Pariwar.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Pariwar/Raj_Pariwar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Pariwar"
   },
   "539": {
     "name": "DD Bihar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Bihar.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Bihar/DD_Bihar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Bihar"
   },
   "540": {
     "name": "DD Uttar Pradesh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Uttar_Pradesh.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Uttar_Pradesh/DD_Uttar_Pradesh{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Uttar_Pradesh"
   },
   "419": {
     "name": "Jaya TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jaya_TV_HD/Jaya_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jaya_TV_HD"
   },
   "844": {
     "name": "Mazavali Manorama HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mazavali_Manorama_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mazavali_Manorama_HD/Mazavali_Manorama_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mazavali_Manorama_HD"
   },
   "847": {
     "name": "MK TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MK_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/MK_TV/MK_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MK_TV"
   },
   "785": {
     "name": "Colors Super",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Super.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Super/Colors_Super{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Super"
   },
   "857": {
     "name": "Vendhar TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vendhar_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vendhar_TV/Vendhar_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vendhar_TV"
   },
   "897": {
     "name": "Gemini TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_TV_HD/Gemini_TV_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_TV_HD"
   },
   "900": {
     "name": "Surya HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Surya_HD/Surya_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_HD"
   },
   "901": {
     "name": "Udaya HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udaya_HD/Udaya_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udaya_HD"
   },
   "904": {
     "name": "Sanjha TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sanjha_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sanjha_TV/Sanjha_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sanjha_TV"
   },
   "919": {
     "name": "Anjan TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Anjan_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Anjan_TV/Anjan_TV{q}.m3u8"
-  },
-  "932": {
-    "name": "PlayMyPlay",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PlayMyPlay.png",
-    "url": "http://jiotv.live.cdn.jio.com/PlayMyPlay/PlayMyPlay.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Anjan_TV"
   },
   "951": {
     "name": "Garv Punjabi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/GarvPunjabi.png",
-    "url": "http://jiotv.live.cdn.jio.com/GarvPunjabi/GarvPunjabi.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/GarvPunjabi"
   },
   "959": {
     "name": "JUSPunjabi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JUSPunjabi.png",
-    "url": "http://jiotv.live.cdn.jio.com/JUSPunjabi/JUSPunjabi.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/JUSPunjabi"
   },
   "189": {
     "name": "Sun TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sun_TV/Sun_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sun_TV"
   },
   "963": {
     "name": "Arre HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Arre.png",
-    "url": "http://jiotv.live.cdn.jio.com/Arre/Arre{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Arre"
   },
   "796": {
     "name": "Peppers TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Peppers_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Peppers_TV/Peppers_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Peppers_TV"
   },
   "722": {
     "name": "Sarthak TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sarthak_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sarthak_TV/Sarthak_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sarthak_TV"
   },
   "634": {
     "name": "Flower TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Flower_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Flower_TV/Flower_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Flower_TV"
   },
   "648": {
     "name": "Mazhavil Manorama",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mazhavil_Manorama.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mazhavil_Manorama/Mazhavil_Manorama{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mazhavil_Manorama"
   },
   "688": {
     "name": "Udaya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udaya_TV/Udaya_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udaya_TV"
   },
   "690": {
     "name": "DD Bangla",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Bangla.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Bangla/DD_Bangla{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Bangla"
   },
   "824": {
     "name": "Puthu Yugam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Puthu_Yugam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Puthu_Yugam/Puthu_Yugam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Puthu_Yugam"
   },
   "691": {
     "name": "Saam Tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Saam_Tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Saam_Tv/Saam_Tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Saam_Tv"
   },
   "198": {
     "name": "Colors Oriya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Oriya.png",
-    "url": "http://jiotv.live.cdn.jio.com/Colors_Oriya/Colors_Oriya{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Colors_Oriya"
   },
   "765": {
     "name": "Jonack",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jonack.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jonack/Jonack{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jonack"
   },
   "623": {
     "name": "Rang",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rang.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rang/Rang{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rang"
   },
   "635": {
     "name": "Rengoni",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rengoni.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rengoni/Rengoni{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rengoni"
   },
   "692": {
     "name": "ETV Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Plus/ETV_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Plus"
   },
   "1146": {
     "name": "Sony Marathi SD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Marathi_SD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Marathi_SD/Sony_Marathi_SD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Marathi_SD"
   },
   "695": {
     "name": "DD Sahayadri",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Sahayadri.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Sahayadri/DD_Sahayadri{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Sahayadri"
   },
   "697": {
     "name": "Sony aath",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_aath.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_aath/Sony_aath{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_aath"
   },
   "698": {
     "name": "Aakash Aath",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aakaash_bangla.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aakaash_bangla/Aakaash_bangla{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aakaash_bangla"
   },
   "699": {
     "name": "DD Malayalam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Malayalam.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Malayalam/DD_Malayalam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Malayalam"
   },
   "701": {
     "name": "Dangal",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dangal.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dangal/Dangal{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dangal"
   },
   "702": {
     "name": "DD Oriya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Oriya.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Oriya/DD_Oriya{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Oriya"
   },
   "703": {
     "name": "Tarang TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tarang_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tarang_TV/Tarang_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tarang_TV"
   },
   "704": {
     "name": "OTV (Odisha TV)",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/OTV_Odisha_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/OTV_Odisha_TV/OTV_Odisha_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/OTV_Odisha_TV"
   },
   "663": {
     "name": "Gemini TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_TV/Gemini_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_TV"
   },
   "705": {
     "name": "Polimer TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Polimer_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Polimer_TV/Polimer_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Polimer_TV"
   },
   "729": {
     "name": "Gemini Comedy",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Comedy.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Comedy/Gemini_Comedy{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Comedy"
   },
   "707": {
     "name": "Raj TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_TV/Raj_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_TV"
   },
   "708": {
     "name": "Makkal TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Makkal_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Makkal_TV/Makkal_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Makkal_TV"
   },
   "709": {
     "name": "Adithya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Adithya_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Adithya_TV/Adithya_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Adithya_TV"
   },
   "710": {
     "name": "Kairali TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kairali_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kairali_TV/Kairali_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kairali_TV"
   },
   "711": {
     "name": "Captain tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Captain_tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Captain_tv/Captain_tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Captain_tv"
   },
   "712": {
     "name": "DD urdu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_urdu.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_urdu/DD_urdu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_urdu"
   },
   "706": {
     "name": "DD Saptagiri",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Saptagiri.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Saptagiri/DD_Saptagiri{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Saptagiri"
   },
   "713": {
     "name": "DD9 chandana (kannada)",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD9_chandana_kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD9_chandana_kannada/DD9_chandana_kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD9_chandana_kannada"
   },
   "714": {
     "name": "DD Girnar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Girnar.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Girnar/DD_Girnar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Girnar"
   },
   "715": {
     "name": "DD Punjabi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Punjabi.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Punjabi/DD_Punjabi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Punjabi"
   },
   "716": {
     "name": "DD Kashir",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Kashir.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Kashir/DD_Kashir{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Kashir"
   },
   "719": {
     "name": "Nepal one",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nepal_one.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nepal_one/Nepal_one{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nepal_one"
   },
   "720": {
     "name": "DD13 Guwahati NE",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD13_Guwahati_NE.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD13_Guwahati_NE/DD13_Guwahati_NE{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD13_Guwahati_NE"
   },
   "723": {
     "name": "Amrita TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Amrita_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Amrita_TV/Amrita_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Amrita_TV"
   },
   "725": {
     "name": "Kairali News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kairali_People_TV.PNG",
-    "url": "http://jiotv.live.cdn.jio.com/Kairali_People_TV/Kairali_People_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kairali_People_TV"
   },
   "726": {
     "name": "DD5 Podhigai",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD5_Podhigai.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD5_Podhigai/DD5_Podhigai{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD5_Podhigai"
   },
   "727": {
     "name": "Vasanth TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vasanth_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vasanth_TV/Vasanth_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vasanth_TV"
   },
   "728": {
     "name": "Zee Salaam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Salaam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Salaam/Zee_Salaam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Salaam"
   },
   "730": {
     "name": "Kasturi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kasturi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kasturi/Kasturi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kasturi"
   },
   "731": {
     "name": "Kairali WE TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kairali_WE_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kairali_WE_TV/Kairali_WE_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kairali_WE_TV"
   },
   "733": {
     "name": "Udaya Comedy",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Comedy.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udaya_Comedy/Udaya_Comedy{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udaya_Comedy"
   },
   "734": {
     "name": "Vissa TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vissa_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vissa_TV/Vissa_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vissa_TV"
   },
   "736": {
     "name": "Maiboli",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maiboli.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maiboli/Maiboli{q}.m3u8"
-  },
-  "1066": {
-    "name": "The Q India",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/QYOUHD.png",
-    "url": "http://jiotv.live.cdn.jio.com/TheQIndia/TheQIndia.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Maiboli"
   },
   "1076": {
     "name": "Andy Haryana",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Andy_Haryana.png",
-    "url": "http://jiotv.live.cdn.jio.com/Andy_Haryana/Andy_Haryana{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Andy_Haryana"
   },
   "1100": {
     "name": "Dishum TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dishum_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dishum_TV/Dishum_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dishum_TV"
   },
   "1144": {
     "name": "Namma TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Namma_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Namma_TV/Namma_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Namma_TV"
   },
   "1151": {
     "name": "Rangamanch",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rangamanch.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rangamanch/Rangamanch.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rangamanch"
   },
   "534": {
     "name": "Dillagi TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dillagi_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dillagi_TV/Dillagi_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dillagi_TV"
   },
   "535": {
     "name": "Dhamaal TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dhamaal_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dhamaal_TV/Dhamaal_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dhamaal_TV"
   },
   "877": {
     "name": "MNX HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Movies_Now2_HD/Movies_Now2_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Movies_Now2_HD"
   },
   "153": {
     "name": "Zee Talkies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Talkies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Talkies/Zee_Talkies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Talkies"
   },
   "417": {
     "name": "J Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/J_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/J_Movies/J_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/J_Movies"
   },
   "686": {
     "name": "Alankar TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Alankar_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Alankar_TV/Alankar_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Alankar_TV"
   },
   "685": {
     "name": "Zee Bangla Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Bangla_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Bangla_Cinema/Zee_Bangla_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Bangla_Cinema"
   },
   "477": {
     "name": "MN+ HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MNPLUS.png",
-    "url": "http://jiotv.live.cdn.jio.com/MNPLUS/MNPLUS{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MNPLUS"
   },
   "252": {
     "name": "ETV Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Cinema/ETV_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Cinema"
   },
   "684": {
     "name": "Gemini Life",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Life.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gemini_Life/Gemini_Life{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gemini_Life"
   },
   "462": {
     "name": "MNX",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Movies_Now2/Movies_Now2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Movies_Now2"
   },
   "682": {
     "name": "Sun Life",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Life.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sun_Life/Sun_Life{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sun_Life"
   },
   "478": {
     "name": "Romedy Now HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Romedy_Now_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Romedy_Now_HD/Romedy_Now_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Romedy_Now_HD"
   },
   "738": {
     "name": "Fakt Marathi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Fakt_Marathi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Fakt_Marathi/Fakt_Marathi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Fakt_Marathi"
   },
   "946": {
     "name": "Pitaara",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Pitaara.png",
-    "url": "http://jiotv.live.cdn.jio.com/Pitaara/Pitaara{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Pitaara"
   },
   "809": {
     "name": "Maha Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maha_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maha_Movies/Maha_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Maha_Movies"
   },
   "841": {
     "name": "Housefull Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Housefull_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Housefull_Movies/Housefull_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Housefull_Movies"
   },
   "683": {
     "name": "Raj Digital Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Digital_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Digital_Plus/Raj_Digital_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Digital_Plus"
   },
   "679": {
     "name": "Kiran TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kiran_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kiran_TV/Kiran_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kiran_TV"
   },
   "1190": {
     "name": "PTC Punjabi Gold ",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_Punjabi_Gold.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_Punjabi_Gold/PTC_Punjabi_Gold.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_Punjabi_Gold"
   },
   "1202": {
     "name": "Jio Bollywood Premium HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/EROSNOW_Hindi_Premium.png",
-    "url": "http://jiotv.live.cdn.jio.com/EROSNOW_Hindi_Premium/EROSNOW_Hindi_Premium{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/EROSNOW_Hindi_Premium"
   },
   "883": {
     "name": "Oscar Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Osar_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/Oscar_Movies/Oscar_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Oscar_Movies"
   },
   "908": {
     "name": "Indradhanu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Indradhanu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Indradhanu/Indradhanu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Indradhanu"
   },
   "1101": {
     "name": "Amaar Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Amaar_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/Amaar_Cinema/Amaar_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Amaar_Cinema"
   },
   "666": {
     "name": "ABN Andhra Jyothi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABN_Andhra_Jyothi.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABN_Andhra_Jyothi/ABN_Andhra_Jyothi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABN_Andhra_Jyothi"
   },
   "499": {
     "name": "News Nation",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_Nation.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_Nation/News_Nation{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_Nation"
   },
   "718": {
     "name": "Kanak News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kanak_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kanak_TV/Kanak_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kanak_TV"
   },
   "498": {
     "name": "India news",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_news.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_news/India_news{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_news"
   },
   "677": {
     "name": "Puthiya Thalimurai",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Puthiya_Thalimurai.png",
-    "url": "http://jiotv.live.cdn.jio.com/Puthiya_Thalimurai/Puthiya_Thalimurai{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Puthiya_Thalimurai"
   },
   "693": {
     "name": "News18 BIHAR",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_BIHAR.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_BIHAR/ETV_BIHAR{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_BIHAR"
   },
   "923": {
     "name": "Dighvijay TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dighvijay_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dighvijay_TV/Dighvijay_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dighvijay_TV"
   },
   "724": {
     "name": "Zee Kalinga",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Kalinga.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Kalinga/Zee_Kalinga{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Kalinga"
   },
   "620": {
     "name": "News18 Gujarati",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_News_Gujarati.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_News_Gujarati/ETV_News_Gujarati{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_News_Gujarati"
   },
   "502": {
     "name": "Tez",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tez.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tez/Tez{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tez"
   },
   "180": {
     "name": "Asianet News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Asianet_News/Asianet_News.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Asianet_News"
   },
   "653": {
     "name": "News18 Kannada News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Kannada_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Kannada_News/ETV_Kannada_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Kannada_News"
   },
   "673": {
     "name": "News7 Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News7_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/News7_Tamil/News7_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News7_Tamil"
   },
   "633": {
     "name": "DY 365",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DY_365.png",
-    "url": "http://jiotv.live.cdn.jio.com/DY_365/DY_365{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DY_365"
   },
   "232": {
     "name": "IBN Lokmat",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/IBN_Lokmat.png",
-    "url": "http://jiotv.live.cdn.jio.com/IBN_Lokmat/IBN_Lokmat{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/IBN_Lokmat"
   },
   "647": {
     "name": "Prime Time News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Pratidin_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Pratidin_News/Pratidin_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Pratidin_News"
   },
   "616": {
     "name": "Tv 9 Gujarat",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tv_9_Gujarat.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tv_9_Gujarat/Tv_9_Gujarat{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tv_9_Gujarat"
   },
   "531": {
     "name": "News18 RAJASTHAN",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_RAJASTHAN.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_RAJASTHAN/ETV_RAJASTHAN{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_RAJASTHAN"
   },
   "717": {
     "name": "News18 Bangla News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Bangla_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Bangla_News/ETV_Bangla_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Bangla_News"
   },
   "676": {
     "name": "Sun News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sun_News/Sun_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sun_News"
   },
   "792": {
     "name": "News State UK UP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_State_UK_UP.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_State_UK_UP/News_State_UK_UP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_State_UK_UP"
   },
   "627": {
     "name": "News 18 Assam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_18_Assam.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_18_Assam/News_18_Assam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_18_Assam"
   },
   "641": {
     "name": "ABP Asmita",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Asmita.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABP_Asmita/ABP_Asmita{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_Asmita"
   },
   "624": {
     "name": "Prag News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prag_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prag_News/Prag_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prag_News"
   },
   "497": {
     "name": "Delhi Aaj Tak",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak_Delhi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Aaj_Tak_Delhi/Aaj_Tak_Delhi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aaj_Tak_Delhi"
   },
   "529": {
     "name": "News18 MP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_MP.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_MP/ETV_MP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_MP"
   },
   "770": {
     "name": "Kashish News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kashish_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kashish_News/Kashish_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kashish_News"
   },
   "769": {
     "name": "V6 News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/V6_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/V6_News/V6_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/V6_News"
   },
   "614": {
     "name": "ETV Andhra pradesh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Andhra_pradesh.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Andhra_pradesh/ETV_Andhra_pradesh{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Andhra_pradesh"
   },
   "615": {
     "name": "News 18 Tamilnadu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_18_Tamilnadu.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_18_Tamilnadu/News_18_Tamilnadu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_18_Tamilnadu"
   },
   "662": {
     "name": "Manorama News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Manorama_News.jpg",
-    "url": "http://jiotv.live.cdn.jio.com/Manorama_News/Manorama_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Manorama_News"
   },
   "780": {
     "name": "Mathrubhumi News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mathrubhumi_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mathrubhumi_News/Mathrubhumi_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mathrubhumi_News"
   },
   "493": {
     "name": "India Today",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_Today.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_Today/India_Today{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_Today"
   },
   "956": {
     "name": "TV 5 Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV_5_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV_5_Kannada/TV_5_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV_5_Kannada"
   },
   "526": {
     "name": "Sony ESPN SD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_ESPN_SD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_ESPN_SD/Sony_ESPN_SD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_ESPN_SD"
   },
   "204": {
     "name": "DD Sports",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Sports.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Sports/DD_Sports{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Sports"
   },
   "845": {
     "name": "MK Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MK_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/MK_Music/MK_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MK_Music"
   },
   "250": {
     "name": "Music India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Music_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/Music_India/Music_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Music_India"
   },
   "803": {
     "name": "Tunes 6",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tunes_6.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tunes_6/Tunes_6{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tunes_6"
   },
   "743": {
     "name": "Raj Music Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Music_Kannada/Raj_Music_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Music_Kannada"
   },
   "639": {
     "name": "Ramdhenu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ramdhenu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ramdhenu/Ramdhenu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ramdhenu"
   },
   "748": {
     "name": "Raj Musix",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Musix.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Musix/Raj_Musix{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Musix"
   },
   "1172": {
     "name": "PTC Chak De",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_Chak_De.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_Chak_De/PTC_Chak_De{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_Chak_De"
   },
   "732": {
     "name": "9X Tashan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/9X_Tashan.png",
-    "url": "http://jiotv.live.cdn.jio.com/9X_Tashan/9X_Tashan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/9X_Tashan"
   },
   "749": {
     "name": "Sahana Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sahana_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sahana_Music/Sahana_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sahana_Music"
   },
   "1188": {
     "name": "PTC DHOL TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_DHOL_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_DHOL_TV/PTC_DHOL_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_DHOL_TV"
   },
   "742": {
     "name": "mh1 (Music)",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/mh1_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/mh1_Music/mh1_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/mh1_Music"
   },
   "735": {
     "name": "Sangeet Marathi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sangeet_Marathi.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sangeet_Marathi/Sangeet_Marathi{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sangeet_Marathi"
   },
   "441": {
     "name": "9x Jhakaas",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/9x_Jhakaas.png",
-    "url": "http://jiotv.live.cdn.jio.com/9x_Jhakaas/9x_Jhakaas{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/9x_Jhakaas"
   },
   "903": {
     "name": "Only Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Only_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Only_Music/Only_Music.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Only_Music"
   },
   "747": {
     "name": "Surya Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Surya_Music/Surya_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_Music"
   },
   "905": {
     "name": "PBN Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PBN_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/PBN_Music/PBN_Music.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PBN_Music"
   },
   "737": {
     "name": "Raj Music Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Music_Telugu/Raj_Music_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Music_Telugu"
   },
   "1192": {
     "name": "Brit Asia",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Brit_Asia.png",
-    "url": "http://jiotv.live.cdn.jio.com/Brit_Asia/Brit_Asia.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Brit_Asia"
   },
   "786": {
     "name": "Kappa TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kappa_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kappa_TV/Kappa_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kappa_TV"
   },
   "1103": {
     "name": "PEACE MUSIC",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PEACE_MUSIC.png",
-    "url": "http://jiotv.live.cdn.jio.com/PEACE_MUSIC/PEACE_MUSIC.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PEACE_MUSIC"
   },
   "739": {
     "name": "Raj Music Malayalam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_Music_Malayalam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_Music_Malayalam/Raj_Music_Malayalam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_Music_Malayalam"
   },
   "1184": {
     "name": "Steelbird Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Steelbird_Music.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Steelbird_Music_HLS/Steelbird_Music{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Steelbird_Music?hls=packagerx_mpd3"
   },
   "832": {
     "name": "10 TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/10_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/10_TV/10_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/10_TV"
   },
   "658": {
     "name": "Zee News MP Chattisgarh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_News_MP_Chattisgarh.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_News_MP_Chattisgarh/Zee_News_MP_Chattisgarh{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_News_MP_Chattisgarh"
   },
   "503": {
     "name": "IBC-24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/IBC-24.png",
-    "url": "http://jiotv.live.cdn.jio.com/IBC-24/IBC-24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/IBC-24"
   },
   "642": {
     "name": "VTV Gujarati",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/VTV_Gujarati.png",
-    "url": "http://jiotv.live.cdn.jio.com/VTV_Gujarati/VTV_Gujarati{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/VTV_Gujarati"
   },
   "668": {
     "name": "TV 5 News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV_5_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV_5_News/TV_5_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV_5_News"
   },
   "1232": {
     "name": "Hi Dost!",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hi_Dost.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hi_Dost/Hi_Dost{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hi_Dost"
   },
   "675": {
     "name": "Assam Talks",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Assam_Talks.png",
-    "url": "http://jiotv.live.cdn.jio.com/Assam_Talks/Assam_Talks{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Assam_Talks"
   },
   "687": {
     "name": "News Time TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_Time_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_Time_TV/News_Time_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_Time_TV"
   },
   "661": {
     "name": "Zee Purvaiya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Purvaiya.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Purvaiya/Zee_Purvaiya{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Purvaiya"
   },
   "779": {
     "name": "Prameya News 7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prameya_News_7.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prameya_News_7/Prameya_News_7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prameya_News_7"
   },
   "784": {
     "name": "CVR News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CVR_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/CVR_News/CVR_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CVR_News"
   },
   "659": {
     "name": "Zee Rajasthan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Rajasthan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Rajasthan/Zee_Rajasthan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Rajasthan"
   },
   "530": {
     "name": "News18 UP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_UP.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_UP/ETV_UP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_UP"
   },
   "696": {
     "name": "News18 Oriya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_News_Oriya.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_News_Oriya/ETV_News_Oriya{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_News_Oriya"
   },
   "667": {
     "name": "T News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/T_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/T_News/T_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/T_News"
   },
   "782": {
     "name": "Sandesh News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sandesh_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sandesh_News/Sandesh_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sandesh_News"
   },
   "203": {
     "name": "DD News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_News/DD_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_News"
   },
   "954": {
     "name": "Prajaa TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prajaa_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prajaa_TV/Prajaa_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prajaa_TV"
   },
   "418": {
     "name": "Jaya Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jaya_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jaya_Plus/Jaya_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jaya_Plus"
   },
   "826": {
     "name": "Malai Murasu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Malai_Murasu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Malai_Murasu/Malai_Murasu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Malai_Murasu"
   },
   "976": {
     "name": "Bangla Time",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bangla_Time.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bangla_Time/Bangla_Time{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bangla_Time"
   },
   "910": {
     "name": "Media One TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Media_One_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Media_One_TV/Media_One_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Media_One_TV"
   },
   "929": {
     "name": "Zee 24 Kalak",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_24_Kalak.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_24_Kalak/Zee_24_Kalak{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_24_Kalak"
   },
   "142": {
     "name": "BBC World News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_World_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/BBC_World_News/BBC_World_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/BBC_World_News"
   },
   "630": {
     "name": "ETV Telangana",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Telangana.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Telangana/ETV_Telangana{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Telangana"
   },
   "781": {
     "name": "Kalinga TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kalinga_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kalinga_TV/Kalinga_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kalinga_TV"
   },
   "810": {
     "name": "Janam TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Janam_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Janam_TV/Janam_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Janam_TV"
   },
   "512": {
     "name": "India News UP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_UP.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_News_UP/India_News_UP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_News_UP"
   },
   "965": {
     "name": "News 18 Kerala",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_18_Kerala.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_18_Kerala/News_18_Kerala{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_18_Kerala"
   },
   "800": {
     "name": "Maha News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maha_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Maha_News/Maha_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Maha_News"
   },
   "665": {
     "name": "HM TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/HM_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/HM_TV/HM_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/HM_TV"
   },
   "557": {
     "name": "Chutti TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Chutti_TV/Chutti_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Chutti_TV"
   },
   "555": {
     "name": "Chintu TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Chintu_TV/Chintu_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Chintu_TV"
   },
   "290": {
     "name": "sonic Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/sonic_Tamil/sonic_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/sonic_Tamil"
   },
   "553": {
     "name": "Discovery Kids 1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Kids_1/Discovery_Kids_1{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Kids_1"
   },
   "558": {
     "name": "Kushi TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kushi_TV/Kushi_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kushi_TV"
   },
   "166": {
     "name": "Cartoon Network Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Cartoon_Network_Telugu/Cartoon_Network_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Cartoon_Network_Telugu"
   },
   "550": {
     "name": "Discovery Kids Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Kids_Tamil/Discovery_Kids_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Kids_Tamil"
   },
   "583": {
     "name": "DD Kisan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Kisan.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Kisan/DD_Kisan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Kisan"
   },
   "570": {
     "name": "ETV Life",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Life.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Life/ETV_Life{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Life"
   },
   "422": {
     "name": "In Goa 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/InGoa24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/InGoa24x7/InGoa24x7.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/InGoa24x7"
   },
   "775": {
     "name": "Vanitha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vanitha.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vanitha/Vanitha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vanitha"
   },
   "774": {
     "name": "CVR Health",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CVR_Health.png",
-    "url": "http://jiotv.live.cdn.jio.com/CVR_Health/CVR_Health{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CVR_Health"
   },
   "541": {
     "name": "Discovery Turbo",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Turbo.png",
-    "url": "http://jiotv.live.cdn.jio.com/Discovery_Turbo/Discovery_Turbo{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Discovery_Turbo"
   },
   "852": {
     "name": "Sony BBC Earth HD English",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD_English.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_BBC_Earth_HD_English/Sony_BBC_Earth_HD_English{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_BBC_Earth_HD_English"
   },
   "962": {
     "name": "Boogle Bollywood",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Boogle_Bollywood.png",
-    "url": "http://jiotv.live.cdn.jio.com/Boogle_Bollywood/Boogle_Bollywood.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Boogle_Bollywood"
   },
   "953": {
     "name": "Propex TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Propex_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Propex_TV/Propex_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Propex_TV"
   },
   "1182": {
     "name": "AstroFlix",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/AstroFlix.png",
-    "url": "http://jiotv.live.cdn.jio.com/AstroFlix/AstroFlix.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/AstroFlix"
   },
   "797": {
     "name": "testii",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sakhi_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Sakhi_TV_HLS/Sakhi_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sakhi_TV?hls=packagerx_mpd4"
   },
   "1181": {
     "name": "Jyotish TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jyotish_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jyotish_TV/Jyotish_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jyotish_TV"
   },
   "490": {
     "name": "CNBC Bazaar (MNO)",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Bazaar_MNO.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNBC_Bazaar_MNO/CNBC_Bazaar_MNO{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNBC_Bazaar_MNO"
   },
   "599": {
     "name": "Disha tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Disha_tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Disha_tv/Disha_tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Disha_tv"
   },
   "856": {
     "name": "Vedic TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vedic_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vedic_TV/Vedic_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vedic_TV"
   },
   "611": {
     "name": "Darshan 24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Darshan_24.png",
-    "url": "http://jiotv.live.cdn.jio.com/Darshan_24/Darshan_24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Darshan_24"
   },
   "939": {
     "name": "Bhaktisagar 2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bhaktisagar_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bhaktisagar_2/Bhaktisagar_2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bhaktisagar_2"
   },
   "601": {
     "name": "Ishwar TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ishwar_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ishwar_TV/Ishwar_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ishwar_TV"
   },
   "605": {
     "name": "Channel Win",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Channel_Win.png",
-    "url": "http://jiotv.live.cdn.jio.com/Channel_Win/Channel_Win{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Channel_Win"
   },
   "603": {
     "name": "Nambikkai",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nambikkai.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nambikkai/Nambikkai{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nambikkai"
   },
   "879": {
     "name": "Hare krsna",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Harekrsna.png",
-    "url": "http://jiotv.live.cdn.jio.com/Harekrsna/Harekrsna.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Harekrsna"
   },
   "887": {
     "name": "Swar Shree",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Garv_Swaminarayan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Garv_Swaminarayan/Garv_Swaminarayan.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Garv_Swaminarayan"
   },
   "608": {
     "name": "Shubhsandesh TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Shubhsandesh_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Shubhsandesh_TV/Shubhsandesh_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Shubhsandesh_TV"
   },
   "1173": {
     "name": "Shree Siddhivinayak",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Siddhivinayak.png",
-    "url": "http://jiotv.live.cdn.jio.com/Siddhivinayak/Siddhivinayak.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Siddhivinayak"
   },
   "912": {
     "name": "Katyayani",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Katyayani.png",
-    "url": "http://jiotv.live.cdn.jio.com/Katyayani/Katyayani{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Katyayani"
   },
   "606": {
     "name": "Shalom",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Shalom.png",
-    "url": "http://jiotv.live.cdn.jio.com/Shalom/Shalom{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Shalom"
   },
   "1159": {
     "name": "Tulja Bhavani",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tulja_Bhavani.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tulja_Bhavani/Tulja_Bhavani.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tulja_Bhavani"
   },
   "972": {
     "name": "Sarv Dharam Sangam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sarv_Dharam_Sangam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sarv_Dharam_Sangam/Sarv_Dharam_Sangam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sarv_Dharam_Sangam"
   },
   "1077": {
     "name": "Lord Buddha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Lord_Buddha.png",
-    "url": "http://jiotv.live.cdn.jio.com/Lord_Buddha/Lord_Buddha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Lord_Buddha"
   },
   "952": {
     "name": "Garv Punjabi Gurbani",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/GarvGurbani.jpg",
-    "url": "http://jiotv.live.cdn.jio.com/GarvGurbani/GarvGurbani.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/GarvGurbani"
   },
   "1174": {
     "name": "Fateh TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Fateh_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Fateh_TV/Fateh_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Fateh_TV"
   },
   "1187": {
     "name": "Valambhakti TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Valambhakti_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Valambhakti/Valambhakti.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Valambhakti"
   },
   "964": {
     "name": "Om Shanti",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Om_Shanti.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Om_Shanti_HLS/Om_Shanti{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Om_Shanti?hls=packagerx_mpd3"
   },
   "1186": {
     "name": "Kartavya TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kartavya_Tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kartavya_Tv/Kartavya_Tv.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kartavya_Tv"
   },
   "1099": {
     "name": "Hamari Sanskruti",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hamari_Sanskruti_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hamari_Sanskruti_TV/Hamari_Sanskruti_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hamari_Sanskruti_TV"
   },
   "961": {
     "name": "JUSOne",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JUSOne.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/JUSOne_HLS/JUSOne{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/JUSOne?hls=packagerx_mpd3"
   },
   "1078": {
     "name": "Soham TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Soham_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Soham_TV/Soham_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Soham_TV"
   },
   "802": {
     "name": "testi",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Navagraha.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Navagraha_HLS/Navagraha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Navagraha?hls=packagerx_mpd4"
   },
   "1175": {
     "name": "Awakening",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Awakening.png",
-    "url": "http://jiotv.live.cdn.jio.com/Awakening/Awakening.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Awakening"
   },
   "1176": {
     "name": "SRMD HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SRMD.png",
-    "url": "http://jiotv.live.cdn.jio.com/SRMD/SRMD.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/SRMD"
   },
   "1193": {
     "name": "Hare Krsna Music",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hare_Krsna_music.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hare_Krsna_music/Hare_Krsna_music.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hare_Krsna_music"
   },
   "409": {
     "name": "Swayam Prabha 30",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_30.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_30/Swayam_Prabha_30{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_30"
   },
   "410": {
     "name": "Swayam Prabha 31",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_31.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_31/Swayam_Prabha_31{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_31"
   },
   "411": {
     "name": "Swayam Prabha 32",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Swayam_Prabha_32.png",
-    "url": "http://jiotv.live.cdn.jio.com/Swayam_Prabha_32/Swayam_Prabha_32{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Swayam_Prabha_32"
   },
   "1069": {
     "name": "Vande Gujarat 1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_1.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_1/Vande_Gujarat_1{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_1"
   },
   "1088": {
     "name": "Vande Gujarat 10",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_10.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_10/Vande_Gujarat_10{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_10"
   },
   "1089": {
     "name": "Vande Gujarat 11",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_11.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_11/Vande_Gujarat_11{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_11"
   },
   "1090": {
     "name": "Vande Gujarat 12",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_12.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_12/Vande_Gujarat_12{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_12"
   },
   "1091": {
     "name": "Vande Gujarat 13",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_13.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_13/Vande_Gujarat_13{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_13"
   },
   "1092": {
     "name": "Vande Gujarat 14",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_14.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_14/Vande_Gujarat_14{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_14"
   },
   "1093": {
     "name": "Vande Gujarat 15",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_15.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_15/Vande_Gujarat_15{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_15"
   },
   "1094": {
     "name": "Vande Gujarat 16",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_16.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_16/Vande_Gujarat_16{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_16"
   },
   "1070": {
     "name": "Vande Gujarat 2",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_2.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_2/Vande_Gujarat_2{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_2"
   },
   "1082": {
     "name": "Vande Gujarat 3",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_3.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_3/Vande_Gujarat_3{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_3"
   },
   "1071": {
     "name": "Vande Gujarat 4",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_4.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_4/Vande_Gujarat_4{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_4"
   },
   "1083": {
     "name": "Vande Gujarat 5",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_5.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_5/Vande_Gujarat_5{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_5"
   },
   "1084": {
     "name": "Vande Gujarat 6",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_6.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_6/Vande_Gujarat_6{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_6"
   },
   "1085": {
     "name": "Vande Gujarat 7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_7.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_7/Vande_Gujarat_7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_7"
   },
   "1086": {
     "name": "Vande Gujarat 8",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_8.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_8/Vande_Gujarat_8{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_8"
   },
   "1087": {
     "name": "Vande Gujarat 9",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vande_Gujarat_9.png",
-    "url": "http://jiotv.live.cdn.jio.com/Vande_Gujarat_9/Vande_Gujarat_9{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vande_Gujarat_9"
   },
   "807": {
     "name": "Gulistan News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Gulistan_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Gulistan_News/Gulistan_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Gulistan_News"
   },
   "768": {
     "name": "Jan TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jan_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jan_TV/Jan_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jan_TV"
   },
   "651": {
     "name": "Raj News Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_News_Kannada/Raj_News_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_News_Kannada"
   },
   "694": {
     "name": "News18 Urdu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Urdu.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Urdu/ETV_Urdu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Urdu"
   },
   "516": {
     "name": "India News Haryana",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Haryana.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_News_Haryana/India_News_Haryana{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_News_Haryana"
   },
   "513": {
     "name": "India News Rajasthan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_Rajasthan.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_News_Rajasthan/India_News_Rajasthan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_News_Rajasthan"
   },
   "643": {
     "name": "GS TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/GS_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/GS_TV/GS_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/GS_TV"
   },
   "631": {
     "name": "MBC",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MBC.png",
-    "url": "http://jiotv.live.cdn.jio.com/MBC/MBC{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MBC"
   },
   "509": {
     "name": "Sahara Samay Bihar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sahara_Samay_Bihar.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sahara_Samay_Bihar/Sahara_Samay_Bihar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sahara_Samay_Bihar"
   },
   "652": {
     "name": "Zee Hindustan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_SANGAM.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_SANGAM/Zee_SANGAM{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_SANGAM"
   },
   "551": {
     "name": "Toonami",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Toonami.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Toonami_HLS/Toonami{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Toonami?hls=packagerx_mpd4"
   },
   "808": {
     "name": "Hindi Khabar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hindi_Khabar.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hindi_Khabar/Hindi_Khabar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hindi_Khabar"
   },
   "654": {
     "name": "Zee Punjabi HP Haryana",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Punjabi_HP_Haryana.png",
-    "url": "http://jiotv.live.cdn.jio.com/Zee_Punjabi_HP_Haryana/Zee_Punjabi_HP_Haryana{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Zee_Punjabi_HP_Haryana"
   },
   "927": {
     "name": "First India News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/First_India_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/First_India_News/First_India_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/First_India_News"
   },
   "581": {
     "name": "TV1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV1.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV1/TV1{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV1"
   },
   "882": {
     "name": "News11",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News11.png",
-    "url": "http://jiotv.live.cdn.jio.com/News11/News11{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News11"
   },
   "950": {
     "name": "R Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/RPLUS.png",
-    "url": "http://jiotv.live.cdn.jio.com/RPLUS/RPLUS{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/RPLUS"
   },
   "507": {
     "name": "SAHARA SAMAY MP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SAHARA_SAMAY_MP.png",
-    "url": "http://jiotv.live.cdn.jio.com/SAHARA_SAMAY_MP/SAHARA_SAMAY_MP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/SAHARA_SAMAY_MP"
   },
   "645": {
     "name": "Captain News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Captain_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Captain_News/Captain_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Captain_News"
   },
   "790": {
     "name": "I News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/I_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/I_News/I_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/I_News"
   },
   "495": {
     "name": "News X",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_X.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_X/News_X{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_X"
   },
   "491": {
     "name": "Mirror Now",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Magic_bricks_Now.png",
-    "url": "http://jiotv.live.cdn.jio.com/Magic_bricks_Now/Magic_bricks_Now{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Magic_bricks_Now"
   },
   "515": {
     "name": "India News MP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_News_MP.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_News_MP/India_News_MP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_News_MP"
   },
   "671": {
     "name": "Sathiyam TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sathiyam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sathiyam/Sathiyam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sathiyam"
   },
   "799": {
     "name": "Naxatra News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Naxatra_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Naxatra_News/Naxatra_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Naxatra_News"
   },
   "572": {
     "name": "Zee UP UK",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Living_Foodz.png",
-    "url": "http://jiotv.live.cdn.jio.com/Living_Foodz/Living_Foodz{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Living_Foodz"
   },
   "193": {
     "name": "CNN",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNN.png",
-    "url": "http://jiotv.live.cdn.jio.com/CNN/CNN{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CNN"
   },
   "517": {
     "name": "Chardikla Time TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Chardikla_Time_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Chardikla_Time_TV/Chardikla_Time_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Chardikla_Time_TV"
   },
   "518": {
     "name": "Sudarshan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sudarshan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sudarshan/Sudarshan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sudarshan"
   },
   "789": {
     "name": "JK 24x7 News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JK_24x7_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/JK_24x7_News/JK_24x7_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/JK_24x7_News"
   },
   "494": {
     "name": "AL Jazeera",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/AL_Jazeera.png",
-    "url": "http://jiotv.live.cdn.jio.com/AL_Jazeera/AL_Jazeera{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/AL_Jazeera"
   },
   "1170": {
     "name": "PTC News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PTC_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/PTC_News/PTC_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PTC_News"
   },
   "791": {
     "name": "Taaza TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Taaza_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Taaza_TV/Taaza_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Taaza_TV"
   },
   "973": {
     "name": "Onkar Only Truth",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Onkar_Only_Truth.png",
-    "url": "http://jiotv.live.cdn.jio.com/Onkar_Only_Truth/Onkar_Only_Truth{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Onkar_Only_Truth"
   },
   "771": {
     "name": "Live Today",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Live_Today.png",
-    "url": "http://jiotv.live.cdn.jio.com/Live_Today/Live_Today{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Live_Today"
   },
   "506": {
     "name": "Sahara Samay Rastriya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sahara_Samay_Rastriya.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sahara_Samay_Rastriya/Sahara_Samay_Rastriya{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sahara_Samay_Rastriya"
   },
   "1147": {
     "name": "Mojo TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mojo_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mojo_TV/Mojo_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mojo_TV"
   },
   "511": {
     "name": "Mh One News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mh_One_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mh_One_News/Mh_One_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mh_One_News"
   },
   "913": {
     "name": "Lotus News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Lotus_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Lotus_News/Lotus_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Lotus_News"
   },
   "880": {
     "name": "Janta TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Janta_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Janta_TV/Janta_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Janta_TV"
   },
   "655": {
     "name": "News18 Haryana and HP News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_Haryana_and_HP_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/ETV_Haryana_and_HP_News/ETV_Haryana_and_HP_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ETV_Haryana_and_HP_News"
   },
   "855": {
     "name": "Total TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Total_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Total_TV/Total_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Total_TV"
   },
   "508": {
     "name": "SAHARA SAMAY UP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SAHARA_SAMAY_UP.png",
-    "url": "http://jiotv.live.cdn.jio.com/SAHARA_SAMAY_UP/SAHARA_SAMAY_UP{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/SAHARA_SAMAY_UP"
   },
   "412": {
     "name": "Wion",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Wion.png",
-    "url": "http://jiotv.live.cdn.jio.com/Wion/Wion{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Wion"
   },
   "918": {
     "name": "Bharat Samachar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bharat_Samachar.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bharat_Samachar/Bharat_Samachar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bharat_Samachar"
   },
   "935": {
     "name": "Artage News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Zeal_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Artage_News/Artage_News.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Artage_News"
   },
   "783": {
     "name": "K News India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/K_News_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/K_News_India/K_News_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/K_News_India"
   },
   "637": {
     "name": "North East Live",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/North_East_Live.png",
-    "url": "http://jiotv.live.cdn.jio.com/North_East_Live/North_East_Live{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/North_East_Live"
   },
   "793": {
     "name": "Samay Rajasthan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Samay_Rajasthan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Samay_Rajasthan/Samay_Rajasthan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Samay_Rajasthan"
   },
   "664": {
     "name": "Raj News Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_News_Telugu/Raj_News_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_News_Telugu"
   },
   "496": {
     "name": "dw",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/dw.png",
-    "url": "http://jiotv.live.cdn.jio.com/dw/dw{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/dw"
   },
   "1149": {
     "name": "Sadhna Aryan News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhna_Aryan_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sadhna_Aryan_News/Sadhna_Aryan_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sadhna_Aryan_News"
   },
   "522": {
     "name": "Loksabha TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Loksabha_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Loksabha_TV/Loksabha_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Loksabha_TV"
   },
   "843": {
     "name": "Madhimugam TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Madhimugam_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Madhimugam_TV/Madhimugam_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Madhimugam_TV"
   },
   "520": {
     "name": "DD Rajyasabha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajyasabha.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_Rajyasabha/DD_Rajyasabha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_Rajyasabha"
   },
   "885": {
     "name": "TV5 Monde",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV_5_Monde.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV_5_Monde/TV_5_Monde{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV_5_Monde"
   },
   "970": {
     "name": "Win TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Win_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Win_TV/Win_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Win_TV"
   },
   "944": {
     "name": "Mantavya News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Mantavya_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Mantavya_News/Mantavya_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Mantavya_News"
   },
   "933": {
     "name": "4 TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/4_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/4_TV/4_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/4_TV"
   },
   "936": {
     "name": "News 1 India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_1_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_1_India/News_1_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_1_India"
   },
   "846": {
     "name": "MKN",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/MK_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/MK_News/MK_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/MK_News"
   },
   "917": {
     "name": "APN News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/APN_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/APN_News/APN_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/APN_News"
   },
   "656": {
     "name": "News 9",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_9.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_9/News_9{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_9"
   },
   "465": {
     "name": "Jaihind tv",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jaihind_tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jaihind_tv/Jaihind_tv{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jaihind_tv"
   },
   "842": {
     "name": "Jeevan TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jeevan_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jeevan_TV/Jeevan_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jeevan_TV"
   },
   "911": {
     "name": "I Plus News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/I_Plus_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/I_Plus_News/I_Plus_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/I_Plus_News"
   },
   "916": {
     "name": "TV 100",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV_100.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV_100/TV_100{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV_100"
   },
   "1179": {
     "name": "Bansal News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bansal_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Bansal_News/Bansal_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Bansal_News"
   },
   "788": {
     "name": "India Voice",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/India_Voice.png",
-    "url": "http://jiotv.live.cdn.jio.com/India_Voice/India_Voice{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/India_Voice"
   },
   "926": {
     "name": "A1 TV Rajasthan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/A1_TV_Rajasthan.png",
-    "url": "http://jiotv.live.cdn.jio.com/A1_TV_Rajasthan/A1_TV_Rajasthan{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/A1_TV_Rajasthan"
   },
   "957": {
     "name": "INH 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/INH_24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/INH_24x7/INH_24x7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/INH_24x7"
   },
   "907": {
     "name": "GoodNews Channel",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/GoodNews_Channel.png",
-    "url": "http://jiotv.live.cdn.jio.com/GoodNews_Channel/GoodNews_Channel{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/GoodNews_Channel"
   },
   "850": {
     "name": "News India 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_India_24_X_7.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_India_24_X_7/News_India_24_X_7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_India_24_X_7"
   },
   "831": {
     "name": "Living India News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Living_India_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Living_India_News/Living_India_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Living_India_News"
   },
   "851": {
     "name": "SMBC TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SMBC_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/SMBC_TV/SMBC_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/SMBC_TV"
   },
   "519": {
     "name": "Sadhna News Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sadhna_News_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sadhna_News_Plus/Sadhna_News_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sadhna_News_Plus"
   },
   "764": {
     "name": "Channel News Asia International",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Channel_News_Asia_International.png",
-    "url": "http://jiotv.live.cdn.jio.com/Channel_News_Asia_International/Channel_News_Asia_International{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Channel_News_Asia_International"
   },
   "421": {
     "name": "GOA 365",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Goa365.png",
-    "url": "http://jiotv.live.cdn.jio.com/Goa365/Goa365.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Goa365"
   },
   "621": {
     "name": "News World India",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/News_World_India.png",
-    "url": "http://jiotv.live.cdn.jio.com/News_World_India/News_World_India{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/News_World_India"
   },
   "838": {
     "name": "France 24",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/France_24.png",
-    "url": "http://jiotv.live.cdn.jio.com/France_24/France_24{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/France_24"
   },
   "650": {
     "name": "Raj News Malayalam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_Malayalam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_News_Malayalam/Raj_News_Malayalam{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_News_Malayalam"
   },
   "921": {
     "name": "Prime News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prime_News/Prime_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prime_News"
   },
   "837": {
     "name": "Euro News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Euro_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Euro_News/Euro_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Euro_News"
   },
   "966": {
     "name": "Prudent",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/PrudentHD.png",
-    "url": "http://jiotv.live.cdn.jio.com/PrudentHD/PrudentHD.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/PrudentHD"
   },
   "915": {
     "name": "Khabar Fast",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Khabar_Fast.png",
-    "url": "http://jiotv.live.cdn.jio.com/Khabar_Fast/Khabar_Fast{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Khabar_Fast"
   },
   "960": {
     "name": "JUS 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JUS24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/JUS24x7/JUS24x7.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/JUS24x7"
   },
   "1102": {
     "name": "RDX Goa",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/RDX_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/RDX_News/RDX_News.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/RDX_News"
   },
   "920": {
     "name": "Channel One News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Channel_One_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Channel_One_News/Channel_One_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Channel_One_News"
   },
   "787": {
     "name": "CVR English",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CVR_English.png",
-    "url": "http://jiotv.live.cdn.jio.com/CVR_English/CVR_English{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CVR_English"
   },
   "974": {
     "name": "HNN 24x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/HNN_24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/HNN_24x7/HNN_24x7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/HNN_24x7"
   },
   "958": {
     "name": "DNN",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DNN.png",
-    "url": "http://jiotv.live.cdn.jio.com/DNN/DNN{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DNN"
   },
   "975": {
     "name": "Jantantra",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jantantra.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jantantra/Jantantra{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jantantra"
   },
   "767": {
     "name": "Raj News\u00a024x7",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Raj_News_24x7.png",
-    "url": "http://jiotv.live.cdn.jio.com/Raj_News_24x7/Raj_News_24x7{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Raj_News_24x7"
   },
   "874": {
     "name": "Sony Yay Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Yay_Telugu/Sony_Yay_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Yay_Telugu"
   },
   "873": {
     "name": "Sony Yay Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sony_Yay_Tamil/Sony_Yay_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sony_Yay_Tamil"
   },
   "548": {
     "name": "Nickelodeon Jr.",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nickelodeon_Jr.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nickelodeon_Jr/Nickelodeon_Jr{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nickelodeon_Jr"
   },
   "1081": {
     "name": "CN HD+ Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/CN_HD_Tamil/CN_HD_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CN_HD_Tamil"
   },
   "556": {
     "name": "Kochu TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kochu_TV/Kochu_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kochu_TV"
   },
   "1080": {
     "name": "CN HD+ Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/CN_HD_Telugu/CN_HD_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/CN_HD_Telugu"
   },
   "580": {
     "name": "DD bharati",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_bharati.png",
-    "url": "http://jiotv.live.cdn.jio.com/DD_bharati/DD_bharati{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/DD_bharati"
   },
   "582": {
     "name": "Care World",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Care_World.png",
-    "url": "http://jiotv.live.cdn.jio.com/Care_World/Care_World{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Care_World"
   },
   "888": {
     "name": "Insight",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Insight.png",
-    "url": "http://jiotv.live.cdn.jio.com/Insight/Insight.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Insight"
   },
   "1162": {
     "name": "Prime Asia HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prime_Asia_Tv.png",
-    "url": "http://jiotv.live.cdn.jio.com/Prime_Asia_Tv/Prime_Asia_Tv.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prime_Asia_Tv"
   },
   "158": {
     "name": "Star Plus HD IP",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Plus_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starplushd/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starplushd"
   },
   "367": {
     "name": "Star Utsav HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Utsav.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starutsav/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starutsav"
   },
   "443": {
     "name": "Asianet HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianethd/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/asianethd"
   },
   "368": {
     "name": "Star Vijay HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Vijay.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starvijay/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starvijay"
   },
   "317": {
     "name": "Star Jalsha HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Jalsha.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starjalsa/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starjalsa"
   },
   "758": {
     "name": "Maa TV HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_TV.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maatv/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/maatv"
   },
   "759": {
     "name": "Maa Gold HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_Gold.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maagold/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/maagold"
   },
   "931": {
     "name": "Star Bharat HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Bharat_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starbharat/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starbharat"
   },
   "181": {
     "name": "Asianet Plus HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Plus.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianetplus/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/asianetplus"
   },
   "336": {
     "name": "Star Pravah HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Pravah.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starpravah/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starpravah"
   },
   "370": {
     "name": "Suvarna HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Suvarna.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarna/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starsuvarna"
   },
   "458": {
     "name": "Suvarna Plus HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Suvarna_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarnaplus/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/starsuvarnaplus"
   },
   "156": {
     "name": "Star Gold HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/stargold/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/stargold"
   },
   "457": {
     "name": "Jalsha Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jalsa_Movies_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/jalsamovies/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/jalsamovies"
   },
   "760": {
     "name": "Maa Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maa_Movies.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/maamovies/master.m3u8"
-  },
-  "247": {
-    "name": "Movies OK HD",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_OK.png",
-    "url": "http://jiotv.live.cdn.jio.com/Movies_OK/Movies_OK.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/maamovies"
   },
   "459": {
     "name": "Asianet Movies HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Movies_HD.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/asianetmovies/master.m3u8"
-  },
-  "460": {
-    "name": "Star Sports Select HD1",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_1.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/ssselecthd1fp/master.m3u8"
-  },
-  "159": {
-    "name": "Star Sports 1",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_1.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshd1livetvfp/master.m3u8"
-  },
-  "160": {
-    "name": "Star Sports 2",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_2.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshd2livetvfp/master.m3u8"
-  },
-  "362": {
-    "name": "Star Sports Hindi 1",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_3.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/sshindifp/master.m3u8"
-  },
-  "461": {
-    "name": "Star Sports Select HD2",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_2.png",
-    "url": "http://hotstar.live.cdn.jio.com/hotstar_isl/ssselecthd2fp/master.m3u8"
+    "url": "plugin://plugin.video.jiotv/playstar/asianetmovies"
   },
   "439": {
     "name": "Home Shop 18",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/home_shop_18.png",
-    "url": "http://jiotv.live.cdn.jio.com/home_shop_18/home_shop_18{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/home_shop_18"
   },
   "805": {
     "name": "Maharashtra1",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Maharashtra1.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Maharashtra1_HLS/Maharashtra1{q}.m3u8"
-  },
-  "1059": {
-    "name": "test3",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Bazar_Test1_ELE.png",
-    "url": "http://jiotv.live.cdn.jio.com/bpk-tv/TEST3_HD/output/index{q}.m3u8"
-  },
-  "1061": {
-    "name": "test5",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/NDTV_India_Test1_ELE.png",
-    "url": "http://jiotv.live.cdn.jio.com/TEST5_HD/TEST5_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Maharashtra1?hls=packagerx_mpd4"
   },
   "1161": {
     "name": "Jio Cricket 2 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_2_HD.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Cricket_2_HD/Jio_Cricket_2_HD{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Cricket_2_HD"
   },
   "1166": {
     "name": "Jio Cricket 3 HD",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_3.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jio_Cricket_3/Jio_Cricket_3{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jio_Cricket_3"
   },
   "1205": {
     "name": "ABP Ganga",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Ganga.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABP_Ganga/ABP_Ganga{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_Ganga"
   },
   "1209": {
     "name": "Kalaignar TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kalaignar_TV/Kalaignar_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kalaignar_TV"
   },
   "1210": {
     "name": "Kalaignar Seithigal ",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kalaignar_Seithigal_.png",
-    "url": "http://jiotv.live.cdn.jio.com/Kalaignar_Seithigal_/Kalaignar_Seithigal_{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kalaignar_Seithigal_"
   },
   "1212": {
     "name": "Hare Krsna Pravachan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hare_Krsna_Pravachan.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hare_Krsna_Pravachan/Hare_Krsna_Pravachan.m3u8"
-  },
-  "1213": {
-    "name": "JioCinema Shows",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JioCinema_Shows.png",
-    "url": "http://jiotv.live.cdn.jio.com/JioCinema_Shows/JioCinema_Shows.m3u8"
-  },
-  "1214": {
-    "name": "JioCinema Action",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JioCinema_Action.png",
-    "url": "http://jiotv.live.cdn.jio.com/JioCinema_Action/JioCinema_Action.m3u8"
-  },
-  "1215": {
-    "name": "JioCinema Comedy",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/JioCinema_Comedy.png",
-    "url": "http://jiotv.live.cdn.jio.com/JioCinema_Comedy/JioCinema_Comedy.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hare_Krsna_Pravachan"
   },
   "1216": {
     "name": "Highbrow",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Highbrow.png",
-    "url": "http://jiotv.live.cdn.jio.com/Highbrow/Highbrow.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Highbrow"
   },
   "1217": {
     "name": "Lord Shri Vitthal Rukmini",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/LordShri_Vitthal.png",
-    "url": "http://jiotv.live.cdn.jio.com/LordShri_Vitthal/LordShri_Vitthal.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/LordShri_Vitthal"
   },
   "1219": {
     "name": "Animal Planet HD Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_HD_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/Animal_Planet_HD_Tamil/Animal_Planet_HD_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Animal_Planet_HD_Tamil"
   },
   "1220": {
     "name": "Rajyoga TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rajyoga_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rajyoga_TV/Rajyoga_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rajyoga_TV"
   },
   "1221": {
     "name": "Rajyoga Malayalam",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Rajyoga_Malayalam.png",
-    "url": "http://jiotv.live.cdn.jio.com/Rajyoga_Malayalam/Rajyoga_Malayalam.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Rajyoga_Malayalam"
   },
   "1222": {
     "name": "Mandir Shri Govinddevji-Jaipur",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/GovindDevji_Jaipur.png",
-    "url": "http://jiotv.live.cdn.jio.com/GovindDevji_Jaipur/GovindDevji_Jaipur.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/GovindDevji_Jaipur"
   },
   "1223": {
     "name": "Dagdusheth Ganpati - Pune",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dagdusheth_Pune.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dagdusheth_Pune/Dagdusheth_Pune.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dagdusheth_Pune"
   },
   "1224": {
     "name": "Nimbark TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nimbark.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nimbark/Nimbark.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nimbark"
   },
   "1225": {
     "name": "Click Life",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Click_Life.png",
-    "url": "http://jiotv.live.cdn.jio.com/Click_Life/Click_Life.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Click_Life"
   },
   "1226": {
     "name": "Nick HD+",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_HD+.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Nick_HD_Plus_HLS/Nick_HD_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_HD_Plus?hls=packagerx_mpd3"
   },
   "1227": {
     "name": "Digishala",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Digishala.png",
-    "url": "http://jiotv.live.cdn.jio.com/Digishala/Digishala{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Digishala"
   },
   "1228": {
     "name": "Ambabai Temple-Kolhapur",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Ambabai_Temple.png",
-    "url": "http://jiotv.live.cdn.jio.com/Ambabai_Temple/Ambabai_Temple.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ambabai_Temple"
   },
   "1230": {
     "name": "PTC VR",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/VR_360.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/VR_360_HLS/VR_360{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/VR_360?hls=packagerx_mpd3"
   },
   "1233": {
     "name": "JIA NEWS",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Jia_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Jia_News/Jia_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Jia_News"
   },
   "1241": {
     "name": "God TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/God_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/God_TV/God_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/God_TV"
   },
   "1242": {
     "name": "Sonic Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sonic_Telugu/Sonic_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sonic_Telugu"
   },
   "1243": {
     "name": "Sonic Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sonic_Kannada/Sonic_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sonic_Kannada"
   },
   "1244": {
     "name": "Nick Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/Nick_Kannada/Nick_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nick_Kannada"
   },
   "1246": {
     "name": "Headlines Tripura",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Tripura_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/Tripura_News/Tripura_News.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tripura_News"
   },
   "1250": {
     "name": "Twenty Four News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TWENTY_FOUR_NEWS.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Twenty_Four_News_HLS/Twenty_Four_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Twenty_Four_News?hls=packagerx_mpd4"
   },
   "1251": {
     "name": "TV9 Bharatvarsh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV9_BHARATVARSH.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/TV9_Bharatvarsh_HLS/TV9_Bharatvarsh{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV9_Bharatvarsh?hls=packagerx_mpd4"
   },
   "1252": {
     "name": "Tehzeeb TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TEHZEEB_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Tehzeeb_TV_HLS/Tehzeeb_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Tehzeeb_TV?hls=packagerx_mpd4"
   },
   "1253": {
     "name": "Kolkata Live",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kolkata_LIVE.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Kolkata_Live_HLS/Kolkata_Live{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kolkata_Live?hls=packagerx_mpd4"
   },
   "1254": {
     "name": "Aastha Telugu",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha_Telugu.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Aastha_Telugu_HLS/Aastha_Telugu{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aastha_Telugu?hls=packagerx_mpd4"
   },
   "1255": {
     "name": "Aastha Tamil",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha_Tamil.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Aastha_Tamil_HLS/Aastha_Tamil{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aastha_Tamil?hls=packagerx_mpd4"
   },
   "1256": {
     "name": "Aastha Kannada",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Aastha_Kannada.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Aastha_Kannada_HLS/Aastha_Kannada{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Aastha_Kannada?hls=packagerx_mpd4"
   },
   "1257": {
     "name": "Surya Samachar",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Samachar.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Surya_Samachar_HLS/Surya_Samachar{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_Samachar?hls=packagerx_mpd4"
   },
   "1258": {
     "name": "Surya Cinema",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Cinema.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Surya_Cinema_HLS/Surya_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_Cinema?hls=packagerx_mpd4"
   },
   "1259": {
     "name": "Surya Bhakti",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Bhakti.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Surya_Bhakti_HLS/Surya_Bhakti{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Surya_Bhakti?hls=packagerx_mpd4"
   },
   "1260": {
     "name": "Ctvn Akd Plus",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/CTVN_AKD_Plus.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Ctvn_Akd_Plus_HLS/Ctvn_Akd_Plus{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Ctvn_Akd_Plus?hls=packagerx_mpd4"
   },
   "1261": {
     "name": "Calcutta News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Calcutta_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Calcutta_News_HLS/Calcutta_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Calcutta_News?hls=packagerx_mpd4"
   },
   "1262": {
     "name": "FM News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/FM_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/FM_News_HLS/FM_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/FM_News?hls=packagerx_mpd4"
   },
   "1263": {
     "name": "Total Tv Haryana",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Total_Tv_Haryana.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Total_Tv_Haryana_HLS/Total_Tv_Haryana{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Total_Tv_Haryana?hls=packagerx_mpd4"
   },
   "1264": {
     "name": "Kolkata TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Kolkata_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd4/Kolkata_TV_HLS/Kolkata_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Kolkata_TV?hls=packagerx_mpd4"
   },
   "1265": {
     "name": "Global Sanjh",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Global_Sanjh.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sanjh_TV/Sanjh_TV.m3u8"
-  },
-  "1266": {
-    "name": "Bflix Movies",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Bflix_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Bflix_Movies_HLS/Bflix_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sanjh_TV"
   },
   "1267": {
     "name": "iLove",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/iLove.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/iLove_HLS/iLove{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/iLove?hls=packagerx_mpd2"
   },
   "1268": {
     "name": "ABZY Dhakad",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Dhakad.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABZY_Dhakad/ABZY_Dhakad.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABZY_Dhakad"
   },
   "1269": {
     "name": "ABZY Cool",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Cool.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABZY_Cool/ABZY_Cool.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABZY_Cool"
   },
   "1270": {
     "name": "ABZY Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABZY_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/ABZY_Movies/ABZY_Movies.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABZY_Movies"
   },
   "1271": {
     "name": "Udupi Shri Krishna Maanya",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Udupi_Krishna_Temple.png",
-    "url": "http://jiotv.live.cdn.jio.com/Udupi_Krishna_Temple/Udupi_Krishna_Temple.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Udupi_Krishna_Temple"
   },
   "1273": {
     "name": "Sugran",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sugran.png",
-    "url": "http://jiotv.live.cdn.jio.com/Sugran/Sugran.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Sugran"
   },
   "1274": {
     "name": "Studio One",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Studio_One.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Studio_One_HLS/Studio_One{q}.m3u8"
-  },
-  "1275": {
-    "name": "Multiplex TV",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Multiplex_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Multiplex_TV_HLS/Multiplex_TV{q}.m3u8"
-  },
-  "1276": {
-    "name": "Box Cinema",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/BOX_CINEMA.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Box_Cinema_HLS/Box_Cinema{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Studio_One?hls=packagerx_mpd2"
   },
   "1277": {
     "name": "Nireekshana TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Nireekshana_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Nireekshana_TV_HLS/Nireekshana_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Nireekshana_TV?hls=packagerx_mpd2"
   },
   "1278": {
     "name": "Prarthana Bhawan",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Prarthana_Bhawan.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Prarthana_Bhawan_HLS/Prarthana_Bhawan{q}.m3u8"
-  },
-  "1279": {
-    "name": "Manoranjan Grand",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Manoranjan_Grand.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Manoranjan_Grand_HLS/Manoranjan_Grand{q}.m3u8"
-  },
-  "1280": {
-    "name": "Manoranjan TV",
-    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Manoranjan_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Manoranjan_TV_HLS/Manoranjan_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Prarthana_Bhawan?hls=packagerx_mpd2"
   },
   "1281": {
     "name": "Manoranjan Movies",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Manoranjan_Movies.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Manoranjan_Movies_HLS/Manoranjan_Movies{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Manoranjan_Movies?hls=packagerx_mpd2"
   },
   "1282": {
     "name": "Khushboo TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Khusboo_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Khusboo_TV_HLS/Khusboo_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Khusboo_TV?hls=packagerx_mpd2"
   },
   "1283": {
     "name": "Mahavir Mandir - Patna",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Hanuman_Mahavir_Temple.png",
-    "url": "http://jiotv.live.cdn.jio.com/Hanuman_Mahavir_Temple/Hanuman_Mahavir_Temple.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Hanuman_Mahavir_Temple"
   },
   "1284": {
     "name": "Vignesh TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Vignesh_TV.PNG",
-    "url": "http://jiotv.live.cdn.jio.com/Vignesh_TV/Vignesh_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Vignesh_TV"
   },
   "1285": {
     "name": "Orange TV",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Orange_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Orange_TV_HLS/Orange_TV{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Orange_TV?hls=packagerx_mpd2"
   },
   "1286": {
     "name": "Insync",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Insync.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/Insync_HLS/Insync{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Insync?hls=packagerx_mpd2"
   },
   "1287": {
     "name": "ANB News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ANB_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd2/ANB_News_HLS/ANB_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ANB_News?hls=packagerx_mpd2"
   },
   "1288": {
     "name": "Shri Omkareshwar Mandir",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Omkareshwar_Temple.png",
-    "url": "http://jiotv.live.cdn.jio.com/Omkareshwar_Temple/Omkareshwar_Temple.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Omkareshwar_Temple"
   },
   "1289": {
     "name": "ISKCON Darshan ",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Iskon_Temples.png",
-    "url": "http://jiotv.live.cdn.jio.com/Iskon_Temples/Iskon_Temples.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Iskon_Temples"
   },
   "1290": {
     "name": "Stars Tell",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/StarTell.png",
-    "url": "http://jiotv.live.cdn.jio.com/StarTell/StarTell.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/StarTell"
   },
   "1291": {
     "name": "ABP Sanjha",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Sanjha.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/ABP_Sanjha_HLS/ABP_Sanjha{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/ABP_Sanjha?hls=packagerx_mpd3"
   },
   "1292": {
     "name": "Wellness",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Wellness_TV.png",
-    "url": "http://jiotv.live.cdn.jio.com/Wellness_TV/Wellness_TV.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Wellness_TV"
   },
   "1293": {
     "name": "Lokshahi News",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Lokshahi_News.png",
-    "url": "http://jiotv.live.cdn.jio.com/packagerx_mpd3/Lokshahi_News_HLS/Lokshahi_News{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Lokshahi_News?hls=packagerx_mpd3"
   },
   "1294": {
     "name": "Dsport",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Dsports_.png",
-    "url": "http://jiotv.live.cdn.jio.com/Dsports/Dsports{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/Dsports"
   },
   "1295": {
     "name": "B4U Kadak",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Kadak.png",
-    "url": "http://jiotv.live.cdn.jio.com/B4U_Kadak/B4U_Kadak{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/B4U_Kadak"
   },
   "1296": {
     "name": "B4U Bhojpuri",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Bhojpuri.png",
-    "url": "http://jiotv.live.cdn.jio.com/B4U_Bhojpuri/B4U_Bhojpuri{q}.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/B4U_Bhojpuri"
   },
   "1297": {
     "name": "TV Bangla",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/TV_Bangla.png",
-    "url": "http://jiotv.live.cdn.jio.com/TV_Bangla/TV_Bangla.m3u8"
+    "url": "plugin://plugin.video.jiotv/play/TV_Bangla"
   }
 }
