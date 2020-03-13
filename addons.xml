@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.jiotv" name="JioTV" version="1.0.6" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="1.0.7" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
         <import addon="script.module.requests" />
-        <import addon="inputstream.adaptive" />
+        <import addon="inputstream.adaptive" version="2.4.3" />
         <import addon="repository.botallen" version="1.0.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
+    <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
         <description lang="en_GB">Unofficial JioTV kodi addon by botallen</description>
@@ -26,6 +27,34 @@
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.tvfplay" name="TVF Play" version="1.0.0" provider-name="botallen">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Play TVF Content in Kodi</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>kodi.botallen.com</website>
+        <email>kodi@botallen.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.png</fanart>
         </assets>
     </extension>
 </addon>

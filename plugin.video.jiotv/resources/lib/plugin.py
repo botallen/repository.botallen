@@ -13,7 +13,7 @@ from resources.lib import kodiutils
 from resources.lib import kodilogging
 from xbmcgui import ListItem, Dialog
 from xbmcplugin import addDirectoryItems, endOfDirectory, setResolvedUrl
-from utils import check_login, getChannelUrl
+from utils import check_login, _hotstarauth_key
 
 
 ADDON = Addon()
@@ -43,18 +43,14 @@ def show_category(category_id):
         categories = json.load(f)
     with open(translatePath("special://home/addons/plugin.video.jiotv/resources/extra/channels.json"), 'r') as f:
         channels = json.load(f)
-    not_working_channels = [1074, 1213, 1214, 1215, 247, 362,
-                            160, 159, 461, 460, 1266, 1275, 1276, 1280, 932, 1066, 1061, 1059, 1061]
-    channel_ids = [x for x in categories[category_id]
-                   if not x in not_working_channels]
+    channel_ids = [x for x in categories[category_id]]
     items = []
     for each in channel_ids:
         list_item = ListItem(label=channels[str(each)]['name'])
         img_url = channels[str(each)]['logo']
         list_item.setArt({
             'thumb': img_url,
-            'icon': img_url,
-            'fanart': img_url
+            'icon': img_url
         })
         list_item.setInfo('video', {
             'title': channels[str(each)]['name'],
@@ -63,27 +59,41 @@ def show_category(category_id):
             'mediatype': 'video'
         })
         list_item.setProperty('IsPlayable', 'true')
-        items.append(("plugin://plugin.video.jiotv/play/" +
-                      str(each), list_item, False))
+        items.append((channels[str(each)]['url'], list_item, False))
     addDirectoryItems(plugin.handle, items)
     endOfDirectory(plugin.handle)
 
 
-@plugin.route('/play/<channel_id>')
-def play(channel_id):
+@plugin.route('/play/<channel_name>')
+def play(channel_name):
     play_item = ListItem()
-    url = getChannelUrl(channel_id)
+    hls = '' if not 'hls' in plugin.args else "?hls="+plugin.args['hls'][0]
+    url = "http://127.0.0.1:48996/play/{0}/master.m3u8{1}".format(
+        channel_name, hls)
+    if not url:
+        return
+    play_item.setPath(url)
+    play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
+    play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
+    play_item.setMimeType('application/vnd.apple.mpegurl')
+    play_item.setContentLookup(False)
+
+    setResolvedUrl(plugin.handle, True, listitem=play_item)
+
+
+@plugin.route('/playstar/<channel_name>')
+def playstar(channel_name):
+    play_item = ListItem()
+    _auth = _hotstarauth_key()
+    url = "http://hotstar.live.cdn.jio.com/hotstar_isl/{0}/master.m3u8?hdnea={1}".format(
+        channel_name, _auth)
     if not url:
         return
     play_item.setPath(url)
     play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
     play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
     play_item.setProperty(
-        'inputstream.adaptive.stream_headers', url.split('|')[1])
-    play_item.setProperty(
-        'inputstream.adaptive.license_key', url.split('?')[1])
-    play_item.setProperty(
-        'inputstream.adaptive.media_renewal_url', sys.argv[0])
+        'inputstream.adaptive.stream_headers', "User-Agent=hotstar")
     play_item.setMimeType('application/vnd.apple.mpegurl')
     play_item.setContentLookup(False)
 
@@ -93,7 +103,7 @@ def play(channel_id):
 @plugin.route('/logout')
 def logout():
     os.path.isfile(
-        ADDONDATA + 'channels.json') and os.remove(ADDONDATA + 'channels.json')
+        ADDONDATA + 'headers.json') and os.remove(ADDONDATA + 'headers.json')
     kodiutils.set_setting('username', '')
     kodiutils.set_setting('password', '')
 
