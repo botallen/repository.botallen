@@ -21,7 +21,8 @@
 
 ## Highlights
 
-- [JioTV Addon](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv)
+- [TVF Play add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.tvfplay)
+- [JioTV add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv)
 
 ## Download
 
