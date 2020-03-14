@@ -4,7 +4,7 @@
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
         <import addon="script.module.requests" />
-        <import addon="inputstream.adaptive" version="2.4.3" />
+        <import addon="inputstream.adaptive"/>
         <import addon="repository.botallen" version="1.0.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
