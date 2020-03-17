@@ -4,32 +4,32 @@
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Jio_Cricket/master.m3u8?hls=packagerx_mpd1
-#EXTINF:0 tvg-id="144" tvg-name="Colors HD" group-title="Entertainment;HD Channels" tvg-chno="1" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Colors_HD/{utc}" catchup-days="7",Colors HD
+#EXTINF:0 tvg-id="144" tvg-name="Colors HD" group-title="Entertainment;HD Channels" tvg-chno="3" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Colors_HD/{utc}" catchup-days="7",Colors HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Colors_HD/master.m3u8?hls=packagerx_mpd3
-#EXTINF:0 tvg-id="291" tvg-name="Sony HD" group-title="Entertainment;HD Channels" tvg-chno="2" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_HD/{utc}" catchup-days="7",Sony HD
+#EXTINF:0 tvg-id="291" tvg-name="Sony HD" group-title="Entertainment;HD Channels" tvg-chno="5" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_HD/{utc}" catchup-days="7",Sony HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_HD/master.m3u8?hls=packagerx_mpd3
-#EXTINF:0 tvg-id="167" tvg-name="Zee TV HD" group-title="Entertainment;HD Channels" tvg-chno="3" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_TV_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Zee_TV_HD/{utc}" catchup-days="7",Zee TV HD
+#EXTINF:0 tvg-id="167" tvg-name="Zee TV HD" group-title="Entertainment;HD Channels" tvg-chno="4" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_TV_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Zee_TV_HD/{utc}" catchup-days="7",Zee TV HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_TV_HD/master.m3u8
-#EXTINF:0 tvg-id="476" tvg-name="Sony Max HD" group-title="Movies;HD Channels" tvg-chno="38" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png" radio="false",Sony Max HD
+#EXTINF:0 tvg-id="476" tvg-name="Sony Max HD" group-title="Movies;HD Channels" tvg-chno="53" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png" radio="false",Sony Max HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_Max_HD/master.m3u8?hls=packagerx_mpd3
-#EXTINF:0 tvg-id="833" tvg-name="HBO HD" group-title="Movies;HD Channels" tvg-chno="39" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/HBO_HD.png" radio="false",HBO HD
+#EXTINF:0 tvg-id="833" tvg-name="HBO HD" group-title="Movies;HD Channels" tvg-chno="67" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/HBO_HD.png" radio="false",HBO HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/HBO_HD/master.m3u8
-#EXTINF:0 tvg-id="165" tvg-name="Zee Cinema HD" group-title="Movies;HD Channels" tvg-chno="40" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png" radio="false",Zee Cinema HD
+#EXTINF:0 tvg-id="165" tvg-name="Zee Cinema HD" group-title="Movies;HD Channels" tvg-chno="52" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png" radio="false",Zee Cinema HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -229,7 +229,7 @@ http://127.0.0.1:48996/play/Swayam_Prabha_03/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_SAB/master.m3u8
-#EXTINF:0 tvg-id="472" tvg-name="And TV HD" group-title="Entertainment;HD Channels" tvg-chno="5" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/And_TV_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/And_TV_HD/{utc}" catchup-days="7",And TV HD
+#EXTINF:0 tvg-id="472" tvg-name="And TV HD" group-title="Entertainment;HD Channels" tvg-chno="6" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/And_TV_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/And_TV_HD/{utc}" catchup-days="7",And TV HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -239,22 +239,22 @@ http://127.0.0.1:48996/play/And_TV_HD/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Jio_Exclusive/master.m3u8
-#EXTINF:0 tvg-id="279" tvg-name="Rishtey" group-title="Entertainment" tvg-chno="7" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Rishtey/{utc}" catchup-days="7",Rishtey
+#EXTINF:0 tvg-id="279" tvg-name="Rishtey" group-title="Entertainment" tvg-chno="13" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Rishtey/{utc}" catchup-days="7",Rishtey
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Rishtey/master.m3u8
-#EXTINF:0 tvg-id="473" tvg-name="Zee Anmol" group-title="Entertainment" tvg-chno="8" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Zee_Anmol/{utc}" catchup-days="7",Zee Anmol
+#EXTINF:0 tvg-id="473" tvg-name="Zee Anmol" group-title="Entertainment" tvg-chno="12" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Zee_Anmol/{utc}" catchup-days="7",Zee Anmol
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_Anmol/master.m3u8
-#EXTINF:0 tvg-id="474" tvg-name="Sony Pal" group-title="Entertainment" tvg-chno="9" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_Pal/{utc}" catchup-days="7",Sony Pal
+#EXTINF:0 tvg-id="474" tvg-name="Sony Pal" group-title="Entertainment" tvg-chno="15" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_Pal/{utc}" catchup-days="7",Sony Pal
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_Pal/master.m3u8
-#EXTINF:0 tvg-id="471" tvg-name="Sony SAB HD" group-title="Entertainment;HD Channels" tvg-chno="10" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_SAB_HD/{utc}" catchup-days="7",Sony SAB HD
+#EXTINF:0 tvg-id="471" tvg-name="Sony SAB HD" group-title="Entertainment;HD Channels" tvg-chno="7" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Sony_SAB_HD/{utc}" catchup-days="7",Sony SAB HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -279,7 +279,7 @@ http://127.0.0.1:48996/play/Colors_Kannada_HD/master.m3u8?hls=packagerx_mpd3
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_Kannada/master.m3u8
-#EXTINF:0 tvg-id="1157" tvg-name="Comedy Central HD" group-title="Entertainment;HD Channels" tvg-chno="11" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Comedy_Central_HD.png" radio="false",Comedy Central HD
+#EXTINF:0 tvg-id="1157" tvg-name="Comedy Central HD" group-title="Entertainment;HD Channels" tvg-chno="46" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Comedy_Central_HD.png" radio="false",Comedy Central HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -294,7 +294,7 @@ http://127.0.0.1:48996/play/Zee_Telugu/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_Tamil/master.m3u8
-#EXTINF:0 tvg-id="196" tvg-name="Colors Gujarati" group-title="Entertainment" tvg-chno="12" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Colors_Gujarati/{utc}" catchup-days="7",Colors Gujarati
+#EXTINF:0 tvg-id="196" tvg-name="Colors Gujarati" group-title="Entertainment" tvg-chno="11" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Colors_Gujarati/{utc}" catchup-days="7",Colors Gujarati
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -319,12 +319,12 @@ http://127.0.0.1:48996/play/Surya_TV/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Epic_HD/master.m3u8
-#EXTINF:0 tvg-id="1158" tvg-name="Colors Infinity HD" group-title="Entertainment;HD Channels" tvg-chno="14" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png" radio="false",Colors Infinity HD
+#EXTINF:0 tvg-id="1158" tvg-name="Colors Infinity HD" group-title="Entertainment;HD Channels" tvg-chno="43" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png" radio="false",Colors Infinity HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Colors_Infinity_HD/master.m3u8
-#EXTINF:0 tvg-id="822" tvg-name="AXN HD" group-title="Entertainment;HD Channels" tvg-chno="15" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/AXN_HD.png" radio="false",AXN HD
+#EXTINF:0 tvg-id="822" tvg-name="AXN HD" group-title="Entertainment;HD Channels" tvg-chno="44" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/AXN_HD.png" radio="false",AXN HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -349,7 +349,7 @@ http://127.0.0.1:48996/play/ID/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/DD_India/master.m3u8
-#EXTINF:0 tvg-id="202" tvg-name="DD National" group-title="Entertainment" tvg-chno="18" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_National.png" radio="false",DD National
+#EXTINF:0 tvg-id="202" tvg-name="DD National" group-title="Entertainment" tvg-chno="34" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_National.png" radio="false",DD National
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -369,52 +369,52 @@ http://127.0.0.1:48996/play/Colors_Tamil_HD/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sun_TV_HD/master.m3u8
-#EXTINF:0 tvg-id="536" tvg-name="DD Madhya Pradesh" group-title="Entertainment" tvg-chno="20" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Madhya_Pradesh.png" radio="false",DD Madhya Pradesh
+#EXTINF:0 tvg-id="536" tvg-name="DD Madhya Pradesh" group-title="Entertainment" tvg-chno="40" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Madhya_Pradesh.png" radio="false",DD Madhya Pradesh
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/DD_Madhya_Pradesh/master.m3u8
-#EXTINF:0 tvg-id="538" tvg-name="DD Rajasthan (Jaipur)" group-title="Entertainment" tvg-chno="21" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajasthan_Jaipur.png" radio="false",DD Rajasthan (Jaipur)
+#EXTINF:0 tvg-id="538" tvg-name="DD Rajasthan (Jaipur)" group-title="Entertainment" tvg-chno="35" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Rajasthan_Jaipur.png" radio="false",DD Rajasthan (Jaipur)
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/DD_Rajasthan_Jaipur/master.m3u8
-#EXTINF:0 tvg-id="482" tvg-name="Colors Cineplex" group-title="Movies" tvg-chno="41" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey_Cineplex.png" radio="false",Colors Cineplex
+#EXTINF:0 tvg-id="482" tvg-name="Colors Cineplex" group-title="Movies" tvg-chno="57" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey_Cineplex.png" radio="false",Colors Cineplex
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Rishtey_Cineplex/master.m3u8
-#EXTINF:0 tvg-id="762" tvg-name="Sony Pix HD" group-title="Movies;HD Channels" tvg-chno="42" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" radio="false",Sony Pix HD
+#EXTINF:0 tvg-id="762" tvg-name="Sony Pix HD" group-title="Movies;HD Channels" tvg-chno="73" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" radio="false",Sony Pix HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_Pix_HD/master.m3u8?hls=packagerx_mpd3
-#EXTINF:0 tvg-id="834" tvg-name="WB" group-title="Movies" tvg-chno="43" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/WB.png" radio="false",WB
+#EXTINF:0 tvg-id="834" tvg-name="WB" group-title="Movies" tvg-chno="74" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/WB.png" radio="false",WB
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/WB/master.m3u8
-#EXTINF:0 tvg-id="483" tvg-name="Sony MAX2" group-title="Movies" tvg-chno="44" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png" radio="false",Sony MAX2
+#EXTINF:0 tvg-id="483" tvg-name="Sony MAX2" group-title="Movies" tvg-chno="55" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png" radio="false",Sony MAX2
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sony_MAX2/master.m3u8
-#EXTINF:0 tvg-id="185" tvg-name="And Pictures HD" group-title="Movies;HD Channels" tvg-chno="45" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/And_Pictures_HD.png" radio="false",And Pictures HD
+#EXTINF:0 tvg-id="185" tvg-name="And Pictures HD" group-title="Movies;HD Channels" tvg-chno="56" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/And_Pictures_HD.png" radio="false",And Pictures HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/And_Pictures_HD/master.m3u8
-#EXTINF:0 tvg-id="484" tvg-name="Zee Cinema" group-title="Movies" tvg-chno="46" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema.png" radio="false",Zee Cinema
+#EXTINF:0 tvg-id="484" tvg-name="Zee Cinema" group-title="Movies" tvg-chno="54" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema.png" radio="false",Zee Cinema
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_Cinema/master.m3u8
-#EXTINF:0 tvg-id="182" tvg-name="B4U Movies" group-title="Movies" tvg-chno="47" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Movies.png" radio="false",B4U Movies
+#EXTINF:0 tvg-id="182" tvg-name="B4U Movies" group-title="Movies" tvg-chno="62" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/B4U_Movies.png" radio="false",B4U Movies
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/B4U_Movies/master.m3u8
-#EXTINF:0 tvg-id="487" tvg-name="Zee Bollywood" group-title="Movies" tvg-chno="49" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png" radio="false",Zee Bollywood
+#EXTINF:0 tvg-id="487" tvg-name="Zee Bollywood" group-title="Movies" tvg-chno="59" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png" radio="false",Zee Bollywood
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -429,12 +429,12 @@ http://127.0.0.1:48996/play/Bhojpuri_Cinema/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/KTV_HD/master.m3u8
-#EXTINF:0 tvg-id="485" tvg-name="Enterr 10" group-title="Movies" tvg-chno="50" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Enterr_10.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Enterr_10/{utc}" catchup-days="7",Enterr 10
+#EXTINF:0 tvg-id="485" tvg-name="Enterr 10" group-title="Movies" tvg-chno="65" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Enterr_10.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Enterr_10/{utc}" catchup-days="7",Enterr 10
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Enterr_10/master.m3u8
-#EXTINF:0 tvg-id="488" tvg-name="Zee Action" group-title="Movies" tvg-chno="51" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Action.png" radio="false",Zee Action
+#EXTINF:0 tvg-id="488" tvg-name="Zee Action" group-title="Movies" tvg-chno="58" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Action.png" radio="false",Zee Action
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -459,7 +459,7 @@ http://127.0.0.1:48996/play/K1_TV/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Gemini_Movies_HD/master.m3u8
-#EXTINF:0 tvg-id="415" tvg-name="Zee Anmol Cinema" group-title="Movies" tvg-chno="52" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png" radio="false",Zee Anmol Cinema
+#EXTINF:0 tvg-id="415" tvg-name="Zee Anmol Cinema" group-title="Movies" tvg-chno="60" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Anmol_Cinema.png" radio="false",Zee Anmol Cinema
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -469,7 +469,7 @@ http://127.0.0.1:48996/play/Zee_Anmol_Cinema/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Gemini_Movies/master.m3u8
-#EXTINF:0 tvg-id="151" tvg-name="Movies Now HD" group-title="Movies;HD Channels" tvg-chno="53" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now_HD.png" radio="false",Movies Now HD
+#EXTINF:0 tvg-id="151" tvg-name="Movies Now HD" group-title="Movies;HD Channels" tvg-chno="68" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now_HD.png" radio="false",Movies Now HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -644,7 +644,7 @@ http://127.0.0.1:48996/play/E_24/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/B4U_Music/master.m3u8
-#EXTINF:0 tvg-id="592" tvg-name="ZOOM" group-title="Music" tvg-chno="216" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/ZOOM.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/ZOOM/{utc}" catchup-days="7",ZOOM
+#EXTINF:0 tvg-id="592" tvg-name="ZOOM" group-title="Music" tvg-chno="16" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/ZOOM.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/ZOOM/{utc}" catchup-days="7",ZOOM
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1159,12 +1159,12 @@ http://127.0.0.1:48996/play/Swayam_Prabha_29/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Raj_Pariwar/master.m3u8
-#EXTINF:0 tvg-id="539" tvg-name="DD Bihar" group-title="Entertainment" tvg-chno="23" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Bihar.png" radio="false",DD Bihar
+#EXTINF:0 tvg-id="539" tvg-name="DD Bihar" group-title="Entertainment" tvg-chno="37" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Bihar.png" radio="false",DD Bihar
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/DD_Bihar/master.m3u8
-#EXTINF:0 tvg-id="540" tvg-name="DD Uttar Pradesh" group-title="Entertainment" tvg-chno="24" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Uttar_Pradesh.png" radio="false",DD Uttar Pradesh
+#EXTINF:0 tvg-id="540" tvg-name="DD Uttar Pradesh" group-title="Entertainment" tvg-chno="38" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Uttar_Pradesh.png" radio="false",DD Uttar Pradesh
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1509,7 +1509,7 @@ http://127.0.0.1:48996/play/Dillagi_TV/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Dhamaal_TV/master.m3u8
-#EXTINF:0 tvg-id="877" tvg-name="MNX HD" group-title="Movies;HD Channels" tvg-chno="54" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2_HD.png" radio="false",MNX HD
+#EXTINF:0 tvg-id="877" tvg-name="MNX HD" group-title="Movies;HD Channels" tvg-chno="69" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2_HD.png" radio="false",MNX HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1534,7 +1534,7 @@ http://127.0.0.1:48996/play/Alankar_TV/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Zee_Bangla_Cinema/master.m3u8
-#EXTINF:0 tvg-id="477" tvg-name="MN+ HD" group-title="Movies;HD Channels" tvg-chno="55" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/MNPLUS.png" radio="false",MN+ HD
+#EXTINF:0 tvg-id="477" tvg-name="MN+ HD" group-title="Movies;HD Channels" tvg-chno="70" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/MNPLUS.png" radio="false",MN+ HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1549,7 +1549,7 @@ http://127.0.0.1:48996/play/ETV_Cinema/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Gemini_Life/master.m3u8
-#EXTINF:0 tvg-id="462" tvg-name="MNX" group-title="Movies" tvg-chno="56" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2.png" radio="false",MNX
+#EXTINF:0 tvg-id="462" tvg-name="MNX" group-title="Movies" tvg-chno="71" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Movies_Now2.png" radio="false",MNX
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1559,7 +1559,7 @@ http://127.0.0.1:48996/play/Movies_Now2/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Sun_Life/master.m3u8
-#EXTINF:0 tvg-id="478" tvg-name="Romedy Now HD" group-title="Movies;HD Channels" tvg-chno="57" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Romedy_Now_HD.png" radio="false",Romedy Now HD
+#EXTINF:0 tvg-id="478" tvg-name="Romedy Now HD" group-title="Movies;HD Channels" tvg-chno="72" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Romedy_Now_HD.png" radio="false",Romedy Now HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1574,12 +1574,12 @@ http://127.0.0.1:48996/play/Fakt_Marathi/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Pitaara/master.m3u8
-#EXTINF:0 tvg-id="809" tvg-name="Maha Movies" group-title="Movies" tvg-chno="58" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Maha_Movies.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Maha_Movies/{utc}" catchup-days="7",Maha Movies
+#EXTINF:0 tvg-id="809" tvg-name="Maha Movies" group-title="Movies" tvg-chno="61" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Maha_Movies.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Maha_Movies/{utc}" catchup-days="7",Maha Movies
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Maha_Movies/master.m3u8
-#EXTINF:0 tvg-id="841" tvg-name="Housefull Movies" group-title="Movies" tvg-chno="59" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Housefull_Movies.png" radio="false",Housefull Movies
+#EXTINF:0 tvg-id="841" tvg-name="Housefull Movies" group-title="Movies" tvg-chno="64" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Housefull_Movies.png" radio="false",Housefull Movies
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -1599,7 +1599,7 @@ http://127.0.0.1:48996/play/Kiran_TV/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/PTC_Punjabi_Gold/master.m3u8
-#EXTINF:0 tvg-id="1202" tvg-name="Jio Bollywood Premium HD" group-title="Movies;HD Channels" tvg-chno="60" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/EROSNOW_Hindi_Premium.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/EROSNOW_Hindi_Premium/{utc}" catchup-days="7",Jio Bollywood Premium HD
+#EXTINF:0 tvg-id="1202" tvg-name="Jio Bollywood Premium HD" group-title="Movies;HD Channels" tvg-chno="66" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/EROSNOW_Hindi_Premium.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/EROSNOW_Hindi_Premium/{utc}" catchup-days="7",Jio Bollywood Premium HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -2914,13 +2914,13 @@ http://127.0.0.1:48996/play/Insight/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 http://127.0.0.1:48996/play/Prime_Asia_Tv/master.m3u8
-#EXTINF:0 tvg-id="158" tvg-name="Star Plus HD IP" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="33" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Plus_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Plus_HD/{utc}" catchup-days="7",Star Plus HD IP
+#EXTINF:0 tvg-id="158" tvg-name="Star Plus HD IP" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="1" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Plus_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Plus_HD/{utc}" catchup-days="7",Star Plus HD IP
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=hotstar
 http://hotstar.live.cdn.jio.com/hotstar_isl/starplushd/master.m3u8?faxs=1&hdnea=st=1584464876~exp=1584470876~acl=/*~hmac=1f199ab50862d197757fdd33eded1415be01d3597505bdaf65299957f65a3499
-#EXTINF:0 tvg-id="367" tvg-name="Star Utsav HD" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="34" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Utsav.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Utsav/{utc}" catchup-days="7",Star Utsav HD
+#EXTINF:0 tvg-id="367" tvg-name="Star Utsav HD" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="24" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Utsav.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Utsav/{utc}" catchup-days="7",Star Utsav HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -2956,7 +2956,7 @@ http://hotstar.live.cdn.jio.com/hotstar_isl/maatv/master.m3u8?faxs=1&hdnea=st=15
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=hotstar
 http://hotstar.live.cdn.jio.com/hotstar_isl/maagold/master.m3u8?faxs=1&hdnea=st=1584464876~exp=1584470876~acl=/*~hmac=1f199ab50862d197757fdd33eded1415be01d3597505bdaf65299957f65a3499
-#EXTINF:0 tvg-id="931" tvg-name="Star Bharat HD" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="35" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Bharat_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Bharat_HD/{utc}" catchup-days="7",Star Bharat HD
+#EXTINF:0 tvg-id="931" tvg-name="Star Bharat HD" group-title="Entertainment;HD Channels;Star Channels" tvg-chno="2" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Bharat_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Bharat_HD/{utc}" catchup-days="7",Star Bharat HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -2986,7 +2986,7 @@ http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarna/master.m3u8?faxs=1&hdnea
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=hotstar
 http://hotstar.live.cdn.jio.com/hotstar_isl/starsuvarnaplus/master.m3u8?faxs=1&hdnea=st=1584464876~exp=1584470876~acl=/*~hmac=1f199ab50862d197757fdd33eded1415be01d3597505bdaf65299957f65a3499
-#EXTINF:0 tvg-id="156" tvg-name="Star Gold HD" group-title="Movies;HD Channels;Star Channels" tvg-chno="61" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Gold_HD/{utc}" catchup-days="7",Star Gold HD
+#EXTINF:0 tvg-id="156" tvg-name="Star Gold HD" group-title="Movies;HD Channels;Star Channels" tvg-chno="51" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_HD.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/Star_Gold_HD/{utc}" catchup-days="7",Star Gold HD
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl
@@ -3050,7 +3050,7 @@ http://hotstar.live.cdn.jio.com/hotstar_isl/sshindiwv/master.mpd?hdnea=st=158446
 #KODIPROP:inputstream.adaptive.license_key=https://ipl.service.expressplay.com/hms/wv/rights/?ExpressPlayToken=BQAAABNlKfMAAAAAAGB5RXIUhuAKhb0o_gG4s6_qdxw4y5xQZyNGjvsbfiltjdLAStqy3hyJnAzQPRNmTknPc1nMTsezyHAxVCdu2VYmI-bCaJTYMefMpfs-fql1lF_B7Zrj-qyxdlafY1xKq42c6z1i9s1FPsE_z8wV6FC8BHNpMw&req_id=2f652cd6|User-Agent=hotstar&Content-Type=application/octet-stream|R{SSM}|
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 http://hotstar.live.cdn.jio.com/hotstar_isl/ssselecthd2wv/master.mpd?hdnea=st=1584464876~exp=1584470876~acl=/*~hmac=1f199ab50862d197757fdd33eded1415be01d3597505bdaf65299957f65a3499
-#EXTINF:0 tvg-id="439" tvg-name="Home Shop 18" group-title="Shopping" tvg-chno="364" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/home_shop_18.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/home_shop_18/{utc}" catchup-days="7",Home Shop 18
+#EXTINF:0 tvg-id="439" tvg-name="Home Shop 18" group-title="Shopping" tvg-chno="21" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/home_shop_18.png" radio="false" catchup="default" catchup-source="plugin://plugin.video.jiotv/catchup/home_shop_18/{utc}" catchup-days="7",Home Shop 18
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.mime_type=application/vnd.apple.mpegurl

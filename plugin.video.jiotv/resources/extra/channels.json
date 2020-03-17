@@ -2994,6 +2994,31 @@
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Asianet_Movies_HD.png",
     "url": "plugin://plugin.video.jiotv/playstar/asianetmovies"
   },
+  "460": {
+    "name": "Star Sports Select HD1",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_1.png",
+    "url": "plugin://plugin.video.jiotv/playdash/ssselecthd1wv"
+  },
+  "159": {
+    "name": "Star Sports 1",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_1.png",
+    "url": "plugin://plugin.video.jiotv/playdash/sshd1livetvwv"
+  },
+  "160": {
+    "name": "Star Sports 2",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_HD_2.png",
+    "url": "plugin://plugin.video.jiotv/playdash/sshd2livetvwv"
+  },
+  "362": {
+    "name": "Star Sports Hindi 1",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_3.png",
+    "url": "plugin://plugin.video.jiotv/playdash/sshindiwv"
+  },
+  "461": {
+    "name": "Star Sports Select HD2",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_2.png",
+    "url": "plugin://plugin.video.jiotv/playdash/ssselecthd2wv"
+  },
   "439": {
     "name": "Home Shop 18",
     "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/home_shop_18.png",
