@@ -42,8 +42,10 @@
 | 22  |           Raj Pariwar           |   ✔    |    ✔    |
 | 23  |            DD Bihar             |   ✔    |   ❌    |
 | 24  |        DD Uttar Pradesh         |   ✔    |   ❌    |
+| 25  |           PlayMyPlay            |   ❌   |    ✔    |
 | 26  |             Arre HD             |   ✔    |    ✔    |
 | 27  |            DD Girnar            |   ✔    |    ✔    |
+| 28  |           The Q India           |   ❌   |    ✔    |
 | 29  |          Andy Haryana           |   ✔    |    ✔    |
 | 30  |           Dillagi TV            |   ✔    |   ❌    |
 | 31  |           Dhamaal TV            |   ✔    |   ❌    |
@@ -51,6 +53,8 @@
 | 33  |         Star Plus HD IP         |   ✔    |    ✔    |
 | 34  |          Star Utsav HD          |   ✔    |    ✔    |
 | 35  |         Star Bharat HD          |   ✔    |    ✔    |
+| 36  |         JioCinema Shows         |   ❌   |    ✔    |
+| 37  |        Manoranjan Grand         |   ❌   |    ✔    |
 | 38  |           Sony Max HD           |   ✔    |   ❌    |
 | 39  |             HBO HD              |   ✔    |   ❌    |
 | 40  |          Zee Cinema HD          |   ✔    |   ❌    |
@@ -61,6 +65,7 @@
 | 45  |         And Pictures HD         |   ✔    |   ❌    |
 | 46  |           Zee Cinema            |   ✔    |   ❌    |
 | 47  |           B4U Movies            |   ✔    |   ❌    |
+| 48  |            JioCinema            |   ❌   |    ✔    |
 | 49  |          Zee Bollywood          |   ✔    |   ❌    |
 | 50  |            Enterr 10            |   ✔    |    ✔    |
 | 51  |           Zee Action            |   ✔    |   ❌    |
@@ -74,10 +79,17 @@
 | 59  |        Housefull Movies         |   ✔    |   ❌    |
 | 60  |    Jio Bollywood Premium HD     |   ✔    |    ✔    |
 | 61  |          Star Gold HD           |   ✔    |    ✔    |
+| 62  |          Movies OK HD           |   ❌   |    ✔    |
+| 63  |        JioCinema Action         |   ❌   |    ✔    |
+| 64  |        JioCinema Comedy         |   ❌   |    ✔    |
 | 65  |          Surya Cinema           |   ✔    |    ✔    |
+| 66  |          Bflix Movies           |   ❌   |    ✔    |
 | 67  |           ABZY Dhakad           |   ✔    |    ✔    |
 | 68  |            ABZY Cool            |   ✔    |    ✔    |
 | 69  |           ABZY Movies           |   ✔    |    ✔    |
+| 70  |          Multiplex TV           |   ❌   |    ✔    |
+| 71  |           Box Cinema            |   ❌   |    ✔    |
+| 72  |          Manoranjan TV          |   ❌   |    ✔    |
 | 73  |            B4U Kadak            |   ✔    |    ✔    |
 | 74  |            Times NOW            |   ✔    |    ✔    |
 | 75  |             Aaj Tak             |   ✔    |    ✔    |
@@ -174,6 +186,8 @@
 | 166 |            HNN 24x7             |   ✔    |    ✔    |
 | 167 |               DNN               |   ✔    |    ✔    |
 | 168 |            Jantantra            |   ✔    |    ✔    |
+| 169 |              test3              |   ❌   |   ❌    |
+| 170 |              test5              |   ❌   |   ❌    |
 | 171 |            ABP Ganga            |   ✔    |    ✔    |
 | 172 |         TV9 Bharatvarsh         |   ✔    |    ✔    |
 | 173 |         Surya Samachar          |   ✔    |    ✔    |
