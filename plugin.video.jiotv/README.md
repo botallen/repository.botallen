@@ -18,690 +18,676 @@
 
 |  #  |          Channel Name           | Status | Catchup |
 | :-: | :-----------------------------: | :----: | :-----: |
-|  1  |     Jio Cricket English HD      |   ✔    |    ✔    |
-|  2  |            Colors HD            |   ✔    |    ✔    |
-|  3  |             Sony HD             |   ✔    |    ✔    |
-|  4  |            Zee TV HD            |   ✔    |    ✔    |
-|  5  |           Sony Max HD           |   ✔    |   ❌    |
-|  6  |             HBO HD              |   ✔    |   ❌    |
-|  7  |          Zee Cinema HD          |   ✔    |   ❌    |
-|  8  |           Sony Six HD           |   ✔    |   ❌    |
-|  9  |            Times NOW            |   ✔    |    ✔    |
-| 10  |             Ten 1HD             |   ✔    |   ❌    |
-| 11  |             Aaj Tak             |   ✔    |    ✔    |
-| 12  |           BBC Marathi           |   ✔    |    ✔    |
-| 13  |         ABP News India          |   ✔    |    ✔    |
-| 14  |             Ten2 HD             |   ✔    |   ❌    |
-| 15  |           CNN NEWS 18           |   ✔    |    ✔    |
-| 16  |           MTV HD Plus           |   ✔    |   ❌    |
-| 17  |          MTV Beats HD           |   ✔    |   ❌    |
-| 18  |           Republic TV           |   ✔    |    ✔    |
-| 19  |             Mastiii             |   ✔    |   ❌    |
-| 20  |            ABP Majha            |   ✔    |    ✔    |
-| 21  |           Nick Hindi            |   ✔    |   ❌    |
-| 22  |          TV9 Karnataka          |   ✔    |    ✔    |
-| 23  |           Pogo Hindi            |   ✔    |   ❌    |
-| 24  |          Polimer News           |   ✔    |    ✔    |
-| 25  |         TV9 Telugu News         |   ✔    |    ✔    |
-| 26  |      Cartoon Network Hindi      |   ✔    |   ❌    |
-| 27  |       Discovery HD World        |   ✔    |    ✔    |
-| 28  |           ABP Ananda            |   ✔    |    ✔    |
-| 29  |        Sony BBC Earth HD        |   ✔    |   ❌    |
-| 30  |         History TV18 HD         |   ✔    |    ✔    |
-| 31  |             TLC HD              |   ✔    |    ✔    |
-| 32  |            Food Food            |   ✔    |    ✔    |
-| 33  |           GOOD TiMES            |   ✔    |    ✔    |
-| 34  |          Zee Business           |   ✔    |    ✔    |
-| 35  |       CNBC Tv18 Prime HD        |   ✔    |    ✔    |
-| 36  |           NDTV Profit           |   ✔    |    ✔    |
-| 37  |           CNBC Awaaz            |   ✔    |    ✔    |
-| 38  |           Prathana TV           |   ✔    |   ❌    |
-| 39  |             Aastha              |   ✔    |    ✔    |
-| 40  |          Aastha Bhajan          |   ✔    |    ✔    |
-| 41  |             Sanskar             |   ✔    |    ✔    |
-| 42  |          Millionlights          |   ✔    |    ✔    |
-| 43  |        Swayam Prabha 01         |   ✔    |    ✔    |
-| 44  |        Swayam Prabha 02         |   ✔    |    ✔    |
-| 45  |        Swayam Prabha 03         |   ✔    |    ✔    |
-| 46  |            Sony SAB             |   ✔    |    ✔    |
-| 47  |            And TV HD            |   ✔    |    ✔    |
-| 48  |        Jio Exclusive HD         |   ✔    |    ✔    |
-| 49  |             Rishtey             |   ✔    |    ✔    |
-| 50  |            Zee Anmol            |   ✔    |    ✔    |
-| 51  |            Sony Pal             |   ✔    |    ✔    |
-| 52  |           Sony SAB HD           |   ✔    |    ✔    |
-| 53  |           Zee Marathi           |   ✔    |    ✔    |
-| 54  |        Colors Marathi HD        |   ✔    |    ✔    |
-| 55  |        Colors Kannada HD        |   ✔    |    ✔    |
-| 56  |           Zee Kannada           |   ✔    |    ✔    |
-| 57  |        Comedy Central HD        |   ✔    |   ❌    |
-| 58  |           Zee Telugu            |   ✔    |    ✔    |
-| 59  |            Zee Tamil            |   ✔    |    ✔    |
-| 60  |         Colors Gujarati         |   ✔    |    ✔    |
-| 61  |           Zee Bangla            |   ✔    |    ✔    |
-| 62  |        Colors Bengali HD        |   ✔    |    ✔    |
-| 63  |            Surya TV             |   ✔    |   ❌    |
-| 64  |              Epic               |   ✔    |    ✔    |
-| 65  |       Colors Infinity HD        |   ✔    |   ❌    |
-| 66  |             AXN HD              |   ✔    |   ❌    |
-| 67  |            Zee Yuva             |   ✔    |    ✔    |
-| 68  |           PTC Punjabi           |   ✔    |    ✔    |
-| 69  |     Investigation Discovery     |   ✔    |    ✔    |
-| 70  |            DD India             |   ✔    |    ✔    |
-| 71  |           DD National           |   ✔    |   ❌    |
-| 72  |             Dabangg             |   ✔    |   ❌    |
-| 73  |         Colors Tamil HD         |   ✔    |    ✔    |
-| 74  |            Sun TV HD            |   ✔    |   ❌    |
-| 75  |        DD Madhya Pradesh        |   ✔    |   ❌    |
-| 76  |      DD Rajasthan (Jaipur)      |   ✔    |   ❌    |
-| 77  |         Colors Cineplex         |   ✔    |   ❌    |
-| 78  |           Sony Pix HD           |   ✔    |   ❌    |
-| 79  |               WB                |   ✔    |   ❌    |
-| 80  |            Sony MAX2            |   ✔    |   ❌    |
-| 81  |         And Pictures HD         |   ✔    |   ❌    |
-| 82  |           Zee Cinema            |   ✔    |   ❌    |
-| 83  |           B4U Movies            |   ✔    |   ❌    |
-| 84  |            JioCinema            |   ❌   |    ✔    |
-| 85  |          Zee Bollywood          |   ✔    |   ❌    |
-| 86  |         Bhojpuri Cinema         |   ✔    |    ✔    |
-| 87  |             KTV HD              |   ✔    |   ❌    |
-| 88  |            Enterr 10            |   ✔    |    ✔    |
-| 89  |           Zee Action            |   ✔    |   ❌    |
-| 90  |          Udaya Movies           |   ✔    |   ❌    |
-| 91  |          Zee Cinemalu           |   ✔    |   ❌    |
-| 92  |              K TV               |   ✔    |   ❌    |
-| 93  |        Gemini Movies HD         |   ✔    |   ❌    |
-| 94  |        Zee Anmol Cinema         |   ✔    |   ❌    |
-| 95  |          Gemini Movies          |   ✔    |   ❌    |
-| 96  |          Movies Now HD          |   ✔    |   ❌    |
-| 97  |          News 18 India          |   ✔    |    ✔    |
-| 98  |            India TV             |   ✔    |    ✔    |
-| 99  |           NDTV India            |   ✔    |    ✔    |
-| 100 |            Zee News             |   ✔    |    ✔    |
-| 101 |         Times Now World         |   ✔    |    ✔    |
-| 102 |            NDTV 24x7            |   ✔    |    ✔    |
-| 103 |           ETV Telugu            |   ✔    |    ✔    |
-| 104 |            Public TV            |   ✔    |    ✔    |
-| 105 |          24 Ghanta TV           |   ✔    |    ✔    |
-| 106 |            Sakshi tv            |   ✔    |    ✔    |
-| 107 |          Suvarna News           |   ✔    |    ✔    |
-| 108 |               NTV               |   ✔    |    ✔    |
-| 109 |           Thanthi TV            |   ✔    |    ✔    |
-| 110 |             News 24             |   ✔    |    ✔    |
-| 111 |         TV9 Maharashtra         |   ✔    |    ✔    |
-| 112 |               BTV               |   ✔    |    ✔    |
-| 113 |           Zee 24 Taas           |   ✔    |    ✔    |
-| 114 |            Newslive             |   ✔    |   ❌    |
-| 115 |             Ten3 HD             |   ✔    |   ❌    |
-| 116 |          Sony ESPN HD           |   ✔    |   ❌    |
-| 117 |            Dsport HD            |   ✔    |    ✔    |
-| 118 |         Jio Football HD         |   ✔    |    ✔    |
-| 119 |        Jio Cricket 1 HD         |   ✔    |    ✔    |
-| 120 |        Jio Football 1 HD        |   ✔    |    ✔    |
-| 121 |        Jio Football 2 HD        |   ✔    |    ✔    |
-| 122 |              Ten 1              |   ✔    |   ❌    |
-| 123 |              Ten 2              |   ✔    |   ❌    |
-| 124 |              Ten 3              |   ✔    |   ❌    |
-| 125 |           Sony Six SD           |   ✔    |   ❌    |
-| 126 |          Sun Music HD           |   ✔    |   ❌    |
-| 127 |              Zing               |   ✔    |   ❌    |
-| 128 |               9XM               |   ✔    |   ❌    |
-| 129 |              E 24               |   ✔    |    ✔    |
-| 130 |            B4U Music            |   ✔    |   ❌    |
-| 131 |              ZOOM               |   ✔    |    ✔    |
-| 132 |          Tarang Music           |   ✔    |   ❌    |
-| 133 |            Sony Mix             |   ✔    |   ❌    |
-| 134 |         Gemini Music HD         |   ✔    |   ❌    |
-| 135 |               MTV               |   ✔    |   ❌    |
-| 136 |           Udaya Music           |   ✔    |   ❌    |
-| 137 |            9X Jalwa             |   ✔    |   ❌    |
-| 138 |          Public Music           |   ✔    |    ✔    |
-| 139 |            Jaya Max             |   ✔    |   ❌    |
-| 140 |        Sangeet Bhojpuri         |   ✔    |   ❌    |
-| 141 |          Gemini Music           |   ✔    |   ❌    |
-| 142 |            PTC Music            |   ✔    |    ✔    |
-| 143 |         Sangeet Bangla          |   ✔    |   ❌    |
-| 144 |             Zee etc             |   ✔    |   ❌    |
-| 145 |           Sonic Hindi           |   ✔    |   ❌    |
-| 146 |         Sony Yay Hindi          |   ✔    |    ✔    |
-| 147 |           Nickelodeon           |   ✔    |   ❌    |
-| 148 |           Nick Tamil            |   ✔    |   ❌    |
-| 149 |           Pogo Tamil            |   ✔    |   ❌    |
-| 150 |         CN HD+ English          |   ✔    |   ❌    |
-| 151 |      Cartoon Network Tamil      |   ✔    |   ❌    |
-| 152 |           Nick Telugu           |   ✔    |   ❌    |
-| 153 |        Discovery Kids 2         |   ✔    |    ✔    |
-| 154 |           Nick Junior           |   ✔    |   ❌    |
-| 155 |           FYI TV18 HD           |   ✔    |    ✔    |
-| 156 |     Animal Planet HD World      |   ✔    |    ✔    |
-| 157 |          Travel XP HD           |   ✔    |    ✔    |
-| 158 |       Animal Planet Hindi       |   ✔    |    ✔    |
-| 159 |     Discovery Channel Hindi     |   ✔    |    ✔    |
-| 160 |      History TV18 HD Hindi      |   ✔    |    ✔    |
-| 161 |        Discovery Science        |   ✔    |    ✔    |
-| 162 |          Jio Events HD          |   ✔    |    ✔    |
-| 163 |    Discovery Channel Telugu     |   ✔    |    ✔    |
-| 164 |             D Tamil             |   ✔    |    ✔    |
-| 165 |      History TV18 HD Tamil      |   ✔    |    ✔    |
-| 166 |     History TV18 HD Telugu      |   ✔    |    ✔    |
-| 167 |      Animal Planet English      |   ✔    |    ✔    |
-| 168 |           Samara News           |   ✔    |    ✔    |
-| 169 |    Discovery Channel Bengali    |   ✔    |    ✔    |
-| 170 |         Travel XP Tamil         |   ✔    |    ✔    |
-| 171 |    Sony BBC Earth HD Telugu     |   ✔    |   ❌    |
-| 172 |            Discovery            |   ✔    |    ✔    |
-| 173 |     Sony BBC Earth HD Tamil     |   ✔    |   ❌    |
-| 174 |            Ayush TV             |   ✔    |    ✔    |
-| 175 |          Desi Channel           |   ✔    |    ✔    |
-| 176 |       Travel XP HD Hindi        |   ✔    |    ✔    |
-| 177 |           TLC English           |   ✔    |    ✔    |
-| 178 |          ETV Abhiruchi          |   ✔    |    ✔    |
-| 179 |            TLC Hindi            |   ✔    |    ✔    |
-| 180 |     Sadhguru Television HD      |   ✔    |    ✔    |
-| 181 |           Kaumudy TV            |   ✔    |    ✔    |
-| 182 |           CNBC Tv 18            |   ✔    |    ✔    |
-| 183 |             ET Now              |   ✔    |    ✔    |
-| 184 |            Bhakti TV            |   ✔    |    ✔    |
-| 185 |           Sri Sankara           |   ✔    |    ✔    |
-| 186 |             Sai TV              |   ✔    |    ✔    |
-| 187 |          Peace of Mind          |   ✔    |    ✔    |
-| 188 |          mh1 Shraddha           |   ✔    |    ✔    |
-| 189 |           Lakshya TV            |   ✔    |    ✔    |
-| 190 |     Sri Venkateshwar Bhakti     |   ✔    |    ✔    |
-| 191 |            Divya TV             |   ✔    |    ✔    |
-| 192 |            Paras tv             |   ✔    |    ✔    |
-| 193 |             Sadhna              |   ✔    |    ✔    |
-| 194 |           Satsang TV            |   ✔    |    ✔    |
-| 195 |           Angel TV HD           |   ✔    |    ✔    |
-| 196 |        CVR OM Spiritual         |   ✔    |    ✔    |
-| 197 |           Aradhana TV           |   ✔    |    ✔    |
-| 198 |           Jinvani TV            |   ✔    |    ✔    |
-| 199 |           PTC Simran            |   ✔    |    ✔    |
-| 200 |            Shubh TV             |   ✔    |    ✔    |
-| 201 |          Hindu Dharmam          |   ✔    |    ✔    |
-| 202 |         Subhavartha TV          |   ✔    |    ✔    |
-| 203 |           Divya Vani            |   ✔    |    ✔    |
-| 204 |           Arihant TV            |   ✔    |    ✔    |
-| 205 |          Rujumargam TV          |   ✔    |    ✔    |
-| 206 |             Calvary             |   ✔    |    ✔    |
-| 207 |        Swayam Prabha 04         |   ✔    |    ✔    |
-| 208 |        Swayam Prabha 05         |   ✔    |    ✔    |
-| 209 |        Swayam Prabha 06         |   ✔    |    ✔    |
-| 210 |        Swayam Prabha 07         |   ✔    |    ✔    |
-| 211 |        Swayam Prabha 08         |   ✔    |    ✔    |
-| 212 |        Swayam Prabha 09         |   ✔    |    ✔    |
-| 213 |        Swayam Prabha 10         |   ✔    |    ✔    |
-| 214 |        Swayam Prabha 11         |   ✔    |    ✔    |
-| 215 |        Swayam Prabha 12         |   ✔    |    ✔    |
-| 216 |        Swayam Prabha 13         |   ✔    |    ✔    |
-| 217 |        Swayam Prabha 14         |   ✔    |    ✔    |
-| 218 |        Swayam Prabha 15         |   ✔    |    ✔    |
-| 219 |        Swayam Prabha 16         |   ✔    |    ✔    |
-| 220 |        Swayam Prabha 17         |   ✔    |    ✔    |
-| 221 |        Swayam Prabha 18         |   ✔    |    ✔    |
-| 222 |        Swayam Prabha 19         |   ✔    |    ✔    |
-| 223 |        Swayam Prabha 20         |   ✔    |    ✔    |
-| 224 |        Swayam Prabha 21         |   ✔    |    ✔    |
-| 225 |        Swayam Prabha 22         |   ✔    |    ✔    |
-| 226 |        Swayam Prabha 23         |   ✔    |    ✔    |
-| 227 |        Swayam Prabha 24         |   ✔    |    ✔    |
-| 228 |        Swayam Prabha 25         |   ✔    |    ✔    |
-| 229 |        Swayam Prabha 26         |   ✔    |    ✔    |
-| 230 |        Swayam Prabha 27         |   ✔    |    ✔    |
-| 231 |        Swayam Prabha 28         |   ✔    |    ✔    |
-| 232 |        Swayam Prabha 29         |   ✔    |    ✔    |
-| 233 |           Raj Pariwar           |   ✔    |    ✔    |
-| 234 |            DD Bihar             |   ✔    |   ❌    |
-| 235 |        DD Uttar Pradesh         |   ✔    |   ❌    |
-| 236 |           Jaya TV HD            |   ✔    |    ✔    |
-| 237 |      Mazavali Manorama HD       |   ✔    |    ✔    |
-| 238 |              MK TV              |   ✔    |    ✔    |
-| 239 |          Colors Super           |   ✔    |    ✔    |
-| 240 |           Vendhar TV            |   ✔    |    ✔    |
-| 241 |          Gemini TV HD           |   ✔    |   ❌    |
-| 242 |            Surya HD             |   ✔    |   ❌    |
-| 243 |            Udaya HD             |   ✔    |   ❌    |
-| 244 |            Sanjha TV            |   ✔    |    ✔    |
-| 245 |            Anjan TV             |   ✔    |    ✔    |
-| 246 |           PlayMyPlay            |   ❌   |    ✔    |
-| 247 |          Garv Punjabi           |   ✔    |    ✔    |
-| 248 |           JUSPunjabi            |   ✔    |    ✔    |
-| 249 |             Sun TV              |   ✔    |   ❌    |
-| 250 |             Arre HD             |   ✔    |    ✔    |
-| 251 |           Peppers TV            |   ✔    |    ✔    |
-| 252 |           Sarthak TV            |   ✔    |   ❌    |
-| 253 |            Flower TV            |   ✔    |   ❌    |
-| 254 |        Mazhavil Manorama        |   ✔    |    ✔    |
-| 255 |            Udaya TV             |   ✔    |   ❌    |
-| 256 |            DD Bangla            |   ✔    |   ❌    |
-| 257 |           Puthu Yugam           |   ✔    |    ✔    |
-| 258 |             Saam Tv             |   ✔    |    ✔    |
-| 259 |          Colors Oriya           |   ✔    |    ✔    |
-| 260 |             Jonack              |   ✔    |    ✔    |
-| 261 |              Rang               |   ✔    |   ❌    |
-| 262 |             Rengoni             |   ✔    |    ✔    |
-| 263 |            ETV Plus             |   ✔    |    ✔    |
-| 264 |         Sony Marathi SD         |   ✔    |    ✔    |
-| 265 |          DD Sahayadri           |   ✔    |   ❌    |
-| 266 |            Sony aath            |   ✔    |   ❌    |
-| 267 |           Aakash Aath           |   ✔    |    ✔    |
-| 268 |          DD Malayalam           |   ✔    |   ❌    |
-| 269 |             Dangal              |   ✔    |    ✔    |
-| 270 |            DD Oriya             |   ✔    |   ❌    |
-| 271 |            Tarang TV            |   ✔    |   ❌    |
-| 272 |         OTV (Odisha TV)         |   ✔    |    ✔    |
-| 273 |            Gemini TV            |   ✔    |   ❌    |
-| 274 |           Polimer TV            |   ✔    |    ✔    |
-| 275 |          Gemini Comedy          |   ✔    |   ❌    |
-| 276 |             Raj TV              |   ✔    |    ✔    |
-| 277 |            Makkal TV            |   ✔    |    ✔    |
-| 278 |           Adithya TV            |   ✔    |   ❌    |
-| 279 |           Kairali TV            |   ✔    |    ✔    |
-| 280 |           Captain tv            |   ✔    |    ✔    |
-| 281 |             DD urdu             |   ✔    |   ❌    |
-| 282 |          DD Saptagiri           |   ✔    |   ❌    |
-| 283 |     DD9 chandana (kannada)      |   ✔    |   ❌    |
-| 284 |            DD Girnar            |   ✔    |    ✔    |
-| 285 |           DD Punjabi            |   ✔    |   ❌    |
-| 286 |            DD Kashir            |   ✔    |   ❌    |
-| 287 |            Nepal one            |   ✔    |    ✔    |
-| 288 |        DD13 Guwahati NE         |   ✔    |   ❌    |
-| 289 |            Amrita TV            |   ✔    |    ✔    |
-| 290 |          Kairali News           |   ✔    |    ✔    |
-| 291 |          DD5 Podhigai           |   ✔    |   ❌    |
-| 292 |           Vasanth TV            |   ✔    |    ✔    |
-| 293 |           Zee Salaam            |   ✔    |    ✔    |
-| 294 |             Kasturi             |   ✔    |    ✔    |
-| 295 |          Kairali WE TV          |   ✔    |    ✔    |
-| 296 |          Udaya Comedy           |   ✔    |   ❌    |
-| 297 |            Vissa TV             |   ✔    |    ✔    |
-| 298 |             Maiboli             |   ✔    |   ❌    |
-| 299 |           The Q India           |   ❌   |    ✔    |
-| 300 |          Andy Haryana           |   ✔    |    ✔    |
-| 301 |            Dishum TV            |   ✔    |    ✔    |
-| 302 |            Namma TV             |   ✔    |    ✔    |
-| 303 |           Rangamanch            |   ✔    |    ✔    |
-| 304 |           Dillagi TV            |   ✔    |   ❌    |
-| 305 |           Dhamaal TV            |   ✔    |   ❌    |
-| 306 |             MNX HD              |   ✔    |   ❌    |
-| 307 |           Zee Talkies           |   ✔    |   ❌    |
-| 308 |            J Movies             |   ✔    |   ❌    |
-| 309 |           Alankar TV            |   ✔    |   ❌    |
-| 310 |        Zee Bangla Cinema        |   ✔    |   ❌    |
-| 311 |             MN+ HD              |   ✔    |   ❌    |
-| 312 |           ETV Cinema            |   ✔    |    ✔    |
-| 313 |           Gemini Life           |   ✔    |   ❌    |
-| 314 |               MNX               |   ✔    |   ❌    |
-| 315 |            Sun Life             |   ✔    |   ❌    |
-| 316 |          Romedy Now HD          |   ✔    |   ❌    |
-| 317 |          Fakt Marathi           |   ✔    |    ✔    |
-| 318 |             Pitaara             |   ✔    |    ✔    |
-| 319 |           Maha Movies           |   ✔    |    ✔    |
-| 320 |        Housefull Movies         |   ✔    |   ❌    |
-| 321 |        Raj Digital Plus         |   ✔    |    ✔    |
-| 322 |            Kiran TV             |   ✔    |   ❌    |
-| 323 |        PTC Punjabi Gold         |   ✔    |    ✔    |
-| 324 |    Jio Bollywood Premium HD     |   ✔    |    ✔    |
-| 325 |          Oscar Movies           |   ✔    |    ✔    |
-| 326 |           Indradhanu            |   ✔    |    ✔    |
-| 327 |          Amaar Cinema           |   ✔    |    ✔    |
-| 328 |        ABN Andhra Jyothi        |   ✔    |    ✔    |
-| 329 |           News Nation           |   ✔    |    ✔    |
-| 330 |           Kanak News            |   ✔    |    ✔    |
-| 331 |           India news            |   ✔    |    ✔    |
-| 332 |       Puthiya Thalimurai        |   ✔    |    ✔    |
-| 333 |          News18 BIHAR           |   ✔    |    ✔    |
-| 334 |          Dighvijay TV           |   ✔    |    ✔    |
-| 335 |           Zee Kalinga           |   ✔    |    ✔    |
-| 336 |         News18 Gujarati         |   ✔    |    ✔    |
-| 337 |               Tez               |   ✔    |    ✔    |
-| 338 |          Asianet News           |   ✔    |    ✔    |
-| 339 |       News18 Kannada News       |   ✔    |    ✔    |
-| 340 |           News7 Tamil           |   ✔    |    ✔    |
-| 341 |             DY 365              |   ✔    |    ✔    |
-| 342 |           IBN Lokmat            |   ✔    |    ✔    |
-| 343 |         Prime Time News         |   ✔    |    ✔    |
-| 344 |          Tv 9 Gujarat           |   ✔    |    ✔    |
-| 345 |        News18 RAJASTHAN         |   ✔    |    ✔    |
-| 346 |       News18 Bangla News        |   ✔    |    ✔    |
-| 347 |            Sun News             |   ✔    |   ❌    |
-| 348 |        News State UK UP         |   ✔    |    ✔    |
-| 349 |          News 18 Assam          |   ✔    |    ✔    |
-| 350 |           ABP Asmita            |   ✔    |    ✔    |
-| 351 |            Prag News            |   ✔    |    ✔    |
-| 352 |          Delhi Aaj Tak          |   ✔    |    ✔    |
-| 353 |            News18 MP            |   ✔    |    ✔    |
-| 354 |          Kashish News           |   ✔    |    ✔    |
-| 355 |             V6 News             |   ✔    |    ✔    |
-| 356 |       ETV Andhra pradesh        |   ✔    |    ✔    |
-| 357 |        News 18 Tamilnadu        |   ✔    |    ✔    |
-| 358 |          Manorama News          |   ✔    |    ✔    |
-| 359 |        Mathrubhumi News         |   ✔    |    ✔    |
-| 360 |           India Today           |   ✔    |    ✔    |
-| 361 |          TV 5 Kannada           |   ✔    |    ✔    |
-| 362 |          Sony ESPN SD           |   ✔    |   ❌    |
-| 363 |            DD Sports            |   ✔    |   ❌    |
-| 364 |            MK Music             |   ✔    |   ❌    |
-| 365 |           Music India           |   ✔    |   ❌    |
-| 366 |             Tunes 6             |   ✔    |   ❌    |
-| 367 |        Raj Music Kannada        |   ✔    |   ❌    |
-| 368 |            Ramdhenu             |   ✔    |   ❌    |
-| 369 |            Raj Musix            |   ✔    |   ❌    |
-| 370 |           PTC Chak De           |   ✔    |    ✔    |
-| 371 |            9X Tashan            |   ✔    |   ❌    |
-| 372 |          Sahana Music           |   ✔    |    ✔    |
-| 373 |           PTC DHOL TV           |   ✔    |    ✔    |
-| 374 |           mh1 (Music)           |   ✔    |    ✔    |
-| 375 |         Sangeet Marathi         |   ✔    |   ❌    |
-| 376 |           9x Jhakaas            |   ✔    |   ❌    |
-| 377 |           Only Music            |   ✔    |    ✔    |
-| 378 |           Surya Music           |   ✔    |   ❌    |
-| 379 |            PBN Music            |   ✔    |    ✔    |
-| 380 |        Raj Music Telugu         |   ✔    |   ❌    |
-| 381 |            Brit Asia            |   ✔    |    ✔    |
-| 382 |            Kappa TV             |   ✔    |   ❌    |
-| 383 |           PEACE MUSIC           |   ✔    |    ✔    |
-| 384 |       Raj Music Malayalam       |   ✔    |   ❌    |
-| 385 |         Steelbird Music         |   ✔    |   ❌    |
-| 386 |              10 TV              |   ✔    |    ✔    |
-| 387 |     Zee News MP Chattisgarh     |   ✔    |    ✔    |
-| 388 |             IBC-24              |   ✔    |    ✔    |
-| 389 |          VTV Gujarati           |   ✔    |    ✔    |
-| 390 |            TV 5 News            |   ✔    |    ✔    |
-| 391 |            Hi Dost!             |   ✔    |    ✔    |
-| 392 |           Assam Talks           |   ✔    |    ✔    |
-| 393 |          News Time TV           |   ✔    |    ✔    |
-| 394 |          Zee Purvaiya           |   ✔    |    ✔    |
-| 395 |         Prameya News 7          |   ✔    |    ✔    |
-| 396 |            CVR News             |   ✔    |    ✔    |
-| 397 |          Zee Rajasthan          |   ✔    |    ✔    |
-| 398 |            News18 UP            |   ✔    |    ✔    |
-| 399 |          News18 Oriya           |   ✔    |    ✔    |
-| 400 |             T News              |   ✔    |    ✔    |
-| 401 |          Sandesh News           |   ✔    |    ✔    |
-| 402 |             DD News             |   ✔    |   ❌    |
-| 403 |            Prajaa TV            |   ✔    |    ✔    |
-| 404 |            Jaya Plus            |   ✔    |    ✔    |
-| 405 |          Malai Murasu           |   ✔    |    ✔    |
-| 406 |           Bangla Time           |   ✔    |    ✔    |
-| 407 |          Media One TV           |   ✔    |    ✔    |
-| 408 |          Zee 24 Kalak           |   ✔    |    ✔    |
-| 409 |         BBC World News          |   ✔    |    ✔    |
-| 410 |          ETV Telangana          |   ✔    |    ✔    |
-| 411 |           Kalinga TV            |   ✔    |    ✔    |
-| 412 |            Janam TV             |   ✔    |    ✔    |
-| 413 |          India News UP          |   ✔    |    ✔    |
-| 414 |         News 18 Kerala          |   ✔    |    ✔    |
-| 415 |            Maha News            |   ✔    |    ✔    |
-| 416 |              HM TV              |   ✔    |    ✔    |
-| 417 |            Chutti TV            |   ✔    |   ❌    |
-| 418 |            Chintu TV            |   ✔    |   ❌    |
-| 419 |           sonic Tamil           |   ✔    |   ❌    |
-| 420 |        Discovery Kids 1         |   ✔    |    ✔    |
-| 421 |            Kushi TV             |   ✔    |   ❌    |
-| 422 |     Cartoon Network Telugu      |   ✔    |   ❌    |
-| 423 |      Discovery Kids Tamil       |   ✔    |    ✔    |
-| 424 |            DD Kisan             |   ✔    |   ❌    |
-| 425 |            ETV Life             |   ✔    |    ✔    |
-| 426 |           In Goa 24x7           |   ✔    |    ✔    |
-| 427 |             Vanitha             |   ✔    |    ✔    |
-| 428 |           CVR Health            |   ✔    |    ✔    |
-| 429 |         Discovery Turbo         |   ✔    |    ✔    |
-| 430 |    Sony BBC Earth HD English    |   ✔    |   ❌    |
-| 431 |        Boogle Bollywood         |   ✔    |    ✔    |
-| 432 |            Propex TV            |   ✔    |    ✔    |
-| 433 |            AstroFlix            |   ✔    |    ✔    |
-| 434 |             testii              |   ✔    |    ✔    |
-| 435 |           Jyotish TV            |   ✔    |    ✔    |
-| 436 |        CNBC Bazaar (MNO)        |   ✔    |    ✔    |
-| 437 |            Disha tv             |   ✔    |    ✔    |
-| 438 |            Vedic TV             |   ✔    |    ✔    |
-| 439 |           Darshan 24            |   ✔    |    ✔    |
-| 440 |          Bhaktisagar 2          |   ✔    |    ✔    |
-| 441 |            Ishwar TV            |   ✔    |    ✔    |
-| 442 |           Channel Win           |   ✔    |    ✔    |
-| 443 |            Nambikkai            |   ✔    |    ✔    |
-| 444 |           Hare krsna            |   ✔    |    ✔    |
-| 445 |           Swar Shree            |   ✔    |    ✔    |
-| 446 |         Shubhsandesh TV         |   ✔    |    ✔    |
-| 447 |       Shree Siddhivinayak       |   ✔    |    ✔    |
-| 448 |            Katyayani            |   ✔    |    ✔    |
-| 449 |             Shalom              |   ✔    |    ✔    |
-| 450 |          Tulja Bhavani          |   ✔    |    ✔    |
-| 451 |       Sarv Dharam Sangam        |   ✔    |    ✔    |
-| 452 |           Lord Buddha           |   ✔    |    ✔    |
-| 453 |      Garv Punjabi Gurbani       |   ✔    |    ✔    |
-| 454 |            Fateh TV             |   ✔    |    ✔    |
-| 455 |         Valambhakti TV          |   ✔    |    ✔    |
-| 456 |            Om Shanti            |   ✔    |    ✔    |
-| 457 |           Kartavya TV           |   ✔    |    ✔    |
-| 458 |        Hamari Sanskruti         |   ✔    |    ✔    |
-| 459 |             JUSOne              |   ✔    |   ❌    |
-| 460 |            Soham TV             |   ✔    |    ✔    |
-| 461 |              testi              |   ✔    |    ✔    |
-| 462 |            Awakening            |   ✔    |    ✔    |
-| 463 |             SRMD HD             |   ✔    |    ✔    |
-| 464 |        Hare Krsna Music         |   ✔    |    ✔    |
-| 465 |        Swayam Prabha 30         |   ✔    |    ✔    |
-| 466 |        Swayam Prabha 31         |   ✔    |    ✔    |
-| 467 |        Swayam Prabha 32         |   ✔    |    ✔    |
-| 468 |         Vande Gujarat 1         |   ✔    |    ✔    |
-| 469 |        Vande Gujarat 10         |   ✔    |    ✔    |
-| 470 |        Vande Gujarat 11         |   ✔    |    ✔    |
-| 471 |        Vande Gujarat 12         |   ✔    |    ✔    |
-| 472 |        Vande Gujarat 13         |   ✔    |    ✔    |
-| 473 |        Vande Gujarat 14         |   ✔    |    ✔    |
-| 474 |        Vande Gujarat 15         |   ✔    |    ✔    |
-| 475 |        Vande Gujarat 16         |   ✔    |    ✔    |
-| 476 |         Vande Gujarat 2         |   ✔    |    ✔    |
-| 477 |         Vande Gujarat 3         |   ✔    |    ✔    |
-| 478 |         Vande Gujarat 4         |   ✔    |    ✔    |
-| 479 |         Vande Gujarat 5         |   ✔    |    ✔    |
-| 480 |         Vande Gujarat 6         |   ✔    |    ✔    |
-| 481 |         Vande Gujarat 7         |   ✔    |    ✔    |
-| 482 |         Vande Gujarat 8         |   ✔    |    ✔    |
-| 483 |         Vande Gujarat 9         |   ✔    |    ✔    |
-| 484 |          Gulistan News          |   ✔    |    ✔    |
-| 485 |             Jan TV              |   ✔    |    ✔    |
-| 486 |        Raj News Kannada         |   ✔    |   ❌    |
-| 487 |           News18 Urdu           |   ✔    |    ✔    |
-| 488 |       India News Haryana        |   ✔    |    ✔    |
-| 489 |      India News Rajasthan       |   ✔    |    ✔    |
-| 490 |              GS TV              |   ✔    |    ✔    |
-| 491 |               MBC               |   ✔    |    ✔    |
-| 492 |       Sahara Samay Bihar        |   ✔    |    ✔    |
-| 493 |          Zee Hindustan          |   ✔    |    ✔    |
-| 494 |             Toonami             |   ✔    |   ❌    |
-| 495 |          Hindi Khabar           |   ✔    |    ✔    |
-| 496 |     Zee Punjabi HP Haryana      |   ✔    |    ✔    |
-| 497 |        First India News         |   ✔    |    ✔    |
-| 498 |               TV1               |   ✔    |    ✔    |
-| 499 |             News11              |   ✔    |    ✔    |
-| 500 |             R Plus              |   ✔    |    ✔    |
-| 501 |         SAHARA SAMAY MP         |   ✔    |    ✔    |
-| 502 |          Captain News           |   ✔    |    ✔    |
-| 503 |             I News              |   ✔    |    ✔    |
-| 504 |             News X              |   ✔    |    ✔    |
-| 505 |           Mirror Now            |   ✔    |    ✔    |
-| 506 |          India News MP          |   ✔    |    ✔    |
-| 507 |           Sathiyam TV           |   ✔    |    ✔    |
-| 508 |          Naxatra News           |   ✔    |    ✔    |
-| 509 |            Zee UP UK            |   ✔    |    ✔    |
-| 510 |               CNN               |   ✔    |   ❌    |
-| 511 |        Chardikla Time TV        |   ✔    |    ✔    |
-| 512 |            Sudarshan            |   ✔    |    ✔    |
-| 513 |          JK 24x7 News           |   ✔    |    ✔    |
-| 514 |           AL Jazeera            |   ✔    |    ✔    |
-| 515 |            PTC News             |   ✔    |    ✔    |
-| 516 |            Taaza TV             |   ✔    |    ✔    |
-| 517 |        Onkar Only Truth         |   ✔    |    ✔    |
-| 518 |           Live Today            |   ✔    |    ✔    |
-| 519 |      Sahara Samay Rastriya      |   ✔    |    ✔    |
-| 520 |             Mojo TV             |   ✔    |    ✔    |
-| 521 |           Mh One News           |   ✔    |   ❌    |
-| 522 |           Lotus News            |   ✔    |    ✔    |
-| 523 |            Janta TV             |   ✔    |    ✔    |
-| 524 |   News18 Haryana and HP News    |   ✔    |    ✔    |
-| 525 |            Total TV             |   ✔    |    ✔    |
-| 526 |         SAHARA SAMAY UP         |   ✔    |    ✔    |
-| 527 |              Wion               |   ✔    |    ✔    |
-| 528 |         Bharat Samachar         |   ✔    |    ✔    |
-| 529 |           Artage News           |   ✔    |    ✔    |
-| 530 |          K News India           |   ✔    |    ✔    |
-| 531 |         North East Live         |   ✔    |   ❌    |
-| 532 |         Samay Rajasthan         |   ✔    |    ✔    |
-| 533 |         Raj News Telugu         |   ✔    |    ✔    |
-| 534 |               dw                |   ✔    |    ✔    |
-| 535 |        Sadhna Aryan News        |   ✔    |    ✔    |
-| 536 |           Loksabha TV           |   ✔    |   ❌    |
-| 537 |          Madhimugam TV          |   ✔    |    ✔    |
-| 538 |          DD Rajyasabha          |   ✔    |   ❌    |
-| 539 |            TV5 Monde            |   ✔    |    ✔    |
-| 540 |             Win TV              |   ✔    |    ✔    |
-| 541 |          Mantavya News          |   ✔    |    ✔    |
-| 542 |              4 TV               |   ✔    |    ✔    |
-| 543 |          News 1 India           |   ✔    |    ✔    |
-| 544 |               MKN               |   ✔    |    ✔    |
-| 545 |            APN News             |   ✔    |    ✔    |
-| 546 |             News 9              |   ✔    |    ✔    |
-| 547 |           Jaihind tv            |   ✔    |    ✔    |
-| 548 |            Jeevan TV            |   ✔    |    ✔    |
-| 549 |           I Plus News           |   ✔    |    ✔    |
-| 550 |             TV 100              |   ✔    |    ✔    |
-| 551 |           Bansal News           |   ✔    |    ✔    |
-| 552 |           India Voice           |   ✔    |    ✔    |
-| 553 |         A1 TV Rajasthan         |   ✔    |    ✔    |
-| 554 |            INH 24x7             |   ✔    |    ✔    |
-| 555 |        GoodNews Channel         |   ✔    |    ✔    |
-| 556 |         News India 24x7         |   ✔    |    ✔    |
-| 557 |        Living India News        |   ✔    |    ✔    |
-| 558 |             SMBC TV             |   ✔    |    ✔    |
-| 559 |        Sadhna News Plus         |   ✔    |    ✔    |
-| 560 | Channel News Asia International |   ✔    |    ✔    |
-| 561 |             GOA 365             |   ✔    |    ✔    |
-| 562 |        News World India         |   ✔    |    ✔    |
-| 563 |            France 24            |   ✔    |   ❌    |
-| 564 |       Raj News Malayalam        |   ✔    |    ✔    |
-| 565 |           Prime News            |   ✔    |    ✔    |
-| 566 |            Euro News            |   ✔    |    ✔    |
-| 567 |             Prudent             |   ✔    |    ✔    |
-| 568 |           Khabar Fast           |   ✔    |    ✔    |
-| 569 |            JUS 24x7             |   ✔    |    ✔    |
-| 570 |             RDX Goa             |   ✔    |    ✔    |
-| 571 |        Channel One News         |   ✔    |    ✔    |
-| 572 |           CVR English           |   ✔    |   ❌    |
-| 573 |            HNN 24x7             |   ✔    |    ✔    |
-| 574 |               DNN               |   ✔    |    ✔    |
-| 575 |            Jantantra            |   ✔    |    ✔    |
-| 576 |          Raj News 24x7          |   ✔    |    ✔    |
-| 577 |         Sony Yay Telugu         |   ✔    |    ✔    |
-| 578 |         Sony Yay Tamil          |   ✔    |    ✔    |
-| 579 |         Nickelodeon Jr.         |   ✔    |   ❌    |
-| 580 |          CN HD+ Tamil           |   ✔    |   ❌    |
-| 581 |            Kochu TV             |   ✔    |   ❌    |
-| 582 |          CN HD+ Telugu          |   ✔    |   ❌    |
-| 583 |           DD bharati            |   ✔    |    ✔    |
-| 584 |           Care World            |   ✔    |    ✔    |
-| 585 |             Insight             |   ✔    |    ✔    |
-| 586 |          Prime Asia HD          |   ✔    |    ✔    |
-| 587 |         Star Plus HD IP         |   ✔    |    ✔    |
-| 588 |          Star Utsav HD          |   ✔    |    ✔    |
-| 589 |           Asianet HD            |   ✔    |    ✔    |
-| 590 |          Star Vijay HD          |   ✔    |    ✔    |
-| 591 |         Star Jalsha HD          |   ✔    |    ✔    |
-| 592 |            Maa TV HD            |   ✔    |    ✔    |
-| 593 |           Maa Gold HD           |   ✔    |    ✔    |
-| 594 |         Star Bharat HD          |   ✔    |    ✔    |
-| 595 |         Asianet Plus HD         |   ✔    |    ✔    |
-| 596 |         Star Pravah HD          |   ✔    |    ✔    |
-| 597 |           Suvarna HD            |   ✔    |    ✔    |
-| 598 |         Suvarna Plus HD         |   ✔    |    ✔    |
-| 599 |          Star Gold HD           |   ✔    |    ✔    |
-| 600 |        Jalsha Movies HD         |   ✔    |    ✔    |
-| 601 |          Maa Movies HD          |   ✔    |    ✔    |
-| 602 |          Movies OK HD           |   ❌   |    ✔    |
-| 603 |        Asianet Movies HD        |   ✔    |    ✔    |
-| 604 |     Star Sports Select HD1      |   ✔    |    ✔    |
-| 605 |          Star Sports 1          |   ✔    |   ❌    |
-| 606 |          Star Sports 2          |   ✔    |   ❌    |
-| 607 |       Star Sports Hindi 1       |   ✔    |   ❌    |
-| 608 |     Star Sports Select HD2      |   ✔    |    ✔    |
-| 609 |          Home Shop 18           |   ✔    |    ✔    |
-| 610 |          Maharashtra1           |   ✔    |    ✔    |
-| 611 |              test3              |   ❌   |   ❌    |
-| 612 |              test5              |   ❌   |   ❌    |
-| 613 |        Jio Cricket 2 HD         |   ✔    |    ✔    |
-| 614 |        Jio Cricket 3 HD         |   ✔    |    ✔    |
-| 615 |            ABP Ganga            |   ✔    |    ✔    |
-| 616 |          Kalaignar TV           |   ✔    |    ✔    |
-| 617 |       Kalaignar Seithigal       |   ✔    |    ✔    |
-| 618 |      Hare Krsna Pravachan       |   ✔    |    ✔    |
-| 619 |         JioCinema Shows         |   ❌   |    ✔    |
-| 620 |        JioCinema Action         |   ❌   |    ✔    |
-| 621 |        JioCinema Comedy         |   ❌   |    ✔    |
-| 622 |            Highbrow             |   ✔    |    ✔    |
-| 623 |    Lord Shri Vitthal Rukmini    |   ✔    |    ✔    |
-| 624 |     Animal Planet HD Tamil      |   ✔    |    ✔    |
-| 625 |           Rajyoga TV            |   ✔    |    ✔    |
-| 626 |        Rajyoga Malayalam        |   ✔    |    ✔    |
-| 627 | Mandir Shri Govinddevji-Jaipur  |   ✔    |    ✔    |
-| 628 |    Dagdusheth Ganpati - Pune    |   ✔    |    ✔    |
-| 629 |           Nimbark TV            |   ✔    |    ✔    |
-| 630 |           Click Life            |   ✔    |    ✔    |
-| 631 |            Nick HD+             |   ✔    |   ❌    |
-| 632 |            Digishala            |   ✔    |    ✔    |
-| 633 |     Ambabai Temple-Kolhapur     |   ✔    |    ✔    |
-| 634 |             PTC VR              |   ✔    |   ❌    |
-| 635 |            JIA NEWS             |   ✔    |    ✔    |
-| 636 |             God TV              |   ✔    |    ✔    |
-| 637 |          Sonic Telugu           |   ✔    |    ✔    |
-| 638 |          Sonic Kannada          |   ✔    |    ✔    |
-| 639 |          Nick Kannada           |   ✔    |    ✔    |
-| 640 |        Headlines Tripura        |   ✔    |    ✔    |
-| 641 |        Twenty Four News         |   ✔    |    ✔    |
-| 642 |         TV9 Bharatvarsh         |   ✔    |    ✔    |
-| 643 |           Tehzeeb TV            |   ✔    |    ✔    |
-| 644 |          Kolkata Live           |   ✔    |    ✔    |
-| 645 |          Aastha Telugu          |   ✔    |    ✔    |
-| 646 |          Aastha Tamil           |   ✔    |    ✔    |
-| 647 |         Aastha Kannada          |   ✔    |    ✔    |
-| 648 |         Surya Samachar          |   ✔    |    ✔    |
-| 649 |          Surya Cinema           |   ✔    |    ✔    |
-| 650 |          Surya Bhakti           |   ✔    |    ✔    |
-| 651 |          Ctvn Akd Plus          |   ✔    |    ✔    |
-| 652 |          Calcutta News          |   ✔    |    ✔    |
-| 653 |             FM News             |   ✔    |    ✔    |
-| 654 |        Total Tv Haryana         |   ✔    |    ✔    |
-| 655 |           Kolkata TV            |   ✔    |    ✔    |
-| 656 |          Global Sanjh           |   ✔    |    ✔    |
-| 657 |          Bflix Movies           |   ❌   |    ✔    |
-| 658 |              iLove              |   ✔    |    ✔    |
-| 659 |           ABZY Dhakad           |   ✔    |    ✔    |
-| 660 |            ABZY Cool            |   ✔    |    ✔    |
-| 661 |           ABZY Movies           |   ✔    |    ✔    |
-| 662 |    Udupi Shri Krishna Maanya    |   ✔    |    ✔    |
-| 663 |             Sugran              |   ✔    |    ✔    |
-| 664 |           Studio One            |   ✔    |    ✔    |
-| 665 |          Multiplex TV           |   ❌   |    ✔    |
-| 666 |           Box Cinema            |   ❌   |    ✔    |
-| 667 |         Nireekshana TV          |   ✔    |    ✔    |
-| 668 |        Prarthana Bhawan         |   ✔    |    ✔    |
-| 669 |        Manoranjan Grand         |   ❌   |    ✔    |
-| 670 |          Manoranjan TV          |   ❌   |    ✔    |
-| 671 |        Manoranjan Movies        |   ✔    |    ✔    |
-| 672 |           Khushboo TV           |   ✔    |    ✔    |
-| 673 |     Mahavir Mandir - Patna      |   ✔    |    ✔    |
-| 674 |           Vignesh TV            |   ✔    |    ✔    |
-| 675 |            Orange TV            |   ✔    |    ✔    |
-| 676 |             Insync              |   ✔    |    ✔    |
-| 677 |            ANB News             |   ✔    |    ✔    |
-| 678 |     Shri Omkareshwar Mandir     |   ✔    |    ✔    |
-| 679 |         ISKCON Darshan          |   ✔    |    ✔    |
-| 680 |           Stars Tell            |   ✔    |    ✔    |
-| 681 |           ABP Sanjha            |   ✔    |    ✔    |
-| 682 |            Wellness             |   ✔    |    ✔    |
-| 683 |          Lokshahi News          |   ✔    |    ✔    |
-| 684 |             Dsport              |   ✔    |    ✔    |
-| 685 |            B4U Kadak            |   ✔    |    ✔    |
+|  1  |            Colors HD            |   ✔    |    ✔    |
+|  2  |             Sony HD             |   ✔    |    ✔    |
+|  3  |            Zee TV HD            |   ✔    |    ✔    |
+|  4  |            Sony SAB             |   ✔    |    ✔    |
+|  5  |            And TV HD            |   ✔    |    ✔    |
+|  6  |        Jio Exclusive HD         |   ✔    |    ✔    |
+|  7  |             Rishtey             |   ✔    |    ✔    |
+|  8  |            Zee Anmol            |   ✔    |    ✔    |
+|  9  |            Sony Pal             |   ✔    |    ✔    |
+| 10  |           Sony SAB HD           |   ✔    |    ✔    |
+| 11  |        Comedy Central HD        |   ✔    |   ❌    |
+| 12  |         Colors Gujarati         |   ✔    |    ✔    |
+| 13  |              Epic               |   ✔    |    ✔    |
+| 14  |       Colors Infinity HD        |   ✔    |   ❌    |
+| 15  |             AXN HD              |   ✔    |   ❌    |
+| 16  |     Investigation Discovery     |   ✔    |    ✔    |
+| 17  |            DD India             |   ✔    |    ✔    |
+| 18  |           DD National           |   ✔    |   ❌    |
+| 19  |             Dabangg             |   ✔    |   ❌    |
+| 20  |        DD Madhya Pradesh        |   ✔    |   ❌    |
+| 21  |      DD Rajasthan (Jaipur)      |   ✔    |   ❌    |
+| 22  |           Raj Pariwar           |   ✔    |    ✔    |
+| 23  |            DD Bihar             |   ✔    |   ❌    |
+| 24  |        DD Uttar Pradesh         |   ✔    |   ❌    |
+| 26  |             Arre HD             |   ✔    |    ✔    |
+| 27  |            DD Girnar            |   ✔    |    ✔    |
+| 29  |          Andy Haryana           |   ✔    |    ✔    |
+| 30  |           Dillagi TV            |   ✔    |   ❌    |
+| 31  |           Dhamaal TV            |   ✔    |   ❌    |
+| 32  |            Hi Dost!             |   ✔    |    ✔    |
+| 33  |         Star Plus HD IP         |   ✔    |    ✔    |
+| 34  |          Star Utsav HD          |   ✔    |    ✔    |
+| 35  |         Star Bharat HD          |   ✔    |    ✔    |
+| 38  |           Sony Max HD           |   ✔    |   ❌    |
+| 39  |             HBO HD              |   ✔    |   ❌    |
+| 40  |          Zee Cinema HD          |   ✔    |   ❌    |
+| 41  |         Colors Cineplex         |   ✔    |   ❌    |
+| 42  |           Sony Pix HD           |   ✔    |   ❌    |
+| 43  |               WB                |   ✔    |   ❌    |
+| 44  |            Sony MAX2            |   ✔    |   ❌    |
+| 45  |         And Pictures HD         |   ✔    |   ❌    |
+| 46  |           Zee Cinema            |   ✔    |   ❌    |
+| 47  |           B4U Movies            |   ✔    |   ❌    |
+| 49  |          Zee Bollywood          |   ✔    |   ❌    |
+| 50  |            Enterr 10            |   ✔    |    ✔    |
+| 51  |           Zee Action            |   ✔    |   ❌    |
+| 52  |        Zee Anmol Cinema         |   ✔    |   ❌    |
+| 53  |          Movies Now HD          |   ✔    |   ❌    |
+| 54  |             MNX HD              |   ✔    |   ❌    |
+| 55  |             MN+ HD              |   ✔    |   ❌    |
+| 56  |               MNX               |   ✔    |   ❌    |
+| 57  |          Romedy Now HD          |   ✔    |   ❌    |
+| 58  |           Maha Movies           |   ✔    |    ✔    |
+| 59  |        Housefull Movies         |   ✔    |   ❌    |
+| 60  |    Jio Bollywood Premium HD     |   ✔    |    ✔    |
+| 61  |          Star Gold HD           |   ✔    |    ✔    |
+| 65  |          Surya Cinema           |   ✔    |    ✔    |
+| 67  |           ABZY Dhakad           |   ✔    |    ✔    |
+| 68  |            ABZY Cool            |   ✔    |    ✔    |
+| 69  |           ABZY Movies           |   ✔    |    ✔    |
+| 73  |            B4U Kadak            |   ✔    |    ✔    |
+| 74  |            Times NOW            |   ✔    |    ✔    |
+| 75  |             Aaj Tak             |   ✔    |    ✔    |
+| 76  |         ABP News India          |   ✔    |    ✔    |
+| 77  |           CNN NEWS 18           |   ✔    |    ✔    |
+| 78  |           Republic TV           |   ✔    |    ✔    |
+| 79  |          News 18 India          |   ✔    |    ✔    |
+| 80  |            India TV             |   ✔    |    ✔    |
+| 81  |           NDTV India            |   ✔    |    ✔    |
+| 82  |            Zee News             |   ✔    |    ✔    |
+| 83  |         Times Now World         |   ✔    |    ✔    |
+| 84  |            NDTV 24x7            |   ✔    |    ✔    |
+| 85  |             News 24             |   ✔    |    ✔    |
+| 86  |           News Nation           |   ✔    |    ✔    |
+| 87  |           India news            |   ✔    |    ✔    |
+| 88  |         News18 Gujarati         |   ✔    |    ✔    |
+| 89  |               Tez               |   ✔    |    ✔    |
+| 90  |          Tv 9 Gujarat           |   ✔    |    ✔    |
+| 91  |        News18 RAJASTHAN         |   ✔    |    ✔    |
+| 92  |        News State UK UP         |   ✔    |    ✔    |
+| 93  |           ABP Asmita            |   ✔    |    ✔    |
+| 94  |          Delhi Aaj Tak          |   ✔    |    ✔    |
+| 95  |            News18 MP            |   ✔    |    ✔    |
+| 96  |          Kashish News           |   ✔    |    ✔    |
+| 97  |           India Today           |   ✔    |    ✔    |
+| 98  |     Zee News MP Chattisgarh     |   ✔    |    ✔    |
+| 99  |             IBC-24              |   ✔    |    ✔    |
+| 100 |          VTV Gujarati           |   ✔    |    ✔    |
+| 101 |          Zee Rajasthan          |   ✔    |    ✔    |
+| 102 |            News18 UP            |   ✔    |    ✔    |
+| 103 |          Sandesh News           |   ✔    |    ✔    |
+| 104 |             DD News             |   ✔    |   ❌    |
+| 105 |          Zee 24 Kalak           |   ✔    |    ✔    |
+| 106 |         BBC World News          |   ✔    |    ✔    |
+| 107 |          India News UP          |   ✔    |    ✔    |
+| 108 |             Jan TV              |   ✔    |    ✔    |
+| 109 |       India News Haryana        |   ✔    |    ✔    |
+| 110 |      India News Rajasthan       |   ✔    |    ✔    |
+| 111 |              GS TV              |   ✔    |    ✔    |
+| 112 |       Sahara Samay Bihar        |   ✔    |    ✔    |
+| 113 |          Zee Hindustan          |   ✔    |    ✔    |
+| 114 |          Hindi Khabar           |   ✔    |    ✔    |
+| 115 |        First India News         |   ✔    |    ✔    |
+| 116 |             News11              |   ✔    |    ✔    |
+| 117 |         SAHARA SAMAY MP         |   ✔    |    ✔    |
+| 118 |             News X              |   ✔    |    ✔    |
+| 119 |           Mirror Now            |   ✔    |    ✔    |
+| 120 |          India News MP          |   ✔    |    ✔    |
+| 121 |            Zee UP UK            |   ✔    |    ✔    |
+| 122 |               CNN               |   ✔    |   ❌    |
+| 123 |            Sudarshan            |   ✔    |    ✔    |
+| 124 |          JK 24x7 News           |   ✔    |    ✔    |
+| 125 |           AL Jazeera            |   ✔    |    ✔    |
+| 126 |            Taaza TV             |   ✔    |    ✔    |
+| 127 |           Live Today            |   ✔    |    ✔    |
+| 128 |      Sahara Samay Rastriya      |   ✔    |    ✔    |
+| 129 |           Mh One News           |   ✔    |   ❌    |
+| 130 |            Janta TV             |   ✔    |    ✔    |
+| 131 |   News18 Haryana and HP News    |   ✔    |    ✔    |
+| 132 |            Total TV             |   ✔    |    ✔    |
+| 133 |         SAHARA SAMAY UP         |   ✔    |    ✔    |
+| 134 |              Wion               |   ✔    |    ✔    |
+| 135 |         Bharat Samachar         |   ✔    |    ✔    |
+| 136 |          K News India           |   ✔    |    ✔    |
+| 137 |         Samay Rajasthan         |   ✔    |    ✔    |
+| 138 |               dw                |   ✔    |    ✔    |
+| 139 |           Loksabha TV           |   ✔    |   ❌    |
+| 140 |          DD Rajyasabha          |   ✔    |   ❌    |
+| 141 |            TV5 Monde            |   ✔    |    ✔    |
+| 142 |          Mantavya News          |   ✔    |    ✔    |
+| 143 |          News 1 India           |   ✔    |    ✔    |
+| 144 |            APN News             |   ✔    |    ✔    |
+| 145 |             News 9              |   ✔    |    ✔    |
+| 146 |             TV 100              |   ✔    |    ✔    |
+| 147 |           Bansal News           |   ✔    |    ✔    |
+| 148 |           India Voice           |   ✔    |    ✔    |
+| 149 |         A1 TV Rajasthan         |   ✔    |    ✔    |
+| 150 |            INH 24x7             |   ✔    |    ✔    |
+| 151 |        GoodNews Channel         |   ✔    |    ✔    |
+| 152 |         News India 24x7         |   ✔    |    ✔    |
+| 153 |        Living India News        |   ✔    |    ✔    |
+| 154 |             SMBC TV             |   ✔    |    ✔    |
+| 155 |        Sadhna News Plus         |   ✔    |    ✔    |
+| 156 | Channel News Asia International |   ✔    |    ✔    |
+| 157 |             GOA 365             |   ✔    |    ✔    |
+| 158 |        News World India         |   ✔    |    ✔    |
+| 159 |           Prime News            |   ✔    |    ✔    |
+| 160 |            Euro News            |   ✔    |    ✔    |
+| 161 |             Prudent             |   ✔    |    ✔    |
+| 162 |           Khabar Fast           |   ✔    |    ✔    |
+| 163 |             RDX Goa             |   ✔    |    ✔    |
+| 164 |        Channel One News         |   ✔    |    ✔    |
+| 165 |           CVR English           |   ✔    |   ❌    |
+| 166 |            HNN 24x7             |   ✔    |    ✔    |
+| 167 |               DNN               |   ✔    |    ✔    |
+| 168 |            Jantantra            |   ✔    |    ✔    |
+| 171 |            ABP Ganga            |   ✔    |    ✔    |
+| 172 |         TV9 Bharatvarsh         |   ✔    |    ✔    |
+| 173 |         Surya Samachar          |   ✔    |    ✔    |
+| 174 |             FM News             |   ✔    |    ✔    |
+| 175 |        Total Tv Haryana         |   ✔    |    ✔    |
+| 176 |            ANB News             |   ✔    |    ✔    |
+| 177 |          Zee Business           |   ✔    |    ✔    |
+| 178 |       CNBC Tv18 Prime HD        |   ✔    |    ✔    |
+| 179 |           NDTV Profit           |   ✔    |    ✔    |
+| 180 |           CNBC Awaaz            |   ✔    |    ✔    |
+| 181 |           CNBC Tv 18            |   ✔    |    ✔    |
+| 182 |             ET Now              |   ✔    |    ✔    |
+| 183 |        CNBC Bazaar (MNO)        |   ✔    |    ✔    |
+| 184 |     Jio Cricket English HD      |   ✔    |    ✔    |
+| 185 |           Sony Six HD           |   ✔    |   ❌    |
+| 186 |             Ten 1HD             |   ✔    |   ❌    |
+| 187 |             Ten2 HD             |   ✔    |   ❌    |
+| 188 |             Ten3 HD             |   ✔    |   ❌    |
+| 189 |          Sony ESPN HD           |   ✔    |   ❌    |
+| 190 |            Dsport HD            |   ✔    |    ✔    |
+| 191 |         Jio Football HD         |   ✔    |    ✔    |
+| 192 |        Jio Cricket 1 HD         |   ✔    |    ✔    |
+| 193 |        Jio Football 1 HD        |   ✔    |    ✔    |
+| 194 |        Jio Football 2 HD        |   ✔    |    ✔    |
+| 195 |              Ten 1              |   ✔    |   ❌    |
+| 196 |              Ten 2              |   ✔    |   ❌    |
+| 197 |              Ten 3              |   ✔    |   ❌    |
+| 198 |           Sony Six SD           |   ✔    |   ❌    |
+| 199 |          Sony ESPN SD           |   ✔    |   ❌    |
+| 200 |            DD Sports            |   ✔    |   ❌    |
+| 201 |     Star Sports Select HD1      |   ✔    |    ✔    |
+| 202 |          Star Sports 1          |   ✔    |   ❌    |
+| 203 |          Star Sports 2          |   ✔    |   ❌    |
+| 204 |       Star Sports Hindi 1       |   ✔    |   ❌    |
+| 205 |     Star Sports Select HD2      |   ✔    |    ✔    |
+| 206 |        Jio Cricket 2 HD         |   ✔    |    ✔    |
+| 207 |        Jio Cricket 3 HD         |   ✔    |    ✔    |
+| 208 |             Dsport              |   ✔    |    ✔    |
+| 209 |           MTV HD Plus           |   ✔    |   ❌    |
+| 210 |          MTV Beats HD           |   ✔    |   ❌    |
+| 211 |             Mastiii             |   ✔    |   ❌    |
+| 212 |              Zing               |   ✔    |   ❌    |
+| 213 |               9XM               |   ✔    |   ❌    |
+| 214 |              E 24               |   ✔    |    ✔    |
+| 215 |            B4U Music            |   ✔    |   ❌    |
+| 216 |              ZOOM               |   ✔    |    ✔    |
+| 217 |            Sony Mix             |   ✔    |   ❌    |
+| 218 |               MTV               |   ✔    |   ❌    |
+| 219 |            9X Jalwa             |   ✔    |   ❌    |
+| 220 |             Zee etc             |   ✔    |   ❌    |
+| 221 |           Music India           |   ✔    |   ❌    |
+| 222 |            Brit Asia            |   ✔    |    ✔    |
+| 223 |           PEACE MUSIC           |   ✔    |    ✔    |
+| 224 |        Boogle Bollywood         |   ✔    |    ✔    |
+| 225 |              iLove              |   ✔    |    ✔    |
+| 226 |             Insync              |   ✔    |    ✔    |
+| 227 |           Nick Hindi            |   ✔    |   ❌    |
+| 228 |           Pogo Hindi            |   ✔    |   ❌    |
+| 229 |      Cartoon Network Hindi      |   ✔    |   ❌    |
+| 230 |           Sonic Hindi           |   ✔    |   ❌    |
+| 231 |         Sony Yay Hindi          |   ✔    |    ✔    |
+| 232 |           Nickelodeon           |   ✔    |   ❌    |
+| 233 |         CN HD+ English          |   ✔    |   ❌    |
+| 234 |        Discovery Kids 2         |   ✔    |    ✔    |
+| 235 |           Nick Junior           |   ✔    |   ❌    |
+| 236 |        Discovery Kids 1         |   ✔    |    ✔    |
+| 237 |             Toonami             |   ✔    |   ❌    |
+| 238 |         Nickelodeon Jr.         |   ✔    |   ❌    |
+| 239 |            Highbrow             |   ✔    |    ✔    |
+| 240 |            Nick HD+             |   ✔    |   ❌    |
+| 241 |       Discovery HD World        |   ✔    |    ✔    |
+| 242 |        Sony BBC Earth HD        |   ✔    |   ❌    |
+| 243 |         History TV18 HD         |   ✔    |    ✔    |
+| 244 |           FYI TV18 HD           |   ✔    |    ✔    |
+| 245 |     Animal Planet HD World      |   ✔    |    ✔    |
+| 246 |          Travel XP HD           |   ✔    |    ✔    |
+| 247 |       Animal Planet Hindi       |   ✔    |    ✔    |
+| 248 |     Discovery Channel Hindi     |   ✔    |    ✔    |
+| 249 |      History TV18 HD Hindi      |   ✔    |    ✔    |
+| 250 |        Discovery Science        |   ✔    |    ✔    |
+| 251 |          Jio Events HD          |   ✔    |    ✔    |
+| 252 |      Animal Planet English      |   ✔    |    ✔    |
+| 253 |            Discovery            |   ✔    |    ✔    |
+| 254 |            DD Kisan             |   ✔    |   ❌    |
+| 255 |         Discovery Turbo         |   ✔    |    ✔    |
+| 256 |    Sony BBC Earth HD English    |   ✔    |   ❌    |
+| 257 |           DD bharati            |   ✔    |    ✔    |
+| 258 |           Care World            |   ✔    |    ✔    |
+| 259 |             Insight             |   ✔    |    ✔    |
+| 260 |             Aastha              |   ✔    |    ✔    |
+| 261 |          Aastha Bhajan          |   ✔    |    ✔    |
+| 262 |             Sanskar             |   ✔    |    ✔    |
+| 263 |          Peace of Mind          |   ✔    |    ✔    |
+| 264 |           Lakshya TV            |   ✔    |    ✔    |
+| 265 |            Divya TV             |   ✔    |    ✔    |
+| 266 |            Paras tv             |   ✔    |    ✔    |
+| 267 |             Sadhna              |   ✔    |    ✔    |
+| 268 |           Satsang TV            |   ✔    |    ✔    |
+| 269 |           Jinvani TV            |   ✔    |    ✔    |
+| 270 |            Shubh TV             |   ✔    |    ✔    |
+| 271 |           Arihant TV            |   ✔    |    ✔    |
+| 272 |            Disha tv             |   ✔    |    ✔    |
+| 273 |            Vedic TV             |   ✔    |    ✔    |
+| 274 |           Darshan 24            |   ✔    |    ✔    |
+| 275 |          Bhaktisagar 2          |   ✔    |    ✔    |
+| 276 |            Ishwar TV            |   ✔    |    ✔    |
+| 277 |           Hare krsna            |   ✔    |    ✔    |
+| 278 |           Swar Shree            |   ✔    |    ✔    |
+| 279 |         Shubhsandesh TV         |   ✔    |    ✔    |
+| 280 |            Katyayani            |   ✔    |    ✔    |
+| 281 |       Sarv Dharam Sangam        |   ✔    |    ✔    |
+| 282 |           Lord Buddha           |   ✔    |    ✔    |
+| 283 |         Valambhakti TV          |   ✔    |    ✔    |
+| 284 |            Om Shanti            |   ✔    |    ✔    |
+| 285 |           Kartavya TV           |   ✔    |    ✔    |
+| 286 |        Hamari Sanskruti         |   ✔    |    ✔    |
+| 287 |            Soham TV             |   ✔    |    ✔    |
+| 288 |              testi              |   ✔    |    ✔    |
+| 289 |            Awakening            |   ✔    |    ✔    |
+| 290 |             SRMD HD             |   ✔    |    ✔    |
+| 291 |        Hare Krsna Music         |   ✔    |    ✔    |
+| 292 |      Hare Krsna Pravachan       |   ✔    |    ✔    |
+| 293 |           Rajyoga TV            |   ✔    |    ✔    |
+| 294 |           Nimbark TV            |   ✔    |    ✔    |
+| 295 |             God TV              |   ✔    |    ✔    |
+| 296 |          Surya Bhakti           |   ✔    |    ✔    |
+| 297 |        Prarthana Bhawan         |   ✔    |    ✔    |
+| 298 | Mandir Shri Govinddevji-Jaipur  |   ✔    |    ✔    |
+| 299 |     Mahavir Mandir - Patna      |   ✔    |    ✔    |
+| 300 |     Shri Omkareshwar Mandir     |   ✔    |    ✔    |
+| 301 |         ISKCON Darshan          |   ✔    |    ✔    |
+| 302 |             TLC HD              |   ✔    |    ✔    |
+| 303 |            Food Food            |   ✔    |    ✔    |
+| 304 |           GOOD TiMES            |   ✔    |    ✔    |
+| 305 |       Travel XP HD Hindi        |   ✔    |    ✔    |
+| 306 |           TLC English           |   ✔    |    ✔    |
+| 307 |            TLC Hindi            |   ✔    |    ✔    |
+| 308 |     Sadhguru Television HD      |   ✔    |    ✔    |
+| 309 |            AstroFlix            |   ✔    |    ✔    |
+| 310 |           Jyotish TV            |   ✔    |    ✔    |
+| 311 |           Click Life            |   ✔    |    ✔    |
+| 312 |           Stars Tell            |   ✔    |    ✔    |
+| 313 |            Wellness             |   ✔    |    ✔    |
+| 314 |          Millionlights          |   ✔    |    ✔    |
+| 315 |        Swayam Prabha 01         |   ✔    |    ✔    |
+| 316 |        Swayam Prabha 02         |   ✔    |    ✔    |
+| 317 |        Swayam Prabha 03         |   ✔    |    ✔    |
+| 318 |        Swayam Prabha 04         |   ✔    |    ✔    |
+| 319 |        Swayam Prabha 05         |   ✔    |    ✔    |
+| 320 |        Swayam Prabha 06         |   ✔    |    ✔    |
+| 321 |        Swayam Prabha 07         |   ✔    |    ✔    |
+| 322 |        Swayam Prabha 08         |   ✔    |    ✔    |
+| 323 |        Swayam Prabha 09         |   ✔    |    ✔    |
+| 324 |        Swayam Prabha 10         |   ✔    |    ✔    |
+| 325 |        Swayam Prabha 11         |   ✔    |    ✔    |
+| 326 |        Swayam Prabha 12         |   ✔    |    ✔    |
+| 327 |        Swayam Prabha 13         |   ✔    |    ✔    |
+| 328 |        Swayam Prabha 14         |   ✔    |    ✔    |
+| 329 |        Swayam Prabha 15         |   ✔    |    ✔    |
+| 330 |        Swayam Prabha 16         |   ✔    |    ✔    |
+| 331 |        Swayam Prabha 17         |   ✔    |    ✔    |
+| 332 |        Swayam Prabha 18         |   ✔    |    ✔    |
+| 333 |        Swayam Prabha 19         |   ✔    |    ✔    |
+| 334 |        Swayam Prabha 20         |   ✔    |    ✔    |
+| 335 |        Swayam Prabha 21         |   ✔    |    ✔    |
+| 336 |        Swayam Prabha 22         |   ✔    |    ✔    |
+| 337 |        Swayam Prabha 23         |   ✔    |    ✔    |
+| 338 |        Swayam Prabha 24         |   ✔    |    ✔    |
+| 339 |        Swayam Prabha 25         |   ✔    |    ✔    |
+| 340 |        Swayam Prabha 26         |   ✔    |    ✔    |
+| 341 |        Swayam Prabha 27         |   ✔    |    ✔    |
+| 342 |        Swayam Prabha 28         |   ✔    |    ✔    |
+| 343 |        Swayam Prabha 29         |   ✔    |    ✔    |
+| 344 |        Swayam Prabha 30         |   ✔    |    ✔    |
+| 345 |        Swayam Prabha 31         |   ✔    |    ✔    |
+| 346 |        Swayam Prabha 32         |   ✔    |    ✔    |
+| 347 |         Vande Gujarat 1         |   ✔    |    ✔    |
+| 348 |        Vande Gujarat 10         |   ✔    |    ✔    |
+| 349 |        Vande Gujarat 11         |   ✔    |    ✔    |
+| 350 |        Vande Gujarat 12         |   ✔    |    ✔    |
+| 351 |        Vande Gujarat 13         |   ✔    |    ✔    |
+| 352 |        Vande Gujarat 14         |   ✔    |    ✔    |
+| 353 |        Vande Gujarat 15         |   ✔    |    ✔    |
+| 354 |        Vande Gujarat 16         |   ✔    |    ✔    |
+| 355 |         Vande Gujarat 2         |   ✔    |    ✔    |
+| 356 |         Vande Gujarat 3         |   ✔    |    ✔    |
+| 357 |         Vande Gujarat 4         |   ✔    |    ✔    |
+| 358 |         Vande Gujarat 5         |   ✔    |    ✔    |
+| 359 |         Vande Gujarat 6         |   ✔    |    ✔    |
+| 360 |         Vande Gujarat 7         |   ✔    |    ✔    |
+| 361 |         Vande Gujarat 8         |   ✔    |    ✔    |
+| 362 |         Vande Gujarat 9         |   ✔    |    ✔    |
+| 363 |            Digishala            |   ✔    |    ✔    |
+| 364 |          Home Shop 18           |   ✔    |    ✔    |
+| 365 |           BBC Marathi           |   ✔    |    ✔    |
+| 366 |            ABP Majha            |   ✔    |    ✔    |
+| 367 |          TV9 Karnataka          |   ✔    |    ✔    |
+| 368 |          Polimer News           |   ✔    |    ✔    |
+| 369 |         TV9 Telugu News         |   ✔    |    ✔    |
+| 370 |           ABP Ananda            |   ✔    |    ✔    |
+| 371 |           Prathana TV           |   ✔    |   ❌    |
+| 372 |           Zee Marathi           |   ✔    |    ✔    |
+| 373 |        Colors Marathi HD        |   ✔    |    ✔    |
+| 374 |        Colors Kannada HD        |   ✔    |    ✔    |
+| 375 |           Zee Kannada           |   ✔    |    ✔    |
+| 376 |           Zee Telugu            |   ✔    |    ✔    |
+| 377 |            Zee Tamil            |   ✔    |    ✔    |
+| 378 |           Zee Bangla            |   ✔    |    ✔    |
+| 379 |        Colors Bengali HD        |   ✔    |    ✔    |
+| 380 |            Surya TV             |   ✔    |   ❌    |
+| 381 |            Zee Yuva             |   ✔    |    ✔    |
+| 382 |           PTC Punjabi           |   ✔    |    ✔    |
+| 383 |         Colors Tamil HD         |   ✔    |    ✔    |
+| 384 |            Sun TV HD            |   ✔    |   ❌    |
+| 385 |         Bhojpuri Cinema         |   ✔    |    ✔    |
+| 386 |             KTV HD              |   ✔    |   ❌    |
+| 387 |          Udaya Movies           |   ✔    |   ❌    |
+| 388 |          Zee Cinemalu           |   ✔    |   ❌    |
+| 389 |              K TV               |   ✔    |   ❌    |
+| 390 |        Gemini Movies HD         |   ✔    |   ❌    |
+| 391 |          Gemini Movies          |   ✔    |   ❌    |
+| 392 |           ETV Telugu            |   ✔    |    ✔    |
+| 393 |            Public TV            |   ✔    |    ✔    |
+| 394 |          24 Ghanta TV           |   ✔    |    ✔    |
+| 395 |            Sakshi tv            |   ✔    |    ✔    |
+| 396 |          Suvarna News           |   ✔    |    ✔    |
+| 397 |               NTV               |   ✔    |    ✔    |
+| 398 |           Thanthi TV            |   ✔    |    ✔    |
+| 399 |         TV9 Maharashtra         |   ✔    |    ✔    |
+| 400 |               BTV               |   ✔    |    ✔    |
+| 401 |           Zee 24 Taas           |   ✔    |    ✔    |
+| 402 |            Newslive             |   ✔    |   ❌    |
+| 403 |          Sun Music HD           |   ✔    |   ❌    |
+| 404 |          Tarang Music           |   ✔    |   ❌    |
+| 405 |         Gemini Music HD         |   ✔    |   ❌    |
+| 406 |           Udaya Music           |   ✔    |   ❌    |
+| 407 |          Public Music           |   ✔    |    ✔    |
+| 408 |            Jaya Max             |   ✔    |   ❌    |
+| 409 |        Sangeet Bhojpuri         |   ✔    |   ❌    |
+| 410 |          Gemini Music           |   ✔    |   ❌    |
+| 411 |            PTC Music            |   ✔    |    ✔    |
+| 412 |         Sangeet Bangla          |   ✔    |   ❌    |
+| 413 |           Nick Tamil            |   ✔    |   ❌    |
+| 414 |           Pogo Tamil            |   ✔    |   ❌    |
+| 415 |      Cartoon Network Tamil      |   ✔    |   ❌    |
+| 416 |           Nick Telugu           |   ✔    |   ❌    |
+| 417 |    Discovery Channel Telugu     |   ✔    |    ✔    |
+| 418 |             D Tamil             |   ✔    |    ✔    |
+| 419 |      History TV18 HD Tamil      |   ✔    |    ✔    |
+| 420 |     History TV18 HD Telugu      |   ✔    |    ✔    |
+| 421 |           Samara News           |   ✔    |    ✔    |
+| 422 |    Discovery Channel Bengali    |   ✔    |    ✔    |
+| 423 |         Travel XP Tamil         |   ✔    |    ✔    |
+| 424 |    Sony BBC Earth HD Telugu     |   ✔    |   ❌    |
+| 425 |     Sony BBC Earth HD Tamil     |   ✔    |   ❌    |
+| 426 |            Ayush TV             |   ✔    |    ✔    |
+| 427 |          Desi Channel           |   ✔    |    ✔    |
+| 428 |          ETV Abhiruchi          |   ✔    |    ✔    |
+| 429 |           Kaumudy TV            |   ✔    |    ✔    |
+| 430 |            Bhakti TV            |   ✔    |    ✔    |
+| 431 |           Sri Sankara           |   ✔    |    ✔    |
+| 432 |             Sai TV              |   ✔    |    ✔    |
+| 433 |          mh1 Shraddha           |   ✔    |    ✔    |
+| 434 |     Sri Venkateshwar Bhakti     |   ✔    |    ✔    |
+| 435 |           Angel TV HD           |   ✔    |    ✔    |
+| 436 |        CVR OM Spiritual         |   ✔    |    ✔    |
+| 437 |           Aradhana TV           |   ✔    |    ✔    |
+| 438 |           PTC Simran            |   ✔    |    ✔    |
+| 439 |          Hindu Dharmam          |   ✔    |    ✔    |
+| 440 |         Subhavartha TV          |   ✔    |    ✔    |
+| 441 |           Divya Vani            |   ✔    |    ✔    |
+| 442 |          Rujumargam TV          |   ✔    |    ✔    |
+| 443 |             Calvary             |   ✔    |    ✔    |
+| 444 |           Jaya TV HD            |   ✔    |    ✔    |
+| 445 |      Mazavali Manorama HD       |   ✔    |    ✔    |
+| 446 |              MK TV              |   ✔    |    ✔    |
+| 447 |          Colors Super           |   ✔    |    ✔    |
+| 448 |           Vendhar TV            |   ✔    |    ✔    |
+| 449 |          Gemini TV HD           |   ✔    |   ❌    |
+| 450 |            Surya HD             |   ✔    |   ❌    |
+| 451 |            Udaya HD             |   ✔    |   ❌    |
+| 452 |            Sanjha TV            |   ✔    |    ✔    |
+| 453 |            Anjan TV             |   ✔    |    ✔    |
+| 454 |          Garv Punjabi           |   ✔    |    ✔    |
+| 455 |           JUSPunjabi            |   ✔    |    ✔    |
+| 456 |             Sun TV              |   ✔    |   ❌    |
+| 457 |           Peppers TV            |   ✔    |    ✔    |
+| 458 |           Sarthak TV            |   ✔    |   ❌    |
+| 459 |            Flower TV            |   ✔    |   ❌    |
+| 460 |        Mazhavil Manorama        |   ✔    |    ✔    |
+| 461 |            Udaya TV             |   ✔    |   ❌    |
+| 462 |            DD Bangla            |   ✔    |   ❌    |
+| 463 |           Puthu Yugam           |   ✔    |    ✔    |
+| 464 |             Saam Tv             |   ✔    |    ✔    |
+| 465 |          Colors Oriya           |   ✔    |    ✔    |
+| 466 |             Jonack              |   ✔    |    ✔    |
+| 467 |              Rang               |   ✔    |   ❌    |
+| 468 |             Rengoni             |   ✔    |    ✔    |
+| 469 |            ETV Plus             |   ✔    |    ✔    |
+| 470 |         Sony Marathi SD         |   ✔    |    ✔    |
+| 471 |          DD Sahayadri           |   ✔    |   ❌    |
+| 472 |            Sony aath            |   ✔    |   ❌    |
+| 473 |           Aakash Aath           |   ✔    |    ✔    |
+| 474 |          DD Malayalam           |   ✔    |   ❌    |
+| 475 |             Dangal              |   ✔    |    ✔    |
+| 476 |            DD Oriya             |   ✔    |   ❌    |
+| 477 |            Tarang TV            |   ✔    |   ❌    |
+| 478 |         OTV (Odisha TV)         |   ✔    |    ✔    |
+| 479 |            Gemini TV            |   ✔    |   ❌    |
+| 480 |           Polimer TV            |   ✔    |    ✔    |
+| 481 |          Gemini Comedy          |   ✔    |   ❌    |
+| 482 |             Raj TV              |   ✔    |    ✔    |
+| 483 |            Makkal TV            |   ✔    |    ✔    |
+| 484 |           Adithya TV            |   ✔    |   ❌    |
+| 485 |           Kairali TV            |   ✔    |    ✔    |
+| 486 |           Captain tv            |   ✔    |    ✔    |
+| 487 |             DD urdu             |   ✔    |   ❌    |
+| 488 |          DD Saptagiri           |   ✔    |   ❌    |
+| 489 |     DD9 chandana (kannada)      |   ✔    |   ❌    |
+| 490 |           DD Punjabi            |   ✔    |   ❌    |
+| 491 |            DD Kashir            |   ✔    |   ❌    |
+| 492 |            Nepal one            |   ✔    |    ✔    |
+| 493 |        DD13 Guwahati NE         |   ✔    |   ❌    |
+| 494 |            Amrita TV            |   ✔    |    ✔    |
+| 495 |          Kairali News           |   ✔    |    ✔    |
+| 496 |          DD5 Podhigai           |   ✔    |   ❌    |
+| 497 |           Vasanth TV            |   ✔    |    ✔    |
+| 498 |           Zee Salaam            |   ✔    |    ✔    |
+| 499 |             Kasturi             |   ✔    |    ✔    |
+| 500 |          Kairali WE TV          |   ✔    |    ✔    |
+| 501 |          Udaya Comedy           |   ✔    |   ❌    |
+| 502 |            Vissa TV             |   ✔    |    ✔    |
+| 503 |             Maiboli             |   ✔    |   ❌    |
+| 504 |            Dishum TV            |   ✔    |    ✔    |
+| 505 |            Namma TV             |   ✔    |    ✔    |
+| 506 |           Rangamanch            |   ✔    |    ✔    |
+| 507 |           Zee Talkies           |   ✔    |   ❌    |
+| 508 |            J Movies             |   ✔    |   ❌    |
+| 509 |           Alankar TV            |   ✔    |   ❌    |
+| 510 |        Zee Bangla Cinema        |   ✔    |   ❌    |
+| 511 |           ETV Cinema            |   ✔    |    ✔    |
+| 512 |           Gemini Life           |   ✔    |   ❌    |
+| 513 |            Sun Life             |   ✔    |   ❌    |
+| 514 |          Fakt Marathi           |   ✔    |    ✔    |
+| 515 |             Pitaara             |   ✔    |    ✔    |
+| 516 |        Raj Digital Plus         |   ✔    |    ✔    |
+| 517 |            Kiran TV             |   ✔    |   ❌    |
+| 518 |        PTC Punjabi Gold         |   ✔    |    ✔    |
+| 519 |          Oscar Movies           |   ✔    |    ✔    |
+| 520 |           Indradhanu            |   ✔    |    ✔    |
+| 521 |          Amaar Cinema           |   ✔    |    ✔    |
+| 522 |        ABN Andhra Jyothi        |   ✔    |    ✔    |
+| 523 |           Kanak News            |   ✔    |    ✔    |
+| 524 |       Puthiya Thalimurai        |   ✔    |    ✔    |
+| 525 |          News18 BIHAR           |   ✔    |    ✔    |
+| 526 |          Dighvijay TV           |   ✔    |    ✔    |
+| 527 |           Zee Kalinga           |   ✔    |    ✔    |
+| 528 |          Asianet News           |   ✔    |    ✔    |
+| 529 |       News18 Kannada News       |   ✔    |    ✔    |
+| 530 |           News7 Tamil           |   ✔    |    ✔    |
+| 531 |             DY 365              |   ✔    |    ✔    |
+| 532 |           IBN Lokmat            |   ✔    |    ✔    |
+| 533 |         Prime Time News         |   ✔    |    ✔    |
+| 534 |       News18 Bangla News        |   ✔    |    ✔    |
+| 535 |            Sun News             |   ✔    |   ❌    |
+| 536 |          News 18 Assam          |   ✔    |    ✔    |
+| 537 |            Prag News            |   ✔    |    ✔    |
+| 538 |             V6 News             |   ✔    |    ✔    |
+| 539 |       ETV Andhra pradesh        |   ✔    |    ✔    |
+| 540 |        News 18 Tamilnadu        |   ✔    |    ✔    |
+| 541 |          Manorama News          |   ✔    |    ✔    |
+| 542 |        Mathrubhumi News         |   ✔    |    ✔    |
+| 543 |          TV 5 Kannada           |   ✔    |    ✔    |
+| 544 |            MK Music             |   ✔    |   ❌    |
+| 545 |             Tunes 6             |   ✔    |   ❌    |
+| 546 |        Raj Music Kannada        |   ✔    |   ❌    |
+| 547 |            Ramdhenu             |   ✔    |   ❌    |
+| 548 |            Raj Musix            |   ✔    |   ❌    |
+| 549 |           PTC Chak De           |   ✔    |    ✔    |
+| 550 |            9X Tashan            |   ✔    |   ❌    |
+| 551 |          Sahana Music           |   ✔    |    ✔    |
+| 552 |           PTC DHOL TV           |   ✔    |    ✔    |
+| 553 |           mh1 (Music)           |   ✔    |    ✔    |
+| 554 |         Sangeet Marathi         |   ✔    |   ❌    |
+| 555 |           9x Jhakaas            |   ✔    |   ❌    |
+| 556 |           Only Music            |   ✔    |    ✔    |
+| 557 |           Surya Music           |   ✔    |   ❌    |
+| 558 |            PBN Music            |   ✔    |    ✔    |
+| 559 |        Raj Music Telugu         |   ✔    |   ❌    |
+| 560 |            Kappa TV             |   ✔    |   ❌    |
+| 561 |       Raj Music Malayalam       |   ✔    |   ❌    |
+| 562 |         Steelbird Music         |   ✔    |   ❌    |
+| 563 |              10 TV              |   ✔    |    ✔    |
+| 564 |            TV 5 News            |   ✔    |    ✔    |
+| 565 |           Assam Talks           |   ✔    |    ✔    |
+| 566 |          News Time TV           |   ✔    |    ✔    |
+| 567 |          Zee Purvaiya           |   ✔    |    ✔    |
+| 568 |         Prameya News 7          |   ✔    |    ✔    |
+| 569 |            CVR News             |   ✔    |    ✔    |
+| 570 |          News18 Oriya           |   ✔    |    ✔    |
+| 571 |             T News              |   ✔    |    ✔    |
+| 572 |            Prajaa TV            |   ✔    |    ✔    |
+| 573 |            Jaya Plus            |   ✔    |    ✔    |
+| 574 |          Malai Murasu           |   ✔    |    ✔    |
+| 575 |           Bangla Time           |   ✔    |    ✔    |
+| 576 |          Media One TV           |   ✔    |    ✔    |
+| 577 |          ETV Telangana          |   ✔    |    ✔    |
+| 578 |           Kalinga TV            |   ✔    |    ✔    |
+| 579 |            Janam TV             |   ✔    |    ✔    |
+| 580 |         News 18 Kerala          |   ✔    |    ✔    |
+| 581 |            Maha News            |   ✔    |    ✔    |
+| 582 |              HM TV              |   ✔    |    ✔    |
+| 583 |            Chutti TV            |   ✔    |   ❌    |
+| 584 |            Chintu TV            |   ✔    |   ❌    |
+| 585 |           sonic Tamil           |   ✔    |   ❌    |
+| 586 |            Kushi TV             |   ✔    |   ❌    |
+| 587 |     Cartoon Network Telugu      |   ✔    |   ❌    |
+| 588 |      Discovery Kids Tamil       |   ✔    |    ✔    |
+| 589 |            ETV Life             |   ✔    |    ✔    |
+| 590 |           In Goa 24x7           |   ✔    |    ✔    |
+| 591 |             Vanitha             |   ✔    |    ✔    |
+| 592 |           CVR Health            |   ✔    |    ✔    |
+| 593 |            Propex TV            |   ✔    |    ✔    |
+| 594 |             testii              |   ✔    |    ✔    |
+| 595 |           Channel Win           |   ✔    |    ✔    |
+| 596 |            Nambikkai            |   ✔    |    ✔    |
+| 597 |       Shree Siddhivinayak       |   ✔    |    ✔    |
+| 598 |             Shalom              |   ✔    |    ✔    |
+| 599 |          Tulja Bhavani          |   ✔    |    ✔    |
+| 600 |      Garv Punjabi Gurbani       |   ✔    |    ✔    |
+| 601 |            Fateh TV             |   ✔    |    ✔    |
+| 602 |             JUSOne              |   ✔    |   ❌    |
+| 603 |          Gulistan News          |   ✔    |    ✔    |
+| 604 |        Raj News Kannada         |   ✔    |   ❌    |
+| 605 |           News18 Urdu           |   ✔    |    ✔    |
+| 606 |               MBC               |   ✔    |    ✔    |
+| 607 |     Zee Punjabi HP Haryana      |   ✔    |    ✔    |
+| 608 |               TV1               |   ✔    |    ✔    |
+| 609 |             R Plus              |   ✔    |    ✔    |
+| 610 |          Captain News           |   ✔    |    ✔    |
+| 611 |             I News              |   ✔    |    ✔    |
+| 612 |           Sathiyam TV           |   ✔    |    ✔    |
+| 613 |          Naxatra News           |   ✔    |    ✔    |
+| 614 |        Chardikla Time TV        |   ✔    |    ✔    |
+| 615 |            PTC News             |   ✔    |    ✔    |
+| 616 |        Onkar Only Truth         |   ✔    |    ✔    |
+| 617 |             Mojo TV             |   ✔    |    ✔    |
+| 618 |           Lotus News            |   ✔    |    ✔    |
+| 619 |           Artage News           |   ✔    |    ✔    |
+| 620 |         North East Live         |   ✔    |   ❌    |
+| 621 |         Raj News Telugu         |   ✔    |    ✔    |
+| 622 |        Sadhna Aryan News        |   ✔    |    ✔    |
+| 623 |          Madhimugam TV          |   ✔    |    ✔    |
+| 624 |             Win TV              |   ✔    |    ✔    |
+| 625 |              4 TV               |   ✔    |    ✔    |
+| 626 |               MKN               |   ✔    |    ✔    |
+| 627 |           Jaihind tv            |   ✔    |    ✔    |
+| 628 |            Jeevan TV            |   ✔    |    ✔    |
+| 629 |           I Plus News           |   ✔    |    ✔    |
+| 630 |            France 24            |   ✔    |   ❌    |
+| 631 |       Raj News Malayalam        |   ✔    |    ✔    |
+| 632 |            JUS 24x7             |   ✔    |    ✔    |
+| 633 |          Raj News 24x7          |   ✔    |    ✔    |
+| 634 |         Sony Yay Telugu         |   ✔    |    ✔    |
+| 635 |         Sony Yay Tamil          |   ✔    |    ✔    |
+| 636 |          CN HD+ Tamil           |   ✔    |   ❌    |
+| 637 |            Kochu TV             |   ✔    |   ❌    |
+| 638 |          CN HD+ Telugu          |   ✔    |   ❌    |
+| 639 |          Prime Asia HD          |   ✔    |    ✔    |
+| 640 |           Asianet HD            |   ✔    |    ✔    |
+| 641 |          Star Vijay HD          |   ✔    |    ✔    |
+| 642 |         Star Jalsha HD          |   ✔    |    ✔    |
+| 643 |            Maa TV HD            |   ✔    |    ✔    |
+| 644 |           Maa Gold HD           |   ✔    |    ✔    |
+| 645 |         Asianet Plus HD         |   ✔    |    ✔    |
+| 646 |         Star Pravah HD          |   ✔    |    ✔    |
+| 647 |           Suvarna HD            |   ✔    |    ✔    |
+| 648 |         Suvarna Plus HD         |   ✔    |    ✔    |
+| 649 |        Jalsha Movies HD         |   ✔    |    ✔    |
+| 650 |          Maa Movies HD          |   ✔    |    ✔    |
+| 651 |        Asianet Movies HD        |   ✔    |    ✔    |
+| 652 |          Maharashtra1           |   ✔    |    ✔    |
+| 653 |          Kalaignar TV           |   ✔    |    ✔    |
+| 654 |       Kalaignar Seithigal       |   ✔    |    ✔    |
+| 655 |    Lord Shri Vitthal Rukmini    |   ✔    |    ✔    |
+| 656 |     Animal Planet HD Tamil      |   ✔    |    ✔    |
+| 657 |        Rajyoga Malayalam        |   ✔    |    ✔    |
+| 658 |    Dagdusheth Ganpati - Pune    |   ✔    |    ✔    |
+| 659 |     Ambabai Temple-Kolhapur     |   ✔    |    ✔    |
+| 660 |             PTC VR              |   ✔    |   ❌    |
+| 661 |            JIA NEWS             |   ✔    |    ✔    |
+| 662 |          Sonic Telugu           |   ✔    |    ✔    |
+| 663 |          Sonic Kannada          |   ✔    |    ✔    |
+| 664 |          Nick Kannada           |   ✔    |    ✔    |
+| 665 |        Headlines Tripura        |   ✔    |    ✔    |
+| 666 |        Twenty Four News         |   ✔    |    ✔    |
+| 667 |           Tehzeeb TV            |   ✔    |    ✔    |
+| 668 |          Kolkata Live           |   ✔    |    ✔    |
+| 669 |          Aastha Telugu          |   ✔    |    ✔    |
+| 670 |          Aastha Tamil           |   ✔    |    ✔    |
+| 671 |         Aastha Kannada          |   ✔    |    ✔    |
+| 672 |          Ctvn Akd Plus          |   ✔    |    ✔    |
+| 673 |          Calcutta News          |   ✔    |    ✔    |
+| 674 |           Kolkata TV            |   ✔    |    ✔    |
+| 675 |          Global Sanjh           |   ✔    |    ✔    |
+| 676 |    Udupi Shri Krishna Maanya    |   ✔    |    ✔    |
+| 677 |             Sugran              |   ✔    |    ✔    |
+| 678 |           Studio One            |   ✔    |    ✔    |
+| 679 |         Nireekshana TV          |   ✔    |    ✔    |
+| 680 |        Manoranjan Movies        |   ✔    |    ✔    |
+| 681 |           Khushboo TV           |   ✔    |    ✔    |
+| 682 |           Vignesh TV            |   ✔    |    ✔    |
+| 683 |            Orange TV            |   ✔    |    ✔    |
+| 684 |           ABP Sanjha            |   ✔    |    ✔    |
+| 685 |          Lokshahi News          |   ✔    |    ✔    |
 | 686 |          B4U Bhojpuri           |   ✔    |    ✔    |
 | 687 |            TV Bangla            |   ✔    |    ✔    |
