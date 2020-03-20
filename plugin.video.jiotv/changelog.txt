@@ -1,3 +1,7 @@
+[- 1.0.8-2 -]
+
+[fixed] jio server issue (minor)
+
 [- 1.0.8 -]
 
 [added] Star sports channels are working now #3 (major)

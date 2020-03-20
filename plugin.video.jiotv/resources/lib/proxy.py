@@ -54,7 +54,7 @@ class ChannelRequestHandler():
             self.proxy.end_headers()
 
     def getMaster(self):
-        effective_url = "http://jiotvstb.live.cdn.jio.com{0}/{1}{2}/{1}_STB.m3u8".format(
+        effective_url = "http://jiotv.live.cdn.jio.com{0}/{1}{2}/{1}_STB.m3u8".format(
             self.hlsrx, self.channel_name, '_HLS' if self.ishls else '')
         resp = ChannelRequestHandler.make_requests(effective_url)
         self.proxy.send_response(resp.status_code)
@@ -65,7 +65,7 @@ class ChannelRequestHandler():
 
     def getM3U8(self):
         m3u8 = self.path.split('/')[3]
-        effective_url = "http://jiotvstb.live.cdn.jio.com{0}/{1}{2}/{3}".format(
+        effective_url = "http://jiotv.live.cdn.jio.com{0}/{1}{2}/{3}".format(
             self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8)
         resp = ChannelRequestHandler.make_requests(effective_url)
 
@@ -76,7 +76,7 @@ class ChannelRequestHandler():
 
         if not self.ishls:
             full_ts = self.getTS(resp.text, full=True)
-            ts_url = 'http://jiotvstb.live.cdn.jio.com/{0}/{1}'.format(
+            ts_url = 'http://jiotv.live.cdn.jio.com/{0}/{1}'.format(
                 self.channel_name, re.sub('\_\d+\-', '_1200-', full_ts.group()[1:]))
             check_filter = requests.head(ts_url)
             quality = False if check_filter.status_code == 404 <= 1200 else re.sub(
@@ -138,14 +138,14 @@ class ChannelRequestHandler():
         ts_re = '\n(\d+\_|\d+\-)' if self.ishls else '\n' + \
             self.channel_name+'(\_\d+\-)'
         if quality:
-            return re.sub(ts_re, '\nhttp://jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
+            return re.sub(ts_re, '\nhttp://jiotv.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
                 self.hlsrx, self.channel_name, quality), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(quality), text)
-        return re.sub(ts_re, '\nhttp://jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
+        return re.sub(ts_re, '\nhttp://jiotv.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
             self.hlsrx, self.channel_name, self.getTS(text).group()[1:]), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(self.getTS(text).group()[1:]), text)
 
     def updateKey(self, text, quality=False):
         if self.ishls:
-            return text.replace('https://tv.media.jio.com/streams_live', 'http://sngprecdnems14.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com/streams_live')
+            return text.replace('https://tv.media.jio.com/streams_live', 'http://snoidcdnems02.cdnsrv.jio.com/jiotv.live.cdn.jio.com/streams_live')
         # key_re = self.channel_name+'(\_\d+\-\d+)\.key'
         # key_find = re.search(key_re, text)
         # quality = quality and re.sub('\_\d+\-', '_1200-', key_find.group())
