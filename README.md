@@ -27,3 +27,7 @@
 ## Download
 
 [**Download**](https://github.com/botallen/repository.botallen/raw/master/repository.botallen/repository.botallen-1.0.0.zip) the `.zip` file.
+
+## Support
+
+<a href="https://www.buymeacoffee.com/NTGLzgi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
