@@ -75,3 +75,10 @@ def _hotstarauth_key():
     secret = keygen("05fc1a01cac94bc412fc53120775f9ee")
     signature = hmac.new(secret, message, digestmod=hashlib.sha256).hexdigest()
     return '{}~hmac={}'.format(message, signature)
+
+def getHeaders():
+    if os.path.isfile(ADDONDATA + 'headers.json'):
+        with open(ADDONDATA + 'headers.json', 'r') as f:
+            headers = json.load(f)
+        return headers
+    return False

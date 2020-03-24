@@ -63,8 +63,16 @@ def show_category(category_id):
             'thumb': img_url,
             'icon': img_url
         })
-        items.append(
-            (plugin.url_for(show_epg, day=0, channel_id=each, live_url=channels[str(each)]['url']), list_item, True))
+        if channels[str(each)]['isCatchupAvailable']:
+            items.append(
+                (plugin.url_for(show_epg, day=0, channel_id=each, live_url=channels[str(each)]['url']), list_item, True))
+        else:
+            list_item.setInfo('video', {
+                'title': channels[str(each)]['name'],
+                'mediatype': 'tvshow',
+            })
+            list_item.setProperty('IsPlayable', 'true')
+            items.append((channels[str(each)]['url'], list_item, False))
 
     addDirectoryItems(plugin.handle, items)
     endOfDirectory(plugin.handle)
@@ -136,9 +144,10 @@ def play(channel_name):
     is_helper = inputstreamhelper.Helper('hls')
     if is_helper.check_inputstream():
         play_item = ListItem()
-        hls = '' if not 'hls' in plugin.args else "?hls="+plugin.args['hls'][0]
+        params = "?"+"&".join([key+'='+value[0]
+                               for key, value in plugin.args.items()])
         url = "http://127.0.0.1:48996/play/{0}/master.m3u8{1}".format(
-            channel_name, hls)
+            channel_name, params)
         if not url:
             return
         play_item.setPath(url)

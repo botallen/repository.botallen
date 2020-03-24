@@ -11,13 +11,10 @@ import os
 from datetime import datetime
 import hashlib
 from xbmc import translatePath, log, LOGNOTICE
-from xbmcaddon import Addon
+from resources.lib import utils, kodiutils
 
-ADDON = Addon()
-ADDONDATA = translatePath(ADDON.getAddonInfo('profile')).decode("utf-8")
-if os.path.isfile(ADDONDATA + 'headers.json'):
-    with open(ADDONDATA + 'headers.json', 'r') as f:
-        headers = json.load(f)
+headers = utils.getHeaders()
+qmap = {"Low": "_LOW", "Medium": "_MED", "High": "_HIG", "STB": "_STB"}
 
 
 class ChannelRequestHandler():
@@ -34,7 +31,9 @@ class ChannelRequestHandler():
 
         self.channel_name = self.path.split('/')[2]
         self.ishls = 'hls' in self.params
+        self.maxq = 'maxq' in self.params and int(self.params['maxq'][0])
         self.hlsrx = '' if not self.ishls else '/'+self.params['hls'][0]
+        self.quality = qmap[kodiutils.get_setting('quality')]
 
         try:
             if play_url:
@@ -54,18 +53,19 @@ class ChannelRequestHandler():
             self.proxy.end_headers()
 
     def getMaster(self):
-        effective_url = "http://jiotv.live.cdn.jio.com{0}/{1}{2}/{1}_STB.m3u8".format(
-            self.hlsrx, self.channel_name, '_HLS' if self.ishls else '')
+        effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}{2}/{1}{3}.m3u8".format(
+            self.hlsrx, self.channel_name, '_HLS' if self.ishls else '', self.quality)
         resp = ChannelRequestHandler.make_requests(effective_url)
-        self.proxy.send_response(resp.status_code)
-        self.proxy.send_header('Content-Type', 'application/vnd.apple.mpegurl')
-        self.proxy.send_header('Content-Length', len(resp.content))
+        self.proxy.send_response(resp.status_code, 'OK')
+        for key, val in resp.headers.items():
+            self.proxy.send_header(key, val)
+        # self.proxy.send_header('Content-Length', len(resp.content))
         self.proxy.end_headers()
         self.proxy.wfile.write(resp.content)
 
     def getM3U8(self):
         m3u8 = self.path.split('/')[3]
-        effective_url = "http://jiotv.live.cdn.jio.com{0}/{1}{2}/{3}".format(
+        effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}{2}/{3}".format(
             self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8)
         resp = ChannelRequestHandler.make_requests(effective_url)
 
@@ -75,18 +75,15 @@ class ChannelRequestHandler():
             ts = self.getTS(resp.text)
 
         if not self.ishls:
-            full_ts = self.getTS(resp.text, full=True)
-            ts_url = 'http://jiotv.live.cdn.jio.com/{0}/{1}'.format(
-                self.channel_name, re.sub('\_\d+\-', '_1200-', full_ts.group()[1:]))
-            check_filter = requests.head(ts_url)
-            quality = False if check_filter.status_code == 404 <= 1200 else re.sub(
-                '\_\d+\-', '_1200-', ts.group()[1:])
+            rq = int(re.search('(.*?_)(\d+)\.m3u8', m3u8).group(2))
+            quality = rq >= self.maxq and re.sub(
+                '\_\d+\-', '_{0}-'.format(self.maxq), ts.group()[1:])
         else:
             quality = m3u8[:1] + ts.group()[2:]
 
         resp_text = self.updateTS(resp.text, quality)
         resp_text = self.updateKey(resp_text, quality)
-        self.proxy.send_response(resp.status_code)
+        self.proxy.send_response(resp.status_code, 'OK')
         self.proxy.send_header('Content-Type', 'application/vnd.apple.mpegurl')
         self.proxy.send_header('Content-Length', len(resp_text))
         self.proxy.end_headers()
@@ -95,7 +92,7 @@ class ChannelRequestHandler():
     def resolveTS(self):
         ts = self.path.split('/')[3]
         for _ in range(0, 3):
-            effective_url = "http://jiotv.live.cdn.jio.com/{0}/{1}".format(
+            effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com/{0}/{1}".format(
                 self.channel_name, ts)
             resp = requests.get(effective_url)
             if resp.status_code == 200:
@@ -105,7 +102,7 @@ class ChannelRequestHandler():
                 ts = ts.replace(timestamp, str(int(timestamp)+2000))
 
         if resp.status_code == 200:
-            self.proxy.send_response(resp.status_code)
+            self.proxy.send_response(resp.status_code, 'OK')
             self.proxy.send_header('Content-Type', 'video/mp2t')
             self.proxy.send_header('Connection', 'keep-alive')
             self.proxy.send_header('Content-Length', len(resp.content))
@@ -120,36 +117,31 @@ class ChannelRequestHandler():
         effective_url = "https://tv.media.jio.com/streams_live/{0}/{1}".format(
             self.channel_name, key)
         if not headers:
-            with open(ADDONDATA + 'headers.json', 'r') as f:
-                headers = json.load(f)
+            headers = utils.getHeaders()
         resp = ChannelRequestHandler.make_requests(effective_url, headers)
-        self.proxy.send_response(resp.status_code)
+        self.proxy.send_response(resp.status_code, 'OK')
         self.proxy.send_header('Content-Type', 'application/octet-stream')
         self.proxy.send_header('Content-Length', len(resp.content))
         self.proxy.end_headers()
         self.proxy.wfile.write(resp.content)
+        self.proxy.wfile.close()
 
-    def getTS(self, text, full=False):
-        return re.search('\n(\d+\_\d+|\d+\-\d+)\.ts' if self.ishls else '\n' +
-                         self.channel_name+'(\_\d+\-\d+)\.ts', text) if full else re.search('\n(\d+\_|\d+\-)' if self.ishls else '\n' +
-                                                                                            self.channel_name+'(\_\d+\-)', text)
+    def getTS(self, text):
+        return re.search('\n(\d+\_|\d+\-)' if self.ishls else '\n' + self.channel_name+'(\_\d+\-)', text)
 
     def updateTS(self, text, quality=False):
         ts_re = '\n(\d+\_|\d+\-)' if self.ishls else '\n' + \
             self.channel_name+'(\_\d+\-)'
         if quality:
-            return re.sub(ts_re, '\nhttp://jiotv.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
-                self.hlsrx, self.channel_name, quality), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(quality), text)
-        return re.sub(ts_re, '\nhttp://jiotv.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
+            return re.sub(ts_re, '\nhttps://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
+                self.hlsrx, self.channel_name, quality), text) if self.ishls else re.sub(ts_re, '\n'+quality, text)
+        return re.sub(ts_re, '\nhttps://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
             self.hlsrx, self.channel_name, self.getTS(text).group()[1:]), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(self.getTS(text).group()[1:]), text)
 
     def updateKey(self, text, quality=False):
         if self.ishls:
             return text.replace('https://tv.media.jio.com/streams_live', 'http://snoidcdnems02.cdnsrv.jio.com/jiotv.live.cdn.jio.com/streams_live')
-        # key_re = self.channel_name+'(\_\d+\-\d+)\.key'
-        # key_find = re.search(key_re, text)
-        # quality = quality and re.sub('\_\d+\-', '_1200-', key_find.group())
-        return re.sub('([\w_\/:\.]*)(\_\d+\-)(\d+)\.key', '{0}{1}.key'.format(self.channel_name, '\\2\\3' if not quality else '_1200-\\3'), text)
+        return re.sub('([\w_\/:\.]*)(\_\d+\-)(\d+)\.key', '{0}{1}.key'.format(self.channel_name, '\\2\\3' if not quality else '_{0}-\\3'.format(self.maxq)), text)
 
     @staticmethod
     def make_requests(url, headers=False, stream=False, delay=6000):
@@ -220,8 +212,7 @@ class CatchupRequestHandler():
         effective_url = "https://tv.media.jio.com/streams_catchup/{0}/{1}/{2}".format(
             self.channel_name, mp4, key)
         if not headers:
-            with open(ADDONDATA + 'headers.json', 'r') as f:
-                headers = json.load(f)
+            headers = utils.getHeaders()
         resp = ChannelRequestHandler.make_requests(effective_url, headers)
         self.proxy.send_response(resp.status_code)
         self.proxy.send_header('Content-Type', 'application/octet-stream')
@@ -233,10 +224,8 @@ class CatchupRequestHandler():
 class JioTVProxy(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
     def do_GET(self):
+        self.protocol_version = 'HTTP/1.1'
         if 'catchup' in self.path:
             CatchupRequestHandler(self)
         else:
             ChannelRequestHandler(self)
-
-    def do_HEAD(self):
-        self.send_response(200)
