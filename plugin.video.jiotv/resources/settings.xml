@@ -5,11 +5,11 @@
         <setting label="32004" type="text" id="password" option="hidden"  enable="!eq(-1,)" default=""/>
         <setting label="32005" type="action" id="logout" action="RunPlugin(plugin://plugin.video.jiotv/logout)" option="close"/>
     </category>
+    <category label="32006">
+        <setting label="32007" type="select" id="quality" values="Low|Medium|High|STB" default="STB" />
+    </category>
     <category label="32008">
         <setting label="32009" type="action" id="pvrsetup" action="RunPlugin(plugin://plugin.video.jiotv/pvrsetup)" option="close"/>
-    </category>
-    <category label="Debug">
-        <setting label="32001" type="bool" id="debug" default="false"/>
     </category>
 </settings>
 
