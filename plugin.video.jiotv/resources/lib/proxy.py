@@ -16,6 +16,8 @@ from resources.lib import utils, kodiutils
 headers = utils.getHeaders()
 qmap = {"Low": "_LOW", "Medium": "_MED", "High": "_HIG", "STB": "_STB"}
 
+SERVER = "https://jiotv.live.cdn.jio.com"
+
 
 class ChannelRequestHandler():
 
@@ -53,8 +55,8 @@ class ChannelRequestHandler():
             self.proxy.end_headers()
 
     def getMaster(self):
-        effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}{2}/{1}{3}.m3u8".format(
-            self.hlsrx, self.channel_name, '_HLS' if self.ishls else '', self.quality)
+        effective_url = "{4}{0}/{1}{2}/{1}{3}.m3u8".format(
+            self.hlsrx, self.channel_name, '_HLS' if self.ishls else '', self.quality, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
         self.proxy.send_response(resp.status_code, 'OK')
         for key, val in resp.headers.items():
@@ -65,8 +67,8 @@ class ChannelRequestHandler():
 
     def getM3U8(self):
         m3u8 = self.path.split('/')[3]
-        effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}{2}/{3}".format(
-            self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8)
+        effective_url = "{4}{0}/{1}{2}/{3}".format(
+            self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
 
         ts = self.getTS(resp.text)
@@ -92,8 +94,8 @@ class ChannelRequestHandler():
     def resolveTS(self):
         ts = self.path.split('/')[3]
         for _ in range(0, 3):
-            effective_url = "https://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com/{0}/{1}".format(
-                self.channel_name, ts)
+            effective_url = "{2}/{0}/{1}".format(
+                self.channel_name, ts, SERVER)
             resp = requests.get(effective_url)
             if resp.status_code == 200:
                 break
@@ -133,14 +135,14 @@ class ChannelRequestHandler():
         ts_re = '\n(\d+\_|\d+\-)' if self.ishls else '\n' + \
             self.channel_name+'(\_\d+\-)'
         if quality:
-            return re.sub(ts_re, '\nhttps://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
-                self.hlsrx, self.channel_name, quality), text) if self.ishls else re.sub(ts_re, '\n'+quality, text)
-        return re.sub(ts_re, '\nhttps://sngprecdnems13.cdnsrv.jio.com/jiotvstb.live.cdn.jio.com{0}/{1}_HLS/{2}'.format(
-            self.hlsrx, self.channel_name, self.getTS(text).group()[1:]), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(self.getTS(text).group()[1:]), text)
+            return re.sub(ts_re, '\n{3}{0}/{1}_HLS/{2}'.format(
+                self.hlsrx, self.channel_name, quality, SERVER), text) if self.ishls else re.sub(ts_re, '\n'+quality, text)
+        return re.sub(ts_re, '\n{3}{0}/{1}_HLS/{2}'.format(
+            self.hlsrx, self.channel_name, self.getTS(text).group()[1:], SERVER), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(self.getTS(text).group()[1:]), text)
 
     def updateKey(self, text, quality=False):
         if self.ishls:
-            return text.replace('https://tv.media.jio.com/streams_live', 'http://snoidcdnems02.cdnsrv.jio.com/jiotv.live.cdn.jio.com/streams_live')
+            return text.replace('https://tv.media.jio.com/streams_live', SERVER+'/streams_live')
         return re.sub('([\w_\/:\.]*)(\_\d+\-)(\d+)\.key', '{0}{1}.key'.format(self.channel_name, '\\2\\3' if not quality else '_{0}-\\3'.format(self.maxq)), text)
 
     @staticmethod
