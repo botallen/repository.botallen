@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.botallen" name="BotAllen Repository" version="1.0.0" provider-name="botallen">
-    <extension point="xbmc.addon.repository" name="BotAllen Repository">
-        <info compressed="false">https://github.com/botallen/repository.botallen/raw/master/addons.xml</info>
-        <checksum>https://github.com/botallen/repository.botallen/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/botallen/repository.botallen/raw/master/</datadir>
+<addon id="plugin.video.tvfplay" name="TVF Play" version="1.0.0" provider-name="botallen">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Unofficial Addons for Kodi</summary>
-        <description></description>
+        <summary lang="en_GB">Play TVF Content in Kodi</summary>
+        <description lang="en_GB"></description>
+        <language></language>
         <platform>all</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>kodi.botallen.com</website>
+        <email>kodi@botallen.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <banner></banner>
-            <clearlogo></clearlogo>
-            <screenshot></screenshot>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.png</fanart>
         </assets>
     </extension>
 </addon>
 
-<addon id="plugin.video.jiotv" name="JioTV" version="1.0.8-3" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="1.0.8-4" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -56,30 +64,22 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.tvfplay" name="TVF Play" version="1.0.0" provider-name="botallen">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
+<addon id="repository.botallen" name="BotAllen Repository" version="1.0.0" provider-name="botallen">
+    <extension point="xbmc.addon.repository" name="BotAllen Repository">
+        <info compressed="false">https://github.com/botallen/repository.botallen/raw/master/addons.xml</info>
+        <checksum>https://github.com/botallen/repository.botallen/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/botallen/repository.botallen/raw/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Play TVF Content in Kodi</summary>
-        <description lang="en_GB"></description>
-        <language></language>
+        <summary>Unofficial Addons for Kodi</summary>
+        <description></description>
         <platform>all</platform>
-        <license>MIT</license>
-        <forum></forum>
-        <website>kodi.botallen.com</website>
-        <email>kodi@botallen.com</email>
-        <source></source>
-        <news></news>
-        <disclaimer></disclaimer>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.png</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo>
+            <screenshot></screenshot>
         </assets>
     </extension>
 </addon>
