@@ -8,25 +8,30 @@ import base64
 import re
 from urllib import urlencode
 import json
+import uuid
 import xbmc
+from datetime import datetime
+import random
 import xbmcaddon
 
 ADDON = xbmcaddon.Addon()
 ADDONDATA = xbmc.translatePath(ADDON.getAddonInfo('profile')).decode("utf-8")
+TOKEN_FILE_PATH = ADDONDATA + 'headers.json'
 
 
 def check_login():
     username = kodiutils.get_setting('username')
     password = kodiutils.get_setting('password')
 
-    if os.path.isfile(ADDONDATA + 'headers.json'):
+    # token is 5 days old ?
+    if os.path.isfile(TOKEN_FILE_PATH) and time.time() < os.path.getmtime(TOKEN_FILE_PATH) + 432000000:
         return True
-    elif username and password and not os.path.isfile(ADDONDATA + 'headers.json'):
+    elif username and password:
         login(username, password)
         return True
     else:
         kodiutils.notification(
-            'Login Error', 'You need to login with Jio Username and password to use this plugin')
+            'Login Error', 'You need to login with Jio Username and password to use this add-on')
         kodiutils.show_settings()
         return False
 
@@ -41,17 +46,17 @@ def login(username, password):
         headers = {
             "User-Agent": "JioTV Kodi",
             "os": "Kodi",
-            "deviceId": "6fcadeb7b4b10d77",
+            "deviceId": str(uuid.uuid4()),
             "versionCode": "226",
             "devicetype": "Kodi",
-            "srno": "200206173037",
+            "srno": datetime.today().strftime("%y%m%d%H%M%S"),  # "200206173037",
             "appkey": "NzNiMDhlYzQyNjJm",
-            "channelid": "100",
+            "channelid": str(random.randint(100, 200)),
             "usergroup": "tvYR7NSNn7rymo3F",
             "lbcookie": "1"
         }
         headers.update(_CREDS)
-        with open(ADDONDATA + 'headers.json', 'w+') as f:
+        with open(TOKEN_FILE_PATH, 'w+') as f:
             json.dump(headers, f, indent=4)
     else:
         kodiutils.notification('Login Failed', 'Invalid credentials')
@@ -76,9 +81,10 @@ def _hotstarauth_key():
     signature = hmac.new(secret, message, digestmod=hashlib.sha256).hexdigest()
     return '{}~hmac={}'.format(message, signature)
 
+
 def getHeaders():
-    if os.path.isfile(ADDONDATA + 'headers.json'):
-        with open(ADDONDATA + 'headers.json', 'r') as f:
+    if os.path.isfile(TOKEN_FILE_PATH):
+        with open(TOKEN_FILE_PATH, 'r') as f:
             headers = json.load(f)
         return headers
     return False

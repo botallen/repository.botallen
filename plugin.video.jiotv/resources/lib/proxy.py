@@ -47,18 +47,21 @@ class ChannelRequestHandler():
             elif ts_url:
                 self.resolveTS()
             else:
-                self.proxy.send_response(404)
+                self.proxy.send_response(404, "Not Found")
         except Exception, e:
             log(str(e), LOGNOTICE)
-            self.proxy.send_response(500)
-            self.proxy.send_header('Connection', 'close')
-            self.proxy.end_headers()
+            if(self.proxy):
+                self.proxy.send_response(
+                    500, "Internal Server Error")
 
     def getMaster(self):
         effective_url = "{4}{0}/{1}{2}/{1}{3}.m3u8".format(
             self.hlsrx, self.channel_name, '_HLS' if self.ishls else '', self.quality, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
-        self.proxy.send_response(resp.status_code, 'OK')
+        if resp.status_code == 411:
+            kodiutils.notification(
+                "Error", "JioTV can not be accessed from outside India")
+        self.proxy.send_response(resp.status_code, "OK")
         for key, val in resp.headers.items():
             self.proxy.send_header(key, val)
         # self.proxy.send_header('Content-Length', len(resp.content))
@@ -70,7 +73,9 @@ class ChannelRequestHandler():
         effective_url = "{4}{0}/{1}{2}/{3}".format(
             self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
-
+        if resp.status_code == 411:
+            kodiutils.notification(
+                "Error", "JioTV can not be accessed from outside India")
         ts = self.getTS(resp.text)
         while not ts or resp.status_code != 200:
             resp = ChannelRequestHandler.make_requests(effective_url)
@@ -87,6 +92,7 @@ class ChannelRequestHandler():
         resp_text = self.updateKey(resp_text, quality)
         self.proxy.send_response(resp.status_code, 'OK')
         self.proxy.send_header('Content-Type', 'application/vnd.apple.mpegurl')
+        self.proxy.send_header('Connection', 'keep-alive')
         self.proxy.send_header('Content-Length', len(resp_text))
         self.proxy.end_headers()
         self.proxy.wfile.write(resp_text)
@@ -110,6 +116,9 @@ class ChannelRequestHandler():
             self.proxy.send_header('Content-Length', len(resp.content))
             self.proxy.end_headers()
             self.proxy.wfile.write(resp.content)
+        elif resp.status_code == 411:
+            kodiutils.notification(
+                "Error", "JioTV can not be accessed from outside India")
         else:
             self.proxy.send_response(resp.status_code)
 
@@ -121,12 +130,15 @@ class ChannelRequestHandler():
         if not headers:
             headers = utils.getHeaders()
         resp = ChannelRequestHandler.make_requests(effective_url, headers)
+        if resp.status_code == 411:
+            kodiutils.notification(
+                "Error", "JioTV can not be accessed from outside India")
         self.proxy.send_response(resp.status_code, 'OK')
         self.proxy.send_header('Content-Type', 'application/octet-stream')
+        self.proxy.send_header('Connection', 'keep-alive')
         self.proxy.send_header('Content-Length', len(resp.content))
         self.proxy.end_headers()
         self.proxy.wfile.write(resp.content)
-        self.proxy.wfile.close()
 
     def getTS(self, text):
         return re.search('\n(\d+\_|\d+\-)' if self.ishls else '\n' + self.channel_name+'(\_\d+\-)', text)
