@@ -64,6 +64,58 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.1">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.codequick" version="0.9.10"/>
+        <import addon="script.module.inputstreamhelper" version="0.4.5"/>
+        <import addon="repository.botallen" version="1.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Stream Disney+ Hotstar Content In Kodi.</summary>
+        <description lang="en_GB">Disney+ Hotstar (erstwhile Hotstar) is India’s largest premium streaming platform that has changed the way Indians watch their entertainment - from their favourite TV shows and movies to sporting extravaganzas. With the widest range of content in India, Disney+ Hotstar offers more than 100,000 hours of TV Shows and Movies in 8 languages, regional and national News, and coverage of every major global sporting event, including the IPL. Disney+ Hotstar Premium has a large selection of Disney+ Originals, latest American shows, blockbuster Hollywood movies and award-winning content from International studios; whereas with Disney+ Hotstar VIP, users get access to Disney content in local languages, exclusive new content from the Hotstar Specials label, access to STAR network serials before television, and the latest and best of live sporting action. In its earlier avatar, the Hotstar mobile app has notched 400 Mn+ downloads, making it one of the most in-demand apps in India and also secured top spots on the Google Play Store as well as the Apple App Store. The app’s success reflects its highly evolved video streaming technology as well as the quality of experience across devices and platforms.</description>
+        <disclaimer lang="en_GB">This plugin is not officially commissioned/supported by Hotstar. The trademark "Hotstar" is registered by "Novi Digital Entertainment Private Limited (Novi)"</disclaimer>
+        <license>MIT</license>
+        <source>https://github.com/botallen/repository.botallen/tree/master/plugin.video.botallen.hotstar</source>
+        <website>https://kodi.botallen.com</website>
+        <email>kodi@botallen.com</email>
+        <platform>all</platform>
+        <language>en</language>
+        <assets>
+            <icon>resources/icon.jpg</icon>
+            <fanart>resources/fanart.png</fanart>
+            <screenshot>resources/screenshots/screenshot000.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot001.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot002.jpg</screenshot>
+        </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde" version="0.9.10">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.youtube.dl" version="18.0.0"/>
+        <import addon="script.module.htmlement" version="0.2.3"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
+        <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/willforde/script.module.codequick</source>
+        <email>willforde+codequick@gmail.com</email>
+        <platform>all</platform>
+        <language>en</language>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.botallen" name="BotAllen Repository" version="1.0.0" provider-name="botallen">
     <extension point="xbmc.addon.repository" name="BotAllen Repository">
         <info compressed="false">https://github.com/botallen/repository.botallen/raw/master/addons.xml</info>
