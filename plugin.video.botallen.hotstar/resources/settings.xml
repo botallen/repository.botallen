@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="General"><!--General-->
+  <setting label="Account" type="lsep"/><!--Account-->
+  <setting id="login" type="action" label="Login" action="RunPlugin(plugin://plugin.video.botallen.hotstar/resources/lib/main/login/)" option="close"/>
+  <setting id="logout" type="action" label="Logout" action="RunPlugin(plugin://plugin.video.botallen.hotstar/resources/lib/main/logout/)" option="close"/>
+  </category>
+</settings>

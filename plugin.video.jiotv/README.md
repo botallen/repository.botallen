@@ -12,7 +12,7 @@
 
 ## Download
 
-[**Download**](https://github.com/botallen/repository.botallen/blob/master/plugin.video.jiotv/plugin.video.jiotv-1.0.8.zip) the `.zip` file.
+[**Download**](https://github.com/botallen/repository.botallen/blob/master/plugin.video.jiotv/plugin.video.jiotv-1.0.8-5.zip) the `.zip` file.
 
 ## Status
 
