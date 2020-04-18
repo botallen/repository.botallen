@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.1">
+<addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.2">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.codequick" version="0.9.10"/>
@@ -22,9 +22,9 @@
         <assets>
             <icon>resources/icon.jpg</icon>
             <fanart>resources/fanart.png</fanart>
-            <screenshot>resources/screenshots/screenshot000.jpg</screenshot>
-            <screenshot>resources/screenshots/screenshot001.jpg</screenshot>
-            <screenshot>resources/screenshots/screenshot002.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot000.png</screenshot>
+            <screenshot>resources/screenshots/screenshot001.png</screenshot>
+            <screenshot>resources/screenshots/screenshot002.png</screenshot>
         </assets>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
