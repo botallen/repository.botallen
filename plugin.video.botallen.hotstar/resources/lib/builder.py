@@ -64,7 +64,8 @@ class Builder:
                     "IsPlayable": False
                 },
                 "params": {
-                    "url": url_constructor("/o/v1/multi/get/content?ids=") + ",".join([str(x.get("contentId")) for x in aItems]) if aItems else url_constructor("/o/v1/tray/e/%s/items?tao=0&tas=15" % each.get("id"))
+                    "url": url_constructor("/o/v1/tray/e/%s/items?tao=0&tas=15" % each.get("id")),
+                    # "url": url_constructor("/o/v1/multi/get/content?ids=") + ",".join([str(x.get("contentId")) for x in aItems]) if aItems else url_constructor("/o/v1/tray/e/%s/items?tao=0&tas=15" % each.get("id"))
                 }
             })
         if nextPageUrl:
