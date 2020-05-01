@@ -22,7 +22,7 @@ def clean_pyc(folder):
         abs_path = os.path.abspath(path)
         if os.path.isdir(abs_path):
             clean_pyc(abs_path)
-        elif path[-4:] == '.pyc':
+        elif path[-4:] == '.pyc' or path[-4:] == '.pyo':
             print('deleting <%s>' % abs_path)
             os.remove(abs_path)
     os.chdir(cwd)
