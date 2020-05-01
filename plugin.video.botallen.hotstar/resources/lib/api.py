@@ -7,6 +7,7 @@ from .contants import API_BASE_URL, BASE_HEADERS, url_constructor
 from codequick import Script
 from codequick.storage import PersistentDict
 from urllib import quote_plus
+from urlparse import urlparse, parse_qs
 import time
 import hashlib
 import hmac
@@ -61,9 +62,13 @@ class HotstarAPI:
     def getPlay(self, contentId, subtag, drm=False):
         url = url_constructor("/play/v1/playback/content/%s" % contentId)
         encryption = "widevine" if drm else "plain"
+        # Script.log(self._getPlayHeaders(), lvl=Script.INFO)
+        # Script.log(self._getPlayParams(subtag, encryption), lvl=Script.INFO)
         resp = self.get(
             url, headers=self._getPlayHeaders(), params=self._getPlayParams(subtag, encryption), max_age=-1)
         playBackSets = deep_get(resp, "data.playBackSets")
+        if playBackSets is None:
+            return None, None, None
         playbackUrl, licenceUrl, playbackProto = HotstarAPI._findPlayback(
             playBackSets, encryption)
         subtitleUrl = re.sub(
@@ -123,10 +128,12 @@ class HotstarAPI:
                 Script.notify("Subscription Error",
                               "You don't have valid subscription to watch this content")
             elif e.code == 401:
-                self._refreshToken()
-                # Script.notify("Token Expired",
-                #               "Try Again")
-                return self.get(url, **kwargs)
+                status = self._refreshToken()
+                if(status is True):
+                    return self.get(url, **kwargs)
+                else:
+                    Script.notify("Token Error", str(status))
+
             elif e.code == 474 or e.code == 475:
                 Script.notify(
                     "VPN Error", "Your VPN provider does not support Hotstar")
@@ -139,24 +146,36 @@ class HotstarAPI:
                 "API Error", "Raise issue if you are continuously facing this error")
 
     def _refreshToken(self):
-        with PersistentDict("userdata.pickle") as db:
-            oldToken = db.get("token")
-            if oldToken:
-                resp = self.get(url_constructor("/in/aadhar/v2/firetv/in/users/refresh-token"),
-                                headers={"userIdentity": oldToken, "deviceId": db.get("deviceId")})
-                new_token = deep_get(resp, "description.userIdentity")
-                db['token'] = new_token
+        try:
+            with PersistentDict("userdata.pickle") as db:
+                oldToken = db.get("token")
+                if oldToken:
+                    resp = self.session.get(url_constructor("/in/aadhar/v2/firetv/in/users/refresh-token"),
+                                            headers={"userIdentity": oldToken, "deviceId": db.get("deviceId")}, raise_for_status=False).json()
+                    if resp.get("errorCode"):
+                        return resp.get("message")
+                    new_token = deep_get(resp, "description.userIdentity")
+                    db['token'] = new_token
+                    return True
+                return "Token not found"
+        except Exception, e:
+            return e
 
     @staticmethod
-    def _getPlayHeaders(includeST=False):
+    def _getPlayHeaders(includeST=False, playbackUrl=None):
         with PersistentDict("userdata.pickle") as db:
             token = db.get("token")
+        if playbackUrl:
+            parsed_url = urlparse(playbackUrl)
+            qs = parse_qs(parsed_url.query)
+            hdnea = "hdnea=%s;" % qs.get("hdnea")[0]
         return {
             "hotstarauth": HotstarAPI._getAuth(includeST),
             "X-Country-Code": "in",
             "X-HS-AppVersion": "3.3.0",
             "X-HS-Platform": "firetv",
             "X-HS-UserToken": token,
+            "Cookie": playbackUrl and hdnea,
             "User-Agent": "Hotstar;in.startv.hotstar/3.3.0 (Android/8.1.0)"
         }
 
@@ -166,7 +185,7 @@ class HotstarAPI:
         st = int(time.time())
         exp = st + 6000
         auth = 'st=%d~exp=%d~acl=/*' % (st,
-                                        exp) if includeST else 'exp=%d~acl=*' % exp
+                                        exp) if includeST else 'exp=%d~acl=/*' % exp
         auth += '~hmac=' + hmac.new(_AKAMAI_ENCRYPTION_KEY,
                                     auth.encode(), hashlib.sha256).hexdigest()
         return auth
