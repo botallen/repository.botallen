@@ -51,7 +51,9 @@ def tray_list(plugin, url, search_query=False):
 def play_vod(plugin, contentId, subtag, label, drm=False):
     playbackUrl, licenceUrl, playbackProto = api.getPlay(
         contentId, subtag, drm)
-    return builder.buildPlay(playbackUrl, licenceUrl, playbackProto, label, drm)
+    if playbackUrl:
+        return builder.buildPlay(playbackUrl, licenceUrl, playbackProto, label, drm)
+    return False
 
 
 @Script.register

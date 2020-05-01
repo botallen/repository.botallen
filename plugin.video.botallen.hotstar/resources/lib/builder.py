@@ -80,7 +80,8 @@ class Builder:
     def buildPlay(self, playbackUrl, licenceUrl=None, playbackProto="mpd", label="", drm=False):
         is_helper = inputstreamhelper.Helper("mpd", drm=drm)
         if is_helper.check_inputstream():
-            stream_headers = HotstarAPI._getPlayHeaders()
+            stream_headers = HotstarAPI._getPlayHeaders(
+                playbackUrl=playbackUrl)
             return Listitem().from_dict(**{
                 "label": label,
                 "callback": playbackUrl,
