@@ -56,7 +56,8 @@ class HotstarAPI:
 
         items = results.get("items") or deep_get(
             results, "assets.items") or (results.get("map") and results.get("map").values())
-        nextPageUrl = results.get("nextOffsetURL")
+        nextPageUrl = deep_get(
+            results, "assets.nextOffsetURL") or results.get("nextOffsetURL")
         return items, nextPageUrl
 
     def getPlay(self, contentId, subtag, drm=False):
@@ -165,12 +166,14 @@ class HotstarAPI:
     def _getPlayHeaders(includeST=False, playbackUrl=None):
         with PersistentDict("userdata.pickle") as db:
             token = db.get("token")
+        auth = HotstarAPI._getAuth(includeST)
         if playbackUrl:
             parsed_url = urlparse(playbackUrl)
             qs = parse_qs(parsed_url.query)
             hdnea = "hdnea=%s;" % qs.get("hdnea")[0]
+            Script.log("hdnea=%s" % hdnea, lvl=Script.INFO)
         return {
-            "hotstarauth": HotstarAPI._getAuth(includeST),
+            "hotstarauth": auth,
             "X-Country-Code": "in",
             "X-HS-AppVersion": "3.3.0",
             "X-HS-Platform": "firetv",
