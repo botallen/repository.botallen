@@ -8,6 +8,12 @@
 
 <h4 align="center">BotAllen Kodi Repository</h4>
 
+<p align="center">
+ <a href="https://github.com/iMro0t/youtube-music/releases/latest">
+    <img src="https://img.shields.io/github/downloads/iMro0t/youtube-music/total">
+  </a>
+</p>
+
 <br>
 
 ## Install
