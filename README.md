@@ -2,39 +2,93 @@
   <br>
   <a href="https://github.com/botallen/repository.botallen"><img src="repository.botallen/icon2.png" height="60" width="60"></a>
   <br>
-  BotAllen Kodi
+  BotAllen
   <br>
 </h2>
 
 <h4 align="center">BotAllen Kodi Repository</h4>
 
 <p align="center">
- <a href="https://github.com/iMro0t/youtube-music/releases/latest">
-    <img src="https://img.shields.io/github/downloads/iMro0t/youtube-music/total">
+
+  <!-- Release -->
+  <a href="https://github.com/botallen/repository.botallen/releases/latest">
+    <img src="https://img.shields.io/github/v/release/botallen/repository.botallen?style=for-the-badge">
   </a>
-</p>
+  
+  <!-- Discord -->
+  <a href="https://discord.com/invite/bUDYtFP">
+    <img src="https://img.shields.io/discord/701304820530937954?color=%237289da&label=discord&style=for-the-badge&logo=discord">
+  </a>
+  
+  <!-- Downloads -->
+  <a href="https://github.com/botallen/repository.botallen/releases/latest">
+    <img src="https://img.shields.io/github/downloads/botallen/repository.botallen/total?style=for-the-badge">
+  </a>
+  
+ </p>
+ <p align="center">
+  
+  <!-- License -->
+  <a href="https://github.com/botallen/repository.botallen/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/botallen/repository.botallen?style=flat-square">
+  </a>
+  
+  <!-- Open Issues -->
+  <a href="https://github.com/botallen/repository.botallen/issues">
+    <img src="https://img.shields.io/github/issues/botallen/repository.botallen?style=flat-square">
+  </a>
+  
+  <!-- Last Commit -->
+  <a href="https://github.com/botallen/repository.botallen/commit/master">
+    <img src="https://img.shields.io/github/last-commit/botallen/repository.botallen?style=flat-square">
+  </a>
+  
+ </p>
+  
+
 
 <br>
 
+<h2 align="center">Add-ons</h2>
+
+<p align="center">
+<span style="display: inline-block;">
+  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotvplus">
+    <img src="plugin.video.jiotvplus/resources/icon.png" width="175" height="100">
+  </a>
+</span>
+  
+<span style="display: inline-block;">
+  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.botallen.hotstar">
+    <img src="plugin.video.botallen.hotstar/resources/icon.jpg" width="100" height="100">
+  </a>
+</span>
+
+<span style="display: inline-block;">
+  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.tvfplay">
+    <img src="plugin.video.tvfplay/resources/icon.png" width="100" height="100">
+  </a>
+</span>
+
+<span style="display: inline-block;">
+  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv">
+    <img src="plugin.video.jiotv/resources/icon.png" width="100" height="100">
+  </a>
+</span>
+</p>
+
 ## Install
 
-![GIF demo](media/install.gif)
+<img align="right" src="media/install.gif" height=250>
 
-1. Add this file source in file manager : https://kodi.botallen.com
-2. Click on Install From zip file
-3. Select repository.botallen-x.x.x.zip
-4. Done
-
-## Highlights
-
-- [Jiotv+ (Beta) add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotvplus)
-- [Disney+ Hotstar add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.botallen.hotstar)
-- [TVF Play add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.tvfplay)
-- [JioTV add-on](https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv)
+- Add this file source in file manager : https://kodi.botallen.com
+- Click on Install From zip file
+- Select repository.botallen-1.0.0.zip
+- Done
 
 ## Download
 
-[**Download**](https://github.com/botallen/repository.botallen/raw/master/repository.botallen/repository.botallen-1.0.0.zip) the `.zip` file.
+[**Download**](https://github.com/botallen/repository.botallen/releases/download/v1.0.0/repository.botallen-1.0.0.zip) the `.zip` file.
 
 ## Support
 
