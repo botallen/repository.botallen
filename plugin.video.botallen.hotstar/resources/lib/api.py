@@ -10,17 +10,13 @@ from urllib import quote_plus
 from urlparse import urlparse, parse_qs
 import time
 import hashlib
-import xbmcaddon
 import hmac
 import json
 import re
-import web_pdb
 from uuid import uuid4
 from base64 import b64decode
 
 # urlquick.cache_cleanup(-1)
-
-ADDON = xbmcaddon.Addon()
 
 def deep_get(dictionary, keys, default=None):
     return reduce(lambda d, key: d.get(key, default) if isinstance(d, dict) else default, keys.split("."), dictionary)
@@ -177,7 +173,6 @@ class HotstarAPI:
                         return resp.get("message")
                     new_token = deep_get(resp, "description.userIdentity")
                     db['token'] = new_token
-                    ADDON.setSettingString(id='token',value=new_token)
                     return True
                 return "Token not found"
         except Exception, e:

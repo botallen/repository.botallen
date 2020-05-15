@@ -69,6 +69,10 @@ def login(plugin):
         pdialog.update(i, line3="[B][UPPERCASE]%s[/UPPERCASE][/B]" % code)
     pdialog.close()
 
+@Script.register
+def loginfree(plugin):
+    api.doLoginFree()
+
 
 @Script.register
 def logout(plugin):
