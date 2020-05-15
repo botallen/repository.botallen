@@ -10,14 +10,17 @@ from urllib import quote_plus
 from urlparse import urlparse, parse_qs
 import time
 import hashlib
+import xbmcaddon
 import hmac
 import json
 import re
+import web_pdb
 from uuid import uuid4
 from base64 import b64decode
 
 # urlquick.cache_cleanup(-1)
 
+ADDON = xbmcaddon.Addon()
 
 def deep_get(dictionary, keys, default=None):
     return reduce(lambda d, key: d.get(key, default) if isinstance(d, dict) else default, keys.split("."), dictionary)
@@ -43,6 +46,7 @@ class HotstarAPI:
         return itmes, nextPageUrl
 
     def getTray(self, url, search_query=None):
+        
         if search_query:
             url = url_constructor("/s/v1/scout?q=%s&size=30" %
                                   quote_plus(search_query))
@@ -58,6 +62,7 @@ class HotstarAPI:
             results, "assets.items") or (results.get("map") and results.get("map").values())
         nextPageUrl = deep_get(
             results, "assets.nextOffsetURL") or results.get("nextOffsetURL")
+
         return items, nextPageUrl
 
     def getPlay(self, contentId, subtag, drm=False):
@@ -96,6 +101,21 @@ class HotstarAPI:
                 yield code, 100
                 break
             yield code, i
+
+
+    def doLoginFree(self):
+
+        token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1bV9hY2Nlc3MiLCJleHAiOjE1ODY3OTEzMzEsImlhdCI6MTU4NjcwNDkzMSwiaXNzIjoiVFMiLCJzdWIiOiJ7XCJjb3VudHJ5Q29kZVwiOlwiaW5cIixcImN1c3RvbWVyVHlwZVwiOlwibnVcIixcImRldmljZUlkXCI6XCI4OTUyYWE5ZS1mZGY5LTQ2ZTMtYjU2Mi1jNTViMzdjZTMyYTdcIixcImhJZFwiOlwiMDBkY2FkN2M4NmQ4NDJiNTgxYmU4Mjg4OTRjMWYyMzRcIixcImlwXCI6XCIxMDMuMjEyLjE0MS4yNFwiLFwiaXNFbWFpbFZlcmlmaWVkXCI6ZmFsc2UsXCJpc1Bob25lVmVyaWZpZWRcIjpmYWxzZSxcImlzc3VlZEF0XCI6MTU4NjcwNDkzMTUzMSxcIm5hbWVcIjpcIkd1ZXN0IFVzZXJcIixcInBJZFwiOlwiNTQ1ZmQzNmE1NWM4NGExNWFkOTE3OGNlYWFhZmI0YTBcIixcInByb2ZpbGVcIjpcIkFEVUxUXCIsXCJzdWJzY3JpcHRpb25zXCI6e1wiaW5cIjp7fX0sXCJ0eXBlXCI6XCJkZXZpY2VcIixcInZlcnNpb25cIjpcInYyXCJ9IiwidmVyc2lvbiI6IjFfMCJ9.X1uJowi4-4eVquBDdTis76pbH44gso1y16i5zKTwRfg"
+
+        with PersistentDict("userdata.pickle") as db:
+            db["token"] = token
+            db["deviceId"] = uuid4()
+            db["udata"] = json.loads(
+                b64decode(token.split(".")[1]+"========"))
+            db.flush()
+
+     	Script.notify("Login Free Success", "You have done Free Login")
+                
 
     def doLogout(self):
         with PersistentDict("userdata.pickle") as db:
@@ -157,6 +177,7 @@ class HotstarAPI:
                         return resp.get("message")
                     new_token = deep_get(resp, "description.userIdentity")
                     db['token'] = new_token
+                    ADDON.setSettingString(id='token',value=new_token)
                     return True
                 return "Token not found"
         except Exception, e:
