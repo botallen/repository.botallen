@@ -1,22 +1,33 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 
+# basic imports
 import re
-import json
 import time
-import requests
+import urlquick
 from urlparse import parse_qs, urlparse
 import SimpleHTTPServer
 import base64
-import threading
 import os
 from datetime import datetime
 import hashlib
-from xbmc import translatePath, log, LOGNOTICE
-from resources.lib import utils, kodiutils
+from random import randint
+
+# add-on imports
+from resources.lib import utils
+
+# codequick imports
+from codequick import Script
+from codequick.script import Settings
+from codequick.storage import PersistentDict
 
 headers = utils.getHeaders()
 qmap = {"Low": "_LOW", "Medium": "_MED", "High": "_HIG", "STB": "_STB"}
 
-SERVER = "https://jiotv.live.cdn.jio.com"
+_server = "jiotv.live.cdn.jio.com"
+cdn = ["http://sklktcdnems06.cdnsrv.jio.com", "http://sbglrcdnems01.cdnsrv.jio.com", "http://sklktcdnems05.cdnsrv.jio.com",
+       "http://sbglrcdnems03.cdnsrv.jio.com", "http://sptnacdnems03.cdnsrv.jio.com", "http://ssrigcdnems02.cdnsrv.jio.com"]
+SERVER = cdn[randint(0, 5)] + "/" + _server
 
 
 class ChannelRequestHandler():
@@ -31,11 +42,12 @@ class ChannelRequestHandler():
         ts_url = self.path.endswith('.ts')
         key_url = self.path.endswith('.key')
 
-        self.channel_name = self.path.split('/')[2]
-        self.ishls = 'hls' in self.params
+        self.ishls = 'packagerx' in self.path
+        self.channel_name = self.path.split(
+            '/')[3] if self.ishls else self.path.split('/')[2]
         self.maxq = 'maxq' in self.params and int(self.params['maxq'][0])
-        self.hlsrx = '' if not self.ishls else '/'+self.params['hls'][0]
-        self.quality = qmap[kodiutils.get_setting('quality')]
+        self.hlsrx = '' if not self.ishls else "/"+self.path.split('/')[2]
+        self.quality = qmap[Settings.get_string('quality')]
 
         try:
             if play_url:
@@ -43,72 +55,134 @@ class ChannelRequestHandler():
             elif m3u8_url:
                 self.getM3U8()
             elif key_url:
-                self.getKey()
+                self.resolveKey()
             elif ts_url:
                 self.resolveTS()
             else:
-                self.proxy.send_response(404, "Not Found")
+                Script.log("Resource not found by proxy", lvl=Script.INFO)
+                self.proxy.send_error(404, "Not Found")
         except Exception, e:
-            log(str(e), LOGNOTICE)
+            Script.log(e, lvl=Script.INFO)
             if(self.proxy):
-                self.proxy.send_response(
-                    500, "Internal Server Error")
+                self.proxy.send_error(500, "Internal Server Error")
+                self.proxy.wfile.write(str(e).encode("utf-8"))
 
     def getMaster(self):
         effective_url = "{4}{0}/{1}{2}/{1}{3}.m3u8".format(
             self.hlsrx, self.channel_name, '_HLS' if self.ishls else '', self.quality, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
         if resp.status_code == 411:
-            kodiutils.notification(
+            Script.notify(
                 "Error", "JioTV can not be accessed from outside India")
         self.proxy.send_response(resp.status_code, "OK")
-        for key, val in resp.headers.items():
-            self.proxy.send_header(key, val)
-        # self.proxy.send_header('Content-Length', len(resp.content))
+        for k, v in resp.headers.items():
+            self.proxy.send_header(k, v)
         self.proxy.end_headers()
-        self.proxy.wfile.write(resp.content)
+        self.proxy.wfile.write(resp.text)
 
     def getM3U8(self):
-        m3u8 = self.path.split('/')[3]
+        m3u8 = self.path.split('/')[-1]
         effective_url = "{4}{0}/{1}{2}/{3}".format(
             self.hlsrx, self.channel_name,  '_HLS' if self.ishls else '', m3u8, SERVER)
         resp = ChannelRequestHandler.make_requests(effective_url)
-        if resp.status_code == 411:
-            kodiutils.notification(
+        if resp.status_code == 411 or resp.status_code == 451:
+            Script.notify(
                 "Error", "JioTV can not be accessed from outside India")
-        ts = self.getTS(resp.text)
-        while not ts or resp.status_code != 200:
-            resp = ChannelRequestHandler.make_requests(effective_url)
-            ts = self.getTS(resp.text)
-
-        if not self.ishls:
-            rq = int(re.search('(.*?_)(\d+)\.m3u8', m3u8).group(2))
-            quality = rq >= self.maxq and re.sub(
-                '\_\d+\-', '_{0}-'.format(self.maxq), ts.group()[1:])
+            self.proxy.send_error(resp.status_code)
         else:
-            quality = m3u8[:1] + ts.group()[2:]
+            if self.ishls:
+                resp_text = self.refine(resp.text, quality=m3u8[:1])
+            else:
+                rq = int(re.search('(.*?_)(\d+)\.m3u8', m3u8).group(2))
+                quality = rq >= self.maxq and self.maxq
+                resp_text = self.refine(resp.text, quality)
 
-        resp_text = self.updateTS(resp.text, quality)
-        resp_text = self.updateKey(resp_text, quality)
-        self.proxy.send_response(resp.status_code, 'OK')
-        self.proxy.send_header('Content-Type', 'application/vnd.apple.mpegurl')
-        self.proxy.send_header('Connection', 'keep-alive')
-        self.proxy.send_header('Content-Length', len(resp_text))
-        self.proxy.end_headers()
-        self.proxy.wfile.write(resp_text)
+            self.proxy.send_response(resp.status_code, 'OK')
+            resp.headers.pop("Content-Length")
+            for k, v in resp.headers.items():
+                self.proxy.send_header(k, v)
+            self.proxy.send_header('Content-Length', len(resp_text))
+            self.proxy.end_headers()
+            self.proxy.wfile.write(resp_text)
+
+    def refine(self, text, quality=False):
+        if self.ishls:
+            rpls_regx = "{{0}}/{{1}}/{{2}}_HLS/{0}\g<2>".format(quality)
+            text = re.sub(
+                '(\d{1})([\-\_]?\d+\.ts)', rpls_regx.format(SERVER, self.hlsrx, self.channel_name), text)
+            return text.replace('https://tv.media.jio.com/streams_live', SERVER+'/streams_live')
+        elif quality:
+            rpls_regx = "_{}".format(quality) if quality else "_\g<1>"
+            text = re.sub('\_(\d{3,4})\-', rpls_regx+"-", text)
+            with PersistentDict("cache", ttl=180) as cache:
+                allkeys = re.findall(
+                    self.channel_name+"\_\d{3,4}\-\d{13}\.key", text)
+                Script.log("Found %d different keys" %
+                           len(allkeys), lvl=Script.INFO)
+                diff = None
+                for key in allkeys:
+                    original_timestamp = re.search(
+                        "\-(\d{13})\.key", key).group(1)
+                    if cache.get(key):
+                        timestamp, newIV = cache.get(key)
+                        Script.log("Using cached timestamp %s" %
+                                   timestamp, lvl=Script.DEBUG)
+                    elif diff:
+                        timestamp = int(original_timestamp) - int(diff)
+                        newIV = '0x%0*X' % (32, int(timestamp))
+                        cache[key] = (timestamp, newIV)
+                        Script.log("Using diff predicted timestamp %s" %
+                                   timestamp, lvl=Script.DEBUG)
+                    else:
+                        timestamp = self._find_valid_key(key)
+                        diff = int(original_timestamp) - int(timestamp)
+                        newIV = '0x%0*X' % (32, int(timestamp))
+                        cache[key] = (timestamp, newIV)
+                        Script.log("Using new valid timestamp %s" %
+                                   timestamp, lvl=Script.DEBUG)
+
+                    Script.log("Replacing old IV with %s" %
+                               newIV, lvl=Script.DEBUG)
+                    text = re.sub('(\_\d{{3,4}}\-){0}(\.key\",IV=)[\w\d]*'.format(original_timestamp),
+                                  "\g<1>{0}\g<2>{1}".format(timestamp, newIV), text)
+            return text.replace("https://tv.media.jio.com/streams_live/{0}/".format(self.channel_name), "")
+        else:
+            rpls_regx = "{0}/{1}/\g<1>".format(SERVER, self.channel_name)
+            text = re.sub(
+                '([\w_\/:\.]*\_\d{3,4}\-\d{13}\.ts)', rpls_regx, text)
+            return text
+            # text = re.sub(',IV=[\w\d]*', ",IV=0x00000000000000000000000000000000", text)
+            # return text.replace("https://tv.media.jio.com/streams_live/{0}/".format(self.channel_name), "")
+
+    def getTS(self, text):
+        return re.search('(\d+\_\d+\.ts|\d+\-\d+\.ts)' if self.ishls else '([\w_\/:\.]*\_\d{3,4}\-\d{13}\.ts)', text)
 
     def resolveTS(self):
-        ts = self.path.split('/')[3]
-        for _ in range(0, 3):
-            effective_url = "{2}/{0}/{1}".format(
-                self.channel_name, ts, SERVER)
-            resp = requests.get(effective_url)
-            if resp.status_code == 200:
-                break
-            elif resp.status_code == 404:
-                timestamp = ts[ts.index('-')+1:ts.index('.')]
-                ts = ts.replace(timestamp, str(int(timestamp)+2000))
+        ts = self.path.split('/')[-1]
 
+        effective_url = "{2}/{0}/{1}".format(
+            self.channel_name, ts, SERVER)
+        resp = urlquick.get(effective_url, raise_for_status=False, max_age=180)
+
+        if resp.status_code == 404:
+            with PersistentDict("cache") as cache:
+                if cache.get(ts):
+                    Script.log("Found cached ts effective url",
+                               lvl=Script.DEBUG)
+                    resp = urlquick.get(
+                        cache.get(ts), raise_for_status=False, max_age=180)
+                else:
+                    for i in range(1, 5):
+                        timestamp = re.search("\-(\d{13})\.ts", ts).group(1)
+                        ts = ts.replace(timestamp, str(int(timestamp)+(i*2000))
+                                        if i % 2 == 0 else str(int(timestamp)-(i*2000)))
+                        effective_url = "{2}/{0}/{1}".format(
+                            self.channel_name, ts, SERVER)
+                        resp = urlquick.get(
+                            effective_url, raise_for_status=False, max_age=180)
+                        if resp.status_code == 200:
+                            cache[ts] = effective_url
+                            break
         if resp.status_code == 200:
             self.proxy.send_response(resp.status_code, 'OK')
             self.proxy.send_header('Content-Type', 'video/mp2t')
@@ -116,52 +190,62 @@ class ChannelRequestHandler():
             self.proxy.send_header('Content-Length', len(resp.content))
             self.proxy.end_headers()
             self.proxy.wfile.write(resp.content)
-        elif resp.status_code == 411:
-            kodiutils.notification(
+        elif resp.status_code == 411 or resp.status_code == 451:
+            Script.notify(
                 "Error", "JioTV can not be accessed from outside India")
+            self.proxy.send_error(resp.status_code)
+        elif resp.status_code >= 400:
+            self.proxy.send_error(resp.status_code)
         else:
             self.proxy.send_response(resp.status_code)
 
-    def getKey(self):
+    def _find_valid_key(self, key):
         global headers
-        key = self.path.split('/')[3]
+        if not headers:
+            headers = utils.getHeaders()
+
+        for _ in range(1, 15):
+            effective_url = "https://tv.media.jio.com/streams_live/{0}/{1}".format(
+                self.channel_name, key)
+            resp = ChannelRequestHandler.make_requests(
+                effective_url, headers, max_age=urlquick.MAX_AGE)
+            timestamp = re.search("\-(\d{13})\.key", key).group(1)
+            if resp.status_code == 200:
+                return timestamp
+            elif resp.status_code == 404:
+                key = key.replace(timestamp, str(
+                    int(timestamp)+(_*2000)) if _ % 2 == 0 else str(int(timestamp)-(_*2000)))
+        return timestamp
+
+    def resolveKey(self):
+        global headers
+        key = self.path.split('/')[-1]
         effective_url = "https://tv.media.jio.com/streams_live/{0}/{1}".format(
             self.channel_name, key)
         if not headers:
             headers = utils.getHeaders()
-        resp = ChannelRequestHandler.make_requests(effective_url, headers)
-        if resp.status_code == 411:
-            kodiutils.notification(
+        resp = ChannelRequestHandler.make_requests(
+            effective_url, headers, max_age=urlquick.MAX_AGE)
+
+        if resp.status_code == 411 or resp.status_code == 451:
+            Script.notify(
                 "Error", "JioTV can not be accessed from outside India")
-        self.proxy.send_response(resp.status_code, 'OK')
-        self.proxy.send_header('Content-Type', 'application/octet-stream')
-        self.proxy.send_header('Connection', 'keep-alive')
-        self.proxy.send_header('Content-Length', len(resp.content))
-        self.proxy.end_headers()
-        self.proxy.wfile.write(resp.content)
-
-    def getTS(self, text):
-        return re.search('\n(\d+\_|\d+\-)' if self.ishls else '\n' + self.channel_name+'(\_\d+\-)', text)
-
-    def updateTS(self, text, quality=False):
-        ts_re = '\n(\d+\_|\d+\-)' if self.ishls else '\n' + \
-            self.channel_name+'(\_\d+\-)'
-        if quality:
-            return re.sub(ts_re, '\n{3}{0}/{1}_HLS/{2}'.format(
-                self.hlsrx, self.channel_name, quality, SERVER), text) if self.ishls else re.sub(ts_re, '\n'+quality, text)
-        return re.sub(ts_re, '\n{3}{0}/{1}_HLS/{2}'.format(
-            self.hlsrx, self.channel_name, self.getTS(text).group()[1:], SERVER), text) if self.ishls else re.sub(ts_re, '\n{0}'.format(self.getTS(text).group()[1:]), text)
-
-    def updateKey(self, text, quality=False):
-        if self.ishls:
-            return text.replace('https://tv.media.jio.com/streams_live', SERVER+'/streams_live')
-        return re.sub('([\w_\/:\.]*)(\_\d+\-)(\d+)\.key', '{0}{1}.key'.format(self.channel_name, '\\2\\3' if not quality else '_{0}-\\3'.format(self.maxq)), text)
+            self.proxy.send_error(resp.status_code)
+        elif resp.status_code >= 400:
+            self.proxy.send_error(resp.status_code)
+        else:
+            self.proxy.send_response(resp.status_code, 'OK')
+            self.proxy.send_header('Content-Type', 'application/octet-stream')
+            self.proxy.send_header('Connection', 'keep-alive')
+            self.proxy.send_header('Content-Length', len(resp.content))
+            self.proxy.end_headers()
+            self.proxy.wfile.write(resp.content)
 
     @staticmethod
-    def make_requests(url, headers=False, stream=False, delay=6000):
+    def make_requests(url, headers=False, delay=6000, max_age=-1, **kwargs):
         params = ChannelRequestHandler.getTokenParams(delay=delay)
         headers = headers or {"User-Agent": "jiotv"}
-        return requests.get(url, params=params, headers=headers, stream=stream)
+        return urlquick.get(url, params=params, headers=headers, max_age=max_age, raise_for_status=False, **kwargs)
 
     @staticmethod
     def getTokenParams(delay):
@@ -172,74 +256,16 @@ class ChannelRequestHandler():
         return {"jct": jct, "pxe": pxe, "st": "9p-O_v1qIyd6E-rf8_gEOQ"}
 
 
-class CatchupRequestHandler():
-
-    def __init__(self, proxy):
-        self.proxy = proxy
-        p = urlparse(proxy.path)
-        self.path = p.path
-        self.params = parse_qs(p.query)
-
-        self.channel_name = self.path.split('/')[2]
-        self.startEpoch = 0 if not 'startEpoch' in self.params else int(
-            self.params['startEpoch'][0])
-
-        try:
-            if self.path.endswith('.m3u8'):
-                self.getM3U8()
-            elif self.path.endswith('.key'):
-                self.getKey()
-            else:
-                self.proxy.send_response(404)
-        except Exception, e:
-            log(str(e), LOGNOTICE)
-            self.proxy.send_response(500)
-            self.proxy.send_header('Connection', 'close')
-            self.proxy.end_headers()
-
-    def getM3U8(self):
-        timestr = datetime.fromtimestamp(
-            int(self.startEpoch*.001)).strftime('%d_%m_%y_%H_%M')
-        self.mp4 = '{0}_4000_{1}.mp4'.format(self.channel_name, timestr)
-        catchup_url = "http://jiotv.catchup.cdn.jio.com/{0}/{1}/index-v1-a1.m3u8".format(
-            self.channel_name, self.mp4)
-        resp = ChannelRequestHandler.make_requests(catchup_url, delay=10)
-        resp_text = self.updateTS(resp.text)
-        resp_text = self.updateKey(resp_text)
-        self.proxy.send_response(resp.status_code)
-        self.proxy.send_header('Content-Type', 'application/vnd.apple.mpegurl')
-        self.proxy.send_header('Content-Length', len(resp_text))
-        self.proxy.end_headers()
-        self.proxy.wfile.write(resp_text)
-
-    def updateTS(self, text):
-        ts_re = '\n(seg\-\d+\-)'
-        return re.sub(ts_re, '\nhttp://jiotv.catchup.cdn.jio.com/{0}/{1}/\\1'.format(self.channel_name, self.mp4), text)
-
-    def updateKey(self, text):
-        return text.replace('https://tv.media.jio.com/streams_catchup/{0}/'.format(self.channel_name), '')
-
-    def getKey(self):
-        global headers
-        mp4 = self.path.split('/')[3]
-        key = self.path.split('/')[4]
-        effective_url = "https://tv.media.jio.com/streams_catchup/{0}/{1}/{2}".format(
-            self.channel_name, mp4, key)
-        if not headers:
-            headers = utils.getHeaders()
-        resp = ChannelRequestHandler.make_requests(effective_url, headers)
-        self.proxy.send_response(resp.status_code)
-        self.proxy.send_header('Content-Type', 'application/octet-stream')
-        self.proxy.send_header('Content-Length', len(resp.content))
-        self.proxy.end_headers()
-        self.proxy.wfile.write(resp.content)
-
-
 class JioTVProxy(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         self.protocol_version = 'HTTP/1.1'
-        if 'catchup' in self.path:
-            CatchupRequestHandler(self)
-        else:
+        try:
             ChannelRequestHandler(self)
+        except Exception, e:
+            Script.log(e, lvl=Script.DEBUG)
+            pass
+
+    def do_HEAD(self):
+        self.protocol_version = 'HTTP/1.1'
+        self.send_response(200, "OK")

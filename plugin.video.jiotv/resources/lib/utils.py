@@ -1,44 +1,50 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 import os
-import kodiutils
-import requests
-import hmac
-import time
-import hashlib
-import base64
-import re
-from urllib import urlencode
+import urlquick
 import json
-import uuid
-import xbmc
-from datetime import datetime
-import random
-import xbmcaddon
-
-ADDON = xbmcaddon.Addon()
-ADDONDATA = xbmc.translatePath(ADDON.getAddonInfo('profile')).decode("utf-8")
-TOKEN_FILE_PATH = ADDONDATA + 'headers.json'
+from uuid import uuid4
+from functools import wraps
+from codequick import Script
+from codequick.script import Settings
+from codequick.storage import PersistentDict
+from xbmc import executebuiltin
 
 
-def check_login():
-    username = kodiutils.get_setting('username')
-    password = kodiutils.get_setting('password')
+def isLoggedIn(func):
+    """
+    Decorator to ensure that a valid login is present when calling a method
+    """
+    @wraps(func)
+    def login_wrapper(*args, **kwargs):
 
-    # token is 5 days old ?
-    if os.path.isfile(TOKEN_FILE_PATH) and time.time() < os.path.getmtime(TOKEN_FILE_PATH) + 432000000:
-        return True
-    elif username and password:
-        login(username, password)
-        return True
-    else:
-        kodiutils.notification(
-            'Login Error', 'You need to login with Jio Username and password to use this add-on')
-        kodiutils.show_settings()
-        return False
+        with PersistentDict("creds") as db:
+            username = db.get("username")
+            password = db.get("password")
+
+        # token is 5 days old ?
+        with PersistentDict("headers") as db:
+            headers = db.get("headers")
+        if headers:
+            return func(*args, **kwargs)
+        elif username and password:
+            login(username, password)
+            return func(*args, **kwargs)
+        else:
+            Script.notify(
+                'Login Error', 'You need to login with Jio Username and password to use this add-on')
+            executebuiltin(
+                "RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/login/)")
+            return False
+    return login_wrapper
 
 
 def login(username, password):
-    resp = requests.post(
-        "https://api.jio.com/v3/dip/user/unpw/verify", headers={"x-api-key": "l7xx938b6684ee9e4bbe8831a9a682b8e19f"}, json={"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T", "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}})
+    body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
+            "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
+    resp = urlquick.post(
+        "https://api.jio.com/v3/dip/user/unpw/verify", headers={"x-api-key": "l7xx938b6684ee9e4bbe8831a9a682b8e19f"}, json=body, verify=False)
     if resp.status_code == 200 and resp.json()['ssoToken']:
         data = resp.json()
         _CREDS = {"ssotoken": data['ssoToken'], "userId": data['sessionAttributes']['user']['uid'],
@@ -46,45 +52,27 @@ def login(username, password):
         headers = {
             "User-Agent": "JioTV Kodi",
             "os": "Kodi",
-            "deviceId": str(uuid.uuid4()),
+            "deviceId": str(uuid4()),
             "versionCode": "226",
             "devicetype": "Kodi",
-            "srno": datetime.today().strftime("%y%m%d%H%M%S"),  # "200206173037",
+            "srno": "200206173037",
             "appkey": "NzNiMDhlYzQyNjJm",
-            "channelid": str(random.randint(100, 200)),
+            "channelid": "100",
             "usergroup": "tvYR7NSNn7rymo3F",
             "lbcookie": "1"
         }
         headers.update(_CREDS)
-        with open(TOKEN_FILE_PATH, 'w+') as f:
-            json.dump(headers, f, indent=4)
+        with PersistentDict("headers", ttl=432000) as db:
+            db["headers"] = headers
     else:
-        kodiutils.notification('Login Failed', 'Invalid credentials')
+        Script.notify('Login Failed', 'Invalid credentials')
 
 
-def _hotstarauth_key():
-    def keygen(t):
-        e = ""
-        n = 0
-        while len(t) > n:
-            r = t[n] + t[n + 1]
-            o = int(re.sub(r"[^a-f0-9]", "", r + "", re.IGNORECASE), 16)
-            e += chr(o)
-            n += 2
-
-        return e
-
-    start = int(time.time())
-    expiry = start + 6000
-    message = "st={}~exp={}~acl=/*".format(start, expiry)
-    secret = keygen("05fc1a01cac94bc412fc53120775f9ee")
-    signature = hmac.new(secret, message, digestmod=hashlib.sha256).hexdigest()
-    return '{}~hmac={}'.format(message, signature)
+def logout():
+    with PersistentDict("headers") as db:
+        del db["headers"]
 
 
 def getHeaders():
-    if os.path.isfile(TOKEN_FILE_PATH):
-        with open(TOKEN_FILE_PATH, 'r') as f:
-            headers = json.load(f)
-        return headers
-    return False
+    with PersistentDict("headers") as db:
+        return db.get("headers", False)
