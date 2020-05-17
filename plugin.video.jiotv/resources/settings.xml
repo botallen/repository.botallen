@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="32002">
-        <setting label="32003" type="text" id="username" default=""/>
-        <setting label="32004" type="text" id="password" option="hidden"  enable="!eq(-1,)" default=""/>
-        <setting label="32005" type="action" id="logout" action="RunPlugin(plugin://plugin.video.jiotv/logout)" option="close"/>
+        <setting id="login" type="action" label="Login" action="RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/login/)" option="close"/>
+        <setting id="logout" type="action" label="Logout" action="RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/logout/)" option="close"/>
     </category>
     <category label="32006">
         <setting label="32007" type="select" id="quality" values="Low|Medium|High|STB" default="STB" />
     </category>
     <category label="32008">
-        <setting label="32009" type="action" id="pvrsetup" action="RunPlugin(plugin://plugin.video.jiotv/pvrsetup)" option="close"/>
+        <setting label="32009" type="action" id="pvrsetup" action="RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/pvrsetup/)" option="close"/>
+    </category>
+    <category label="Languages">
+        <setting id="Hindi" type="bool" label="Hindi" default="true"/>
+        <setting id="English" type="bool" label="English" default="true"/>
+        <setting id="Marathi" type="bool" label="Marathi" default="true"/>
+        <setting id="Telugu" type="bool" label="Telugu" default="true"/>
+        <setting id="Kannada" type="bool" label="Kannada" default="true"/>
+        <setting id="Tamil" type="bool" label="Tamil" default="true"/>
+        <setting id="Punjabi" type="bool" label="Punjabi" default="true"/>
+        <setting id="Gujarati" type="bool" label="Gujarati" default="true"/>
+        <setting id="Bengali" type="bool" label="Bengali" default="true"/>
+        <setting id="Bhojpuri" type="bool" label="Bhojpuri" default="true"/>
+        <setting id="Malayalam" type="bool" label="Malayalam" default="true"/>
+        <setting id="Odia" type="bool" label="Odia" default="true"/>
+        <setting id="Assamese" type="bool" label="Assamese" default="true"/>
+        <setting id="Urdu" type="bool" label="Urdu" default="true"/>
+        <setting id="Nepali" type="bool" label="Nepali" default="true"/>
     </category>
 </settings>
 

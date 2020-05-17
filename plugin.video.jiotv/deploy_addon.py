@@ -22,7 +22,7 @@ def clean_pyc(folder):
         abs_path = os.path.abspath(path)
         if os.path.isdir(abs_path):
             clean_pyc(abs_path)
-        elif path[-4:] == '.pyc':
+        elif path[-4:] == '.pyc' or path[-4:] == '.pyo':
             print('deleting <%s>' % abs_path)
             os.remove(abs_path)
     os.chdir(cwd)
@@ -45,7 +45,7 @@ def create_zip(zip_name, root_dir, addon_name):
                     addon_name, os.path.relpath(path, base_path)))
             for name in filenames:
                 path = os.path.normpath(os.path.join(dirpath, name))
-                if os.path.isfile(path) and not path.endswith(".zip") and not path.endswith("deploy_addon.py"):
+                if os.path.isfile(path) and not path.endswith(".zip") and not path.endswith("deploy_addon.py") and not path.endswith("channels.json"):
                     print("+ <%s>" % path)
                     zf.write(path, os.path.join(
                         addon_name, os.path.relpath(path, base_path)))
