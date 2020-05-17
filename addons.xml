@@ -51,7 +51,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde" version="0.9.11">
+<addon id="script.module.codequick" name="CodeQuick" provider-name="willforde, botallen" version="0.9.12-botallen">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.youtube.dl" version="18.0.0"/>
@@ -128,15 +128,14 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.jiotv" name="JioTV" version="1.0.8-5" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="2.0.0" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" />
+        <import addon="script.module.codequick"/>
         <import addon="script.module.inputstreamhelper"/>
         <import addon="repository.botallen" version="1.0.0" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
+    <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py"/>
@@ -151,16 +150,18 @@
         <email>kodi@botallen.com</email>
         <source>https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv</source>
         <news>
-	  1.0.8 (2020-03-17)
-      [added] Star sports channels are working now #3 (major)
-      [added] Catchup support for upto 7 days of shows (major)
-      [added] categories icons (minor)
+[- 2.0.0 -]
+
+[fixed] All major issues related to playback almost solved
+[added] Categorized by Language
+[added] Filter channels by specific language in genre. (from settings)
 	    </news>
         <disclaimer>This is a third-party add-on and is not affiliated with Jio.</disclaimer>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
 </addon>
 </addons>
