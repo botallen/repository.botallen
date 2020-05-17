@@ -70,8 +70,8 @@ def login(plugin):
     pdialog.close()
 
 @Script.register
-def loginfree(plugin):
-    api.doLoginFree()
+def loginguest(plugin):
+    api.doLoginGuest()
 
 
 @Script.register
