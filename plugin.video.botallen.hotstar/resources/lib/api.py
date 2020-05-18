@@ -2,8 +2,10 @@
 from __future__ import unicode_literals
 
 import urlquick
+from xbmc import executebuiltin
 from functools import reduce
 from .contants import API_BASE_URL, BASE_HEADERS, url_constructor
+import resources.lib.utils as U
 from codequick import Script
 from codequick.storage import PersistentDict
 from urllib import quote_plus
@@ -92,6 +94,7 @@ class HotstarAPI:
                     db["deviceId"] = uuid4()
                     db["udata"] = json.loads(
                         b64decode(token.split(".")[1]+"========"))
+                    del db["isGuest"]
                     db.flush()
                 yield code, 100
                 break
@@ -109,7 +112,7 @@ class HotstarAPI:
             return response.json()
         except Exception, e:
             # Script.log(e, lvl=Script.INFO)
-            self._handleError(e, url, **kwargs)
+            self._handleError(e, url, "get", **kwargs)
 
     def post(self, url, **kwargs):
         try:
@@ -117,21 +120,31 @@ class HotstarAPI:
             return response.json()
         except Exception, e:
             # Script.log(e, lvl=Script.INFO)
-            self._handleError(e, url, **kwargs)
+            self._handleError(e, url, "post", **kwargs)
 
-    def _handleError(self, e, url, **kwargs):
+    def _handleError(self, e, url, _rtype, **kwargs):
         if e.__class__.__name__ == "ValueError":
             Script.log("Can not parse response of request url %s" %
                        url, lvl=Script.INFO)
             Script.notify("Internal Error", "")
         elif e.__class__.__name__ == "HTTPError":
             if e.code == 402:
-                Script.notify("Subscription Error",
-                              "You don't have valid subscription to watch this content")
+                with PersistentDict("userdata.pickle") as db:
+                    if db.get("isGuest"):
+                        Script.notify(
+                            "Login Error", "Please login to watch this content")
+                        executebuiltin(
+                            "RunPlugin(plugin://plugin.video.botallen.hotstar/resources/lib/main/login/)")
+                    else:
+                        Script.notify(
+                            "Subscription Error", "You don't have valid subscription to watch this content")
             elif e.code == 401:
                 status = self._refreshToken()
-                if(status is True):
-                    return self.get(url, **kwargs)
+                if status is True:
+                    if _rtype == "get":
+                        return self.get(url, **kwargs)
+                    else:
+                        return self.post(url, **kwargs)
                 else:
                     Script.notify("Token Error", str(status))
 
@@ -196,7 +209,7 @@ class HotstarAPI:
     @staticmethod
     def _getPlayParams(subTag="", encryption="widevine"):
         with PersistentDict("userdata.pickle") as db:
-            deviceId = db.get("deviceId")
+            deviceId = db.get("deviceId") or uuid4()
         return {
             "os-name": "firetv",
             "desired-config": "audio_channel:stereo|encryption:%s|ladder:tv|package:dash|%svideo_codec:h264" % (encryption, subTag or ""),
