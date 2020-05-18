@@ -10,10 +10,6 @@
 
 <br>
 
-## Download
-
-[**Download**](https://github.com/botallen/repository.botallen/blob/master/plugin.video.botallen.hotstar/plugin.video.botallen.hotstar-0.0.1.zip) the `.zip` file.
-
 ## Disclaimer
 
 This plugin is not officially commissioned/supported by Hotstar. The trademark "Hotstar" is registered by "Novi Digital Entertainment Private Limited (Novi)"
