@@ -112,7 +112,7 @@ class HotstarAPI:
             return response.json()
         except Exception, e:
             # Script.log(e, lvl=Script.INFO)
-            self._handleError(e, url, "get", **kwargs)
+            return self._handleError(e, url, "get", **kwargs)
 
     def post(self, url, **kwargs):
         try:
@@ -120,7 +120,7 @@ class HotstarAPI:
             return response.json()
         except Exception, e:
             # Script.log(e, lvl=Script.INFO)
-            self._handleError(e, url, "post", **kwargs)
+            return self._handleError(e, url, "post", **kwargs)
 
     def _handleError(self, e, url, _rtype, **kwargs):
         if e.__class__.__name__ == "ValueError":
@@ -139,20 +139,23 @@ class HotstarAPI:
                         Script.notify(
                             "Subscription Error", "You don't have valid subscription to watch this content")
             elif e.code == 401:
-                status = self._refreshToken()
-                if status is True:
+                new_token = self._refreshToken()
+                if new_token:
+                    kwargs.get("headers") and kwargs['headers'].update(
+                        {"X-HS-UserToken": new_token})
                     if _rtype == "get":
                         return self.get(url, **kwargs)
                     else:
                         return self.post(url, **kwargs)
                 else:
-                    Script.notify("Token Error", str(status))
+                    Script.notify("Token Error", "Token not found")
 
             elif e.code == 474 or e.code == 475:
                 Script.notify(
                     "VPN Error", "Your VPN provider does not support Hotstar")
             else:
                 raise urlquick.HTTPError(e.filename, e.code, e.msg, e.hdrs)
+            return
         else:
             Script.log("Got unexpected response for request url %s" %
                        url, lvl=Script.INFO)
@@ -165,13 +168,14 @@ class HotstarAPI:
                 oldToken = db.get("token")
                 if oldToken:
                     resp = self.session.get(url_constructor("/in/aadhar/v2/firetv/in/users/refresh-token"),
-                                            headers={"userIdentity": oldToken, "deviceId": db.get("deviceId")}, raise_for_status=False).json()
+                                            headers={"userIdentity": oldToken, "deviceId": db.get("deviceId", uuid4())}, raise_for_status=False, max_age=-1).json()
                     if resp.get("errorCode"):
                         return resp.get("message")
                     new_token = deep_get(resp, "description.userIdentity")
                     db['token'] = new_token
-                    return True
-                return "Token not found"
+                    db.flush()
+                    return new_token
+            return False
         except Exception, e:
             return e
 
