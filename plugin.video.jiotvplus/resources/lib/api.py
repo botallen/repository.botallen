@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import urlquick
 from functools import reduce
-from .contants import BASE_HEADERS, url_constructor
+from .contants import BASE_HEADERS, url_constructor, CHANNELS_SRC, PLAY_URL, CHANNELS_FILTER
 from codequick import Script
 from codequick.script import Settings
 from codequick.storage import PersistentDict
@@ -33,20 +33,26 @@ class JioAPI:
             "totalPages") - 1 > int(url[-1:]) and url[:-1] + str(int(url[-1:])+1)
         return results.get("data"), nextPageUrl
 
-    def getTray(self, url, search_query=None):
+    def getTray(self, url, search_query=None, post_json=None, isCarousal=False):
         if search_query:
             url = url_constructor(
                 "/apis/2ccce09e59153fc9/v1/plus-search/search")
             results = self.post(url, json={"q": search_query})
             results['data']['items'] = [x for y in deep_get(
                 results, "data.items") for x in y.get("items")]
+        elif post_json:
+            results = self.post(url, json=post_json)
         else:
             results = self.get(url)
+            if isCarousal:
+                results["data"] = list(
+                    filter(lambda x: x.get("isCarousal"), results.get("data")))[0]
+                del results["totalPages"]
         xitems = []
         if deep_get(results, "data.items"):
             items = deep_get(results, "data.items")
             for each in items:
-                if deep_get(each, "app.type") == 16 or deep_get(each, "app.type") == 19:
+                if deep_get(each, "app.type") == 16 or deep_get(each, "app.type") == 19 or deep_get(each, "app.type") == 10:
                     xitems.append(each)
                 else:
                     xitems.append(self.get(url_constructor(
@@ -129,17 +135,17 @@ class JioAPI:
 
     def doLogin(self):
         try:
-            username = Settings.get_string("username", "plugin.video.jiotvx") or Dialog().input(
+            username = Settings.get_string("username", "plugin.video.jiotv") or Dialog().input(
                 "Username (MobileNo / Email)")
             password = Settings.get_string(
-                "password", "plugin.video.jiotvx") or Dialog().input("Password")
+                "password", "plugin.video.jiotv") or Dialog().input("Password")
         except RuntimeError:
             username = Dialog().input("Username (MobileNo / Email)")
             password = Dialog().input("Password")
         if username and password:
-            body = {"identifier": username if "@" in username else "+91" + username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T", "deviceInfo": {
-                "consumptionDeviceName": "unknown sdk_google_atv_x86", "info": {"type": "android", "platform": {"name": "generic_x86", "version": "8.1.0"}, "androidId": str(uuid4())}}}
-            resp = self.post(
+            body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
+                    "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
+            resp = urlquick.post(
                 "https://api.jio.com/v3/dip/user/unpw/verify", json=body, headers={"x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"})
             if resp.get("ssoToken"):
                 with PersistentDict("userdata.pickle") as db:
@@ -256,20 +262,8 @@ class JioAPI:
 
     @staticmethod
     def getLiveUrl(Id):
-        headers, body = JioAPI._getPlayHeaders()
-        body["id"] = str(Id)
-        body["deviceType"] = "tv"
-        resp = urlquick.post(url_constructor(
-            "/apis/2ccce09e59153fc9/v1/plus-playbackrights/get/%s" % Id), headers=headers, json=body, max_age=-1, raise_for_status=False)
-        Script.log("response %s" % resp.text, lvl=Script.INFO)
-        if resp.status_code == 200 and resp.json().get("code") == 200:
-            resp = resp.json()
-            playbackUrl = deep_get(resp, "mpd.auto")
-            licenseUrl = resp.get("keyUrl")
-            params = "jct=%s&pxe=%s&st=%s" % (
-                resp.get("jct"), resp.get("pxe"), resp.get("st"))
-            Script.log(playbackUrl, lvl=Script.INFO)
-            Script.log(licenseUrl, lvl=Script.INFO)
-            if playbackUrl and licenseUrl:
-                return playbackUrl+"?%s" % params, licenseUrl + "&%s" % params
-        return None, None
+        resp = urlquick.get(CHANNELS_SRC).json()
+        if Id in CHANNELS_FILTER:
+            Id = CHANNELS_FILTER[Id]
+        l = [x for x in resp if x.get("id") == int(Id)]
+        return len(l) > 0 and PLAY_URL + l[0].get("data")
