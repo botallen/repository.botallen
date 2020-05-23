@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import urlquick
 from functools import reduce
 from .contants import BASE_HEADERS, url_constructor, CHANNELS_SRC, PLAY_URL, CHANNELS_FILTER
+from .utils import check_addon
 from codequick import Script
 from codequick.script import Settings
 from codequick.storage import PersistentDict
@@ -94,8 +95,8 @@ class JioAPI:
                 playUri, headers={"x-country-code": "in", "x-platform-code": "tv"}, raise_for_status=False).json()
             playbackUrl = deep_get(playbackUrl, "body.results.playbackUrl")
             if not playbackUrl:
-                Script.notify("Hotstar Restricted Content",
-                              "This feature will be available soon")
+                if check_addon("plugin.video.botallen.hotstar", "0.0.25"):
+                    return {"ext": "plugin://plugin.video.botallen.hotstar/resources/lib/main/play_ext/?_pickle_=", "contentId": extId}
                 return None
             headers = {"hotstarauth": playbackUrl.split(
                 "hdnea=")[-1], "User-Agent": "Hotstar;in.startv.hotstar/3.3.0 (Android/8.1.0)"}
