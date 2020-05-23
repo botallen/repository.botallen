@@ -79,6 +79,17 @@ class HotstarAPI:
         Script.log(subtitleUrl, lvl=Script.INFO)
         return playbackUrl, licenceUrl, playbackProto
 
+    def getExtItem(self, contentId):
+        url = url_constructor(
+            "/v1/multi/get/content?ids={0}".format(contentId))
+        resp = self.get(url)
+        url = deep_get(resp, "body.results.map.{0}.uri".format(contentId))
+        if url is None:
+            return None, None, None
+        resp = self.get(url)
+        item = deep_get(resp, "body.results.item")
+        return "com.widevine.alpha" if item.get("encrypted") else False, item.get("isSubTagged") and "subs-tag:Hotstar%s|" % item.get("labels")[0], item.get("title")
+
     def doLogin(self):
         url = url_constructor(
             "/in/aadhar/v2/firetv/in/users/logincode/")
@@ -128,7 +139,7 @@ class HotstarAPI:
                        url, lvl=Script.INFO)
             Script.notify("Internal Error", "")
         elif e.__class__.__name__ == "HTTPError":
-            if e.code == 402:
+            if e.code == 402 or e.code == 403:
                 with PersistentDict("userdata.pickle") as db:
                     if db.get("isGuest"):
                         Script.notify(
@@ -155,7 +166,7 @@ class HotstarAPI:
                     "VPN Error", "Your VPN provider does not support Hotstar")
             else:
                 raise urlquick.HTTPError(e.filename, e.code, e.msg, e.hdrs)
-            return
+            return False
         else:
             Script.log("Got unexpected response for request url %s" %
                        url, lvl=Script.INFO)

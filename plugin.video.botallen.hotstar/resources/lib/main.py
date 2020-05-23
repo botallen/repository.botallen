@@ -56,6 +56,18 @@ def play_vod(plugin, contentId, subtag, label, drm=False):
     return False
 
 
+@Resolver.register
+@U.isLoggedIn
+def play_ext(plugin, contentId):
+    drm, subtag, label = api.getExtItem(contentId)
+    if drm is not None:
+        playbackUrl, licenceUrl, playbackProto = api.getPlay(
+            contentId, subtag, drm)
+        if playbackUrl:
+            return builder.buildPlay(playbackUrl, licenceUrl, playbackProto, label, drm)
+    return False
+
+
 @Script.register
 def login(plugin):
     pdialog = DialogProgress()
