@@ -145,11 +145,13 @@ class JioAPI:
         if username and password:
             body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
                     "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
-            resp = urlquick.post(
-                "https://api.jio.com/v3/dip/user/unpw/verify", json=body, headers={"x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"})
+            resp = urlquick.post("https://api.jio.com/v3/dip/user/unpw/verify", json=body,
+                                 headers={"x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"}, verify=False, raise_for_status=False).json()
             if resp.get("ssoToken"):
                 with PersistentDict("userdata.pickle") as db:
                     db["data"] = resp
+                Script.notify("Login Successful",
+                              "You have been logged in successfully")
             else:
                 Script.notify(
                     "Login Failed", "Double check you username and password and try again")
