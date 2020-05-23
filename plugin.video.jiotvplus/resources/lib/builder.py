@@ -8,6 +8,8 @@ from .contants import url_constructor, ROOT_CONFIG, IMG_PUBLIC, TVSHOW, CHANNEL,
 from .api import deep_get, JioAPI
 from .utils import check_addon
 from urllib import urlencode
+from binascii import hexlify
+from pickle import dumps
 
 
 class Builder:
@@ -121,6 +123,11 @@ class Builder:
                     "inputstreamaddon": "inputstream.adaptive",
                     "inputstream.adaptive.manifest_type": data.get("playbackProto"),
                 }
+            })
+        elif data.get("ext"):
+            return Listitem().from_dict(**{
+                "label": label,
+                "callback": data.get("ext") + hexlify(dumps({"contentId": data.get("contentId")})),
             })
         else:
             Script.log("licenceUrl %s" %
