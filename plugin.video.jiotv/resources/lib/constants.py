@@ -9,6 +9,8 @@ CATCHUP_PLAY = "http://jiotv.catchup.cdn.jio.com/{0}/{0}_1200_{1}.mp4/index-v1-a
 PLAY_URL = "plugin://plugin.video.jiotv/resources/lib/main/play/?_pickle_="
 CHANNELS_SRC = "https://raw.githubusercontent.com/botallen/repository.botallen/master/plugin.video.jiotv/resources/extra/channels.json"
 CATCHUP_SRC = "http://jiotv.data.cdn.jio.com/apis/v1.3/getepg/get?offset={0}&channel_id={1}&langId=6"
+M3U_SRC = "https://raw.githubusercontent.com/botallen/repository.botallen/master/plugin.video.jiotv/resources/extra/jiotv.m3u"
+EPG_SRC = "https://kodi.botallen.com/tv/epg.xml"
 
 # Configs
 GENRE_CONFIG = [

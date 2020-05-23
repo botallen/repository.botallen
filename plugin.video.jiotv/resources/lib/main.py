@@ -12,9 +12,9 @@ from codequick.utils import keyboard
 from codequick.script import Settings
 
 # add-on imports
-from .utils import getHeaders, isLoggedIn, login as ULogin, logout as ULogout
+from .utils import getHeaders, isLoggedIn, login as ULogin, logout as ULogout, check_addon
 from .proxy import ChannelRequestHandler
-from .constants import CONFIG, CHANNELS_SRC, IMG_CATCHUP, PLAY_URL, IMG_PUBLIC, IMG_CATCHUP_SHOWS, CATCHUP_PLAY, CATCHUP_SRC
+from .constants import CONFIG, CHANNELS_SRC, IMG_CATCHUP, PLAY_URL, IMG_PUBLIC, IMG_CATCHUP_SHOWS, CATCHUP_PLAY, CATCHUP_SRC, M3U_SRC, EPG_SRC
 
 # additional imports
 import urlquick
@@ -202,20 +202,12 @@ def logout(plugin):
 @Script.register
 def pvrsetup(plugin):
     IDdoADDON = 'pvr.iptvsimple'
-    pathTOaddon = os.path.join(translatePath(
-        'special://home/addons'), IDdoADDON)
-    pathTOaddon2 = os.path.join(translatePath(
-        'special://xbmc/addons'), IDdoADDON)
-    if os.path.exists(pathTOaddon) or os.path.exists(pathTOaddon2):
+    if check_addon(IDdoADDON):
         Addon(IDdoADDON).setSetting(
-            'm3uPath', os.path.join(translatePath('special://home/addons/plugin.video.jiotv/resources/extra').decode('utf-8'), 'jiotv.m3u'))
+            'm3uPathType', '1')
         Addon(IDdoADDON).setSetting(
-            'epgUrl', "https://kodi.botallen.com/tv/epg.xml")
+            'm3uUrl', M3U_SRC)
         Addon(IDdoADDON).setSetting(
             'epgPathType', '1')
         Addon(IDdoADDON).setSetting(
-            'm3uPathType', '0')
-    else:
-        executebuiltin('InstallAddon(%s)' % (IDdoADDON))
-        executebuiltin('SendClick(11)'), sleep(2), Dialog().ok(
-            "Add-on Install", "The addon was not present. Please wait for installation to finish and try again.")
+            'epgUrl', EPG_SRC)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.jiotv" name="JioTV" version="2.0.0" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="2.0.1" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.codequick"/>
@@ -12,7 +12,7 @@
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
-        <description lang="en_GB">Unofficial JioTV kodi addon by botallen</description>
+        <description lang="en_GB">Enjoy Live TV expreince in Kodi.</description>
         <language></language>
         <platform>all</platform>
         <license>MIT</license>
@@ -27,7 +27,7 @@
 [added] Categorized by Language 
 [added] Filter channels by specific language in genre. (from settings)
 	    </news>
-        <disclaimer>This is a third-party add-on and is not affiliated with Jio.</disclaimer>
+        <disclaimer>This plugin is not officially commissioned/supported by Jio. The trademark "Jio" is registered by "Reliance Corporate IT Park Limited (RCITPL)"</disclaimer>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
