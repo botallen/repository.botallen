@@ -114,11 +114,11 @@ class ChannelRequestHandler():
         elif quality:
             rpls_regx = "_{}".format(quality) if quality else "_\g<1>"
             text = re.sub('\_(\d{3,4})\-', rpls_regx+"-", text)
-            with PersistentDict("cache", ttl=180) as cache:
+            with PersistentDict("proxy_cache", ttl=180) as cache:
                 allkeys = re.findall(
                     self.channel_name+"\_\d{3,4}\-\d{13}\.key", text)
                 Script.log("Found %d different keys" %
-                           len(allkeys), lvl=Script.INFO)
+                           len(allkeys), lvl=Script.DEBUG)
                 diff = None
                 for key in allkeys:
                     original_timestamp = re.search(
@@ -162,15 +162,15 @@ class ChannelRequestHandler():
 
         effective_url = "{2}/{0}/{1}".format(
             self.channel_name, ts, SERVER)
-        resp = urlquick.get(effective_url, raise_for_status=False, max_age=180)
+        resp = urlquick.get(effective_url, raise_for_status=False, max_age=-1)
 
         if resp.status_code == 404:
-            with PersistentDict("cache") as cache:
+            with PersistentDict("proxy_cache", ttl=180) as cache:
                 if cache.get(ts):
                     Script.log("Found cached ts effective url",
                                lvl=Script.DEBUG)
                     resp = urlquick.get(
-                        cache.get(ts), raise_for_status=False, max_age=180)
+                        cache.get(ts), raise_for_status=False, max_age=-1)
                 else:
                     for i in range(1, 5):
                         timestamp = re.search("\-(\d{13})\.ts", ts).group(1)
@@ -179,7 +179,7 @@ class ChannelRequestHandler():
                         effective_url = "{2}/{0}/{1}".format(
                             self.channel_name, ts, SERVER)
                         resp = urlquick.get(
-                            effective_url, raise_for_status=False, max_age=180)
+                            effective_url, raise_for_status=False, max_age=-1)
                         if resp.status_code == 200:
                             cache[ts] = effective_url
                             break
