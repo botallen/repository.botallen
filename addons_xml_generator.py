@@ -27,7 +27,7 @@ class Generator:
         for addon in addons:
             # try:
             # skip any file or .svn folder
-            if (not os.path.isdir(addon) or addon == ".svn" or addon == ".git" or addon == "media"):
+            if (not os.path.isdir(addon) or addon == ".svn" or addon == ".git" or addon == ".github" or addon == "media"):
                 continue
             # create path
             # print(addon)
