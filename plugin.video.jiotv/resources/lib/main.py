@@ -10,6 +10,7 @@ from xbmcgui import ListItem, Dialog
 from codequick import Route, run, Listitem, Resolver, Script
 from codequick.utils import keyboard
 from codequick.script import Settings
+from codequick.storage import PersistentDict
 
 # add-on imports
 from .utils import getHeaders, isLoggedIn, login as ULogin, logout as ULogout, check_addon
@@ -211,3 +212,11 @@ def pvrsetup(plugin):
             'epgPathType', '1')
         Addon(IDdoADDON).setSetting(
             'epgUrl', EPG_SRC)
+
+# Cache cleanup
+@Script.register
+def cleanup(plugin):
+    urlquick.cache_cleanup(-1)
+    with PersistentDict("proxy_cache") as cache:
+        cache.clear()
+    Script.notify("Cache Cleaned", "")

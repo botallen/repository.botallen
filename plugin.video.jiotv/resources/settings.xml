@@ -27,5 +27,8 @@
         <setting id="Urdu" type="bool" label="Urdu" default="true"/>
         <setting id="Nepali" type="bool" label="Nepali" default="true"/>
     </category>
+    <category label="Advance">
+        <setting id="cleanup" type="action" label="Clear Cache" action="RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/cleanup/)" option="close"/>
+    </category>
 </settings>
 
