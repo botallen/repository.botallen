@@ -11,10 +11,6 @@ from .api import HotstarAPI
 from .builder import Builder
 from .contants import BASE_HEADERS, CONTENT_TYPE
 
-# for development only
-# urlquick.cache_cleanup(-1)
-# Script.log(U.getAuth(), lvl=Script.INFO)
-
 
 @Route.register
 def root(plugin):
