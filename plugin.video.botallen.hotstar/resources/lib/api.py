@@ -18,8 +18,6 @@ import re
 from uuid import uuid4
 from base64 import b64decode
 
-# urlquick.cache_cleanup(-1)
-
 
 def deep_get(dictionary, keys, default=None):
     return reduce(lambda d, key: d.get(key, default) if isinstance(d, dict) else default, keys.split("."), dictionary)
@@ -65,8 +63,6 @@ class HotstarAPI:
     def getPlay(self, contentId, subtag, drm=False):
         url = url_constructor("/play/v1/playback/content/%s" % contentId)
         encryption = "widevine" if drm else "plain"
-        # Script.log(self._getPlayHeaders(), lvl=Script.INFO)
-        # Script.log(self._getPlayParams(subtag, encryption), lvl=Script.INFO)
         resp = self.get(
             url, headers=self._getPlayHeaders(), params=self._getPlayParams(subtag, encryption), max_age=-1)
         playBackSets = deep_get(resp, "data.playBackSets")
@@ -74,9 +70,6 @@ class HotstarAPI:
             return None, None, None
         playbackUrl, licenceUrl, playbackProto = HotstarAPI._findPlayback(
             playBackSets, encryption)
-        subtitleUrl = re.sub(
-            "([\w:\/\.]*)(master[\w+\_\-]*?\.[\w+]{3})([\w\/\?=~\*\-]*)", "\1subtitle/lang_en/subtitle.vtt\3", playbackUrl)
-        Script.log(subtitleUrl, lvl=Script.INFO)
         return playbackUrl, licenceUrl, playbackProto
 
     def getExtItem(self, contentId):
@@ -88,7 +81,7 @@ class HotstarAPI:
             return None, None, None
         resp = self.get(url)
         item = deep_get(resp, "body.results.item")
-        return "com.widevine.alpha" if item.get("encrypted") else False, item.get("isSubTagged") and "subs-tag:Hotstar%s|" % item.get("labels")[0], item.get("title")
+        return "com.widevine.alpha" if item.get("encrypted") else False, item.get("isSubTagged") and "subs-tag:%s|" % item.get("features")[0].get("subType"), item.get("title")
 
     def doLogin(self):
         url = url_constructor(
@@ -103,9 +96,10 @@ class HotstarAPI:
                 with PersistentDict("userdata.pickle") as db:
                     db["token"] = token
                     db["deviceId"] = uuid4()
-                    db["udata"] = json.loads(
-                        b64decode(token.split(".")[1]+"========"))
-                    del db["isGuest"]
+                    db["udata"] = json.loads(json.loads(
+                        b64decode(token.split(".")[1]+"========")).get("sub"))
+                    if db.get("isGuest"):
+                        del db["isGuest"]
                     db.flush()
                 yield code, 100
                 break
@@ -122,7 +116,6 @@ class HotstarAPI:
             response = self.session.get(url, **kwargs)
             return response.json()
         except Exception, e:
-            # Script.log(e, lvl=Script.INFO)
             return self._handleError(e, url, "get", **kwargs)
 
     def post(self, url, **kwargs):
@@ -130,13 +123,12 @@ class HotstarAPI:
             response = self.session.post(url, **kwargs)
             return response.json()
         except Exception, e:
-            # Script.log(e, lvl=Script.INFO)
             return self._handleError(e, url, "post", **kwargs)
 
     def _handleError(self, e, url, _rtype, **kwargs):
         if e.__class__.__name__ == "ValueError":
             Script.log("Can not parse response of request url %s" %
-                       url, lvl=Script.INFO)
+                       url, lvl=Script.DEBUG)
             Script.notify("Internal Error", "")
         elif e.__class__.__name__ == "HTTPError":
             if e.code == 402 or e.code == 403:
@@ -169,7 +161,7 @@ class HotstarAPI:
             return False
         else:
             Script.log("Got unexpected response for request url %s" %
-                       url, lvl=Script.INFO)
+                       url, lvl=Script.DEBUG)
             Script.notify(
                 "API Error", "Raise issue if you are continuously facing this error")
 
@@ -199,7 +191,7 @@ class HotstarAPI:
             parsed_url = urlparse(playbackUrl)
             qs = parse_qs(parsed_url.query)
             hdnea = "hdnea=%s;" % qs.get("hdnea")[0]
-            Script.log("hdnea=%s" % hdnea, lvl=Script.INFO)
+            Script.log("hdnea=%s" % hdnea, lvl=Script.DEBUG)
         return {
             "hotstarauth": auth,
             "X-Country-Code": "in",
@@ -235,11 +227,13 @@ class HotstarAPI:
     @staticmethod
     def _findPlayback(playBackSets, encryption="widevine"):
         for each in playBackSets:
+            Script.log("Checking combination: %s" %
+                       each.get("tagsCombination"), lvl=Script.DEBUG)
             if re.search("encryption:%s.*?ladder:tv.*?package:dash" % encryption, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s" %
-                           (each.get("playbackUrl"), each.get("licenceUrl")), lvl=Script.INFO)
+                           (each.get("playbackUrl"), each.get("licenceUrl")), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
         playbackUrl = playBackSets[0].get("playbackUrl")
         Script.log("No stream found for desired config. Using %s" %
-                   playbackUrl, lvl=Script.INFO)
+                   playbackUrl, lvl=Script.DEBUG)
         return (playbackUrl, None, "hls" if "master.m3u8" in playbackUrl else "mpd")

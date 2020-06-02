@@ -3,11 +3,14 @@ from __future__ import unicode_literals
 
 from datetime import datetime
 from codequick import Listitem, Script
+from codequick.storage import PersistentDict
 from urlquick import MAX_AGE
 import inputstreamhelper
 from .contants import url_constructor, IMG_THUMB_H_URL, IMG_POSTER_V_URL, IMG_FANART_H_URL, MEDIA_TYPE
 from .api import deep_get, HotstarAPI
 from urllib import urlencode
+import re
+import json
 
 
 class Builder:
@@ -82,6 +85,9 @@ class Builder:
         if is_helper.check_inputstream():
             stream_headers = HotstarAPI._getPlayHeaders(
                 playbackUrl=playbackUrl)
+            subtitleUrl = re.sub(
+                "(.*)(master[\w+\_\-]*?\.[\w+]{3})([\w\/\?=~\*\-]*)", "\g<1>subtitle/lang_en/subtitle.vtt\g<3>", playbackUrl) + "|User-Agent=Hotstar%3Bin.startv.hotstar%2F3.3.0+%28Android%2F8.1.0%29"
+            Script.log(subtitleUrl, lvl=Script.DEBUG)
             return Listitem().from_dict(**{
                 "label": label,
                 "callback": playbackUrl,
@@ -92,7 +98,8 @@ class Builder:
                     "inputstream.adaptive.license_type": drm,
                     "inputstream.adaptive.stream_headers": urlencode(stream_headers),
                     "inputstream.adaptive.license_key": licenceUrl and licenceUrl + '|%s&Content-Type=application/octet-stream|R{SSM}|' % urlencode(stream_headers)
-                }
+                },
+                "subtitles": [subtitleUrl]
             })
         return False
 
@@ -104,10 +111,21 @@ class Builder:
             params = {"url": url_constructor(
                 "/o/v1/tray/g/2/items?eid=%d&etid=2&tao=0&tas=100" % item.get("id")) if item.get("assetType") == "SHOW" else item.get("uri")}
         else:
+            if item.get("isSubTagged"):
+                with PersistentDict("userdata.pickle") as db:
+                    subtag = deep_get(dict(db), "udata.subscriptions.in")
+                if subtag:
+                    subtag = subtag.keys()[0]
+                    Script.log("Using subtag from subscription: %s" %
+                               subtag, lvl=Script.DEBUG)
+                else:
+                    subtag = "Hotstar%s" % item.get("labels")[0]
+                    Script.log("Using subtag from labels: %s" %
+                               subtag, lvl=Script.DEBUG)
             callback = self.callbackRefs.get("play_vod")
             params = {
                 "contentId": item.get("contentId"),
-                "subtag": item.get("isSubTagged") and "subs-tag:Hotstar%s|" % item.get("labels")[0],
+                "subtag": item.get("isSubTagged") and "subs-tag:%s|" % subtag,
                 "label": item.get("title"),
                 "drm": "com.widevine.alpha" if item.get("encrypted") else False
             }
