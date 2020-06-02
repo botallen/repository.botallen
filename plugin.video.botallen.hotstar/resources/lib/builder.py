@@ -34,13 +34,7 @@ class Builder:
             yield item
 
     def buildSearch(self, callback):
-        return Listitem().search(**{
-            "art": {
-                "fanart": "https://secure-media.hotstar.com/static/firetv/v1/poster_search_in.jpg"
-            },
-            "callback": callback,  # self.callbackRefs.get("tray_list"),
-            "params": {"url": ""}
-        })
+        return Listitem().search(callback, url="")
 
     def buildPage(self, items, nextPageUrl=None):
         for each in items:
