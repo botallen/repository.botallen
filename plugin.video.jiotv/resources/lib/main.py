@@ -84,11 +84,11 @@ def show_category(plugin, category_id, by):
         litm = Listitem.from_dict(**{
             "label": each.get("name"),
             "art": art,
-            "callback": PLAY_URL + each.get("data")
+            "callback": each.get("ext") or PLAY_URL + each.get("data")
         })
         if each.get("isCatchupAvailable"):
             litm.context.container(show_epg, "Catchup", 0, each.get(
-                "id"), PLAY_URL + each.get("data"))
+                "id"), each.get("ext") or PLAY_URL + each.get("data"))
         yield litm
 
 
