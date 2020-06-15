@@ -74,13 +74,15 @@ class HotstarAPI:
 
     def getExtItem(self, contentId):
         url = url_constructor(
-            "/v1/multi/get/content?ids={0}".format(contentId))
+            "/o/v1/multi/get/content?ids={0}".format(contentId))
         resp = self.get(url)
         url = deep_get(resp, "body.results.map.{0}.uri".format(contentId))
         if url is None:
             return None, None, None
         resp = self.get(url)
         item = deep_get(resp, "body.results.item")
+        if int(contentId) in [1260000033, 1260000025, 1260000034, 1260000024, 1260000035]:
+            item["encrypted"] = True
         return "com.widevine.alpha" if item.get("encrypted") else False, item.get("isSubTagged") and "subs-tag:%s|" % item.get("features")[0].get("subType"), item.get("title")
 
     def doLogin(self):
@@ -229,11 +231,12 @@ class HotstarAPI:
         for each in playBackSets:
             Script.log("Checking combination: %s" %
                        each.get("tagsCombination"), lvl=Script.DEBUG)
-            if re.search("encryption:%s.*?ladder:tv.*?package:dash" % encryption, each.get("tagsCombination")):
+            if re.search(".*encryption:%s.*?ladder:tv.*?package:dash.*" % encryption, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl")), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
         playbackUrl = playBackSets[0].get("playbackUrl")
+        licenceUrl = playBackSets[0].get("licenceUrl")
         Script.log("No stream found for desired config. Using %s" %
                    playbackUrl, lvl=Script.DEBUG)
-        return (playbackUrl, None, "hls" if "master.m3u8" in playbackUrl else "mpd")
+        return (playbackUrl, licenceUrl, "hls" if "master.m3u8" in playbackUrl else "mpd")
