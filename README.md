@@ -22,7 +22,7 @@
   
   <!-- Downloads -->
   <a href="https://github.com/botallen/repository.botallen/releases/latest">
-    <img src="https://img.shields.io/github/downloads/botallen/repository.botallen/total?style=for-the-badge">
+    <img src="https://img.shields.io/github/downloads/botallen/repository.botallen/total?style=for-the-badge&logo=kodi&color=17B2E7">
   </a>
   
  </p>
