@@ -9,6 +9,7 @@ from codequick import Script
 from codequick.script import Settings
 from codequick.storage import PersistentDict
 from xbmcgui import Dialog
+from xbmc import executebuiltin
 import time
 import hashlib
 import hmac
@@ -82,11 +83,11 @@ class JioAPI:
         url = url_constructor("/apis/common/v3/playbackrights/get/%s" % Id)
         headers, body = self._getPlayHeaders()
         resp = self.post(url, headers=headers, json=body, max_age=-1)
-        Script.log("Got vender in api %s " % vendor, lvl=Script.INFO)
+        Script.log("Got vender in api %s " % vendor, lvl=Script.DEBUG)
         if vendor is None:
             vendor = resp.get("vendorName")
             Script.log("Vendor is not provided. Choosing %s " %
-                       vendor, lvl=Script.INFO)
+                       vendor, lvl=Script.DEBUG)
         if vendor == "hotstar":
             if not extId:
                 return None
@@ -135,30 +136,30 @@ class JioAPI:
         }
 
     def doLogin(self):
-        try:
-            username = Settings.get_string("username", "plugin.video.jiotv") or Dialog().input(
-                "Username (MobileNo / Email)")
-            password = Settings.get_string(
-                "password", "plugin.video.jiotv") or Dialog().input("Password")
-        except RuntimeError:
-            username = Dialog().input("Username (MobileNo / Email)")
-            password = Dialog().input("Password")
-        if username and password:
-            body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
-                    "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
-            resp = urlquick.post("https://api.jio.com/v3/dip/user/unpw/verify", json=body,
-                                 headers={"x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"}, verify=False, raise_for_status=False).json()
-            if resp.get("ssoToken"):
-                with PersistentDict("userdata.pickle") as db:
+        with PersistentDict("userdata.pickle") as db:
+            try:
+                username = Settings.get_string("username", "plugin.video.jiotv") or db.get("username") or Dialog().input(
+                    "Username (MobileNo / Email)")
+                password = Settings.get_string(
+                    "password", "plugin.video.jiotv") or db.get("password") or Dialog().input("Password")
+            except RuntimeError:
+                username = Dialog().input("Username (MobileNo / Email)")
+                password = Dialog().input("Password")
+            if username and password:
+                body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
+                        "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
+                resp = urlquick.post("https://api.jio.com/v3/dip/user/unpw/verify", json=body,
+                                    headers={"x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"}, verify=False, raise_for_status=False).json()
+                if resp.get("ssoToken"):
                     db["data"] = resp
-                Script.notify("Login Successful",
-                              "You have been logged in successfully")
+                    Script.notify("Login Successful",
+                                "You have been logged in successfully")
+                else:
+                    Script.notify(
+                        "Login Failed", "Double check you username and password and try again")
             else:
-                Script.notify(
-                    "Login Failed", "Double check you username and password and try again")
-        else:
-            Script.notify("Login Required",
-                          "Please login with you Jio credentials")
+                Script.notify("Login Required",
+                            "Please login with you Jio credentials")
 
     def doLogout(self):
         with PersistentDict("userdata.pickle") as db:
@@ -170,7 +171,7 @@ class JioAPI:
             response = self.session.get(url, **kwargs)
             return response.json()
         except Exception, e:
-            Script.log(e, lvl=Script.INFO)
+            Script.log(e, lvl=Script.DEBUG)
             self._handleError(e, url, **kwargs)
 
     def post(self, url, **kwargs):
@@ -178,19 +179,21 @@ class JioAPI:
             response = self.session.post(url, **kwargs)
             return response.json()
         except Exception, e:
-            Script.log(e, lvl=Script.INFO)
+            Script.log(e, lvl=Script.DEBUG)
             self._handleError(e, url, **kwargs)
 
     def _handleError(self, e, url, **kwargs):
         if e.__class__.__name__ == "ValueError":
             Script.log("Can not parse response of request url %s" %
-                       url, lvl=Script.INFO)
+                       url, lvl=Script.DEBUG)
             Script.notify("Internal Error", "")
         elif e.__class__.__name__ == "HTTPError":
-            raise urlquick.HTTPError(e.filename, e.code, e.msg, e.hdrs)
+            if e.code == 419:
+                executebuiltin("RunPlugin(plugin://plugin.video.jiotvplus/resources/lib/main/login/)")
+            else: raise urlquick.HTTPError(e.filename, e.code, e.msg, e.hdrs)
         else:
             Script.log("Got unexpected response for request url %s" %
-                       url, lvl=Script.INFO)
+                       url, lvl=Script.DEBUG)
             Script.notify(
                 "API Error", "Raise issue if you are continuously facing this error")
 
@@ -225,7 +228,6 @@ class JioAPI:
     def _getPlayHeaders():
         with PersistentDict("userdata.pickle") as db:
             data = db.get("data")
-        Script.log(str(data), lvl=Script.INFO)
         return {
             "ssotoken": data.get("ssoToken"),
             "x-multilang": "true",
