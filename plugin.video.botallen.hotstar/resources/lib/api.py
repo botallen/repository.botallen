@@ -18,9 +18,7 @@ import re
 from uuid import uuid4
 from base64 import b64decode
 
-
-def deep_get(dictionary, keys, default=None):
-    return reduce(lambda d, key: d.get(key, default) if isinstance(d, dict) else default, keys.split("."), dictionary)
+deep_get = U.deep_get
 
 
 class HotstarAPI:

@@ -3,6 +3,12 @@ from codequick import Script
 from xbmc import executebuiltin
 from codequick.storage import PersistentDict
 from .contants import url_constructor
+import urlquick
+from uuid import uuid4
+
+
+def deep_get(dictionary, keys, default=None):
+    return reduce(lambda d, key: d.get(key, default) if isinstance(d, dict) else default, keys.split("."), dictionary)
 
 
 def isLoggedIn(func):
@@ -32,6 +38,6 @@ def isLoggedIn(func):
 def guestToken():
     resp = urlquick.post(url_constructor("/in/aadhar/v2/firetv/in/user/guest-signup"), json={
         "idType": "device",
-        "id": uuid4(),
+        "id": str(uuid4()),
     }).json()
     return deep_get(resp, "description.userIdentity")
