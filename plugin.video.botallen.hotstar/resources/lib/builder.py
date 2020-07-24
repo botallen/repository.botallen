@@ -6,7 +6,7 @@ from codequick import Listitem, Script
 from codequick.storage import PersistentDict
 from urlquick import MAX_AGE
 import inputstreamhelper
-from .contants import url_constructor, IMG_THUMB_H_URL, IMG_POSTER_V_URL, IMG_FANART_H_URL, MEDIA_TYPE
+from .contants import url_constructor, IMG_THUMB_H_URL, IMG_POSTER_V_URL, IMG_FANART_H_URL, MEDIA_TYPE, BASE_HEADERS
 from .api import deep_get, HotstarAPI
 from urllib import urlencode
 import re
@@ -113,7 +113,12 @@ class Builder:
                     Script.log("Using subtag from subscription: %s" %
                                subtag, lvl=Script.DEBUG)
                 else:
-                    subtag = "Hotstar%s" % item.get("labels")[0]
+                    if item.get("labels"):
+                        subtag = "Hotstar%s" % item.get("labels")[0]
+                    # elif item.get("badges"):
+                    #     subtag = "Hotstar%s" % item.get("badges")[0]
+                    else:
+                        subtag = "HotstarPremium"
                     Script.log("Using subtag from labels: %s" %
                                subtag, lvl=Script.DEBUG)
             callback = self.callbackRefs.get("play_vod")

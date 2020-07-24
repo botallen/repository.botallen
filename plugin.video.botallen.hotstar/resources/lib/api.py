@@ -238,5 +238,5 @@ class HotstarAPI:
         playbackUrl = playBackSets[0].get("playbackUrl")
         licenceUrl = playBackSets[0].get("licenceUrl")
         Script.log("No stream found for desired config. Using %s" %
-                   playbackUrl, lvl=Script.DEBUG)
+                   playbackUrl, lvl=Script.INFO)
         return (playbackUrl, licenceUrl, "hls" if "master.m3u8" in playbackUrl else "mpd")
