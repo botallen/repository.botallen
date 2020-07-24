@@ -86,10 +86,29 @@
 - Select repository.botallen-1.0.0.zip
 - Done
 
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Download
 
 [**Download**](https://github.com/botallen/repository.botallen/releases/download/v1.0.0/repository.botallen-1.0.0.zip) the `.zip` file.
+<br/>
+<br/>
 
 ## Support
 
-<a href="https://www.buymeacoffee.com/NTGLzgi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+<p align="center">
+<span style="display: inline-block;">
+  <a href="https://paytm.me/G-uA8La" target="_blank">
+    <img width="165px" height="55px" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png?download" alt="Paytm" >
+  </a>
+</span>
+
+<span style="display: inline-block;">
+  <a href="https://paypal.me/botallen" target="_blank">
+    <img width="200px" height="51px" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Paypal" >
+  </a>
+</span>
+</p>
