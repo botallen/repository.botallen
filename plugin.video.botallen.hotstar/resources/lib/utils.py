@@ -2,6 +2,7 @@ from functools import wraps
 from codequick import Script
 from xbmc import executebuiltin
 from codequick.storage import PersistentDict
+from .contants import url_constructor
 
 
 def isLoggedIn(func):
@@ -14,7 +15,7 @@ def isLoggedIn(func):
             if db.get("token"):
                 return func(*args, **kwargs)
             elif db.get("isGuest") is None:
-                db["token"] = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1bV9hY2Nlc3MiLCJleHAiOjE1ODY3OTEzMzEsImlhdCI6MTU4NjcwNDkzMSwiaXNzIjoiVFMiLCJzdWIiOiJ7XCJjb3VudHJ5Q29kZVwiOlwiaW5cIixcImN1c3RvbWVyVHlwZVwiOlwibnVcIixcImRldmljZUlkXCI6XCI4OTUyYWE5ZS1mZGY5LTQ2ZTMtYjU2Mi1jNTViMzdjZTMyYTdcIixcImhJZFwiOlwiMDBkY2FkN2M4NmQ4NDJiNTgxYmU4Mjg4OTRjMWYyMzRcIixcImlwXCI6XCIxMDMuMjEyLjE0MS4yNFwiLFwiaXNFbWFpbFZlcmlmaWVkXCI6ZmFsc2UsXCJpc1Bob25lVmVyaWZpZWRcIjpmYWxzZSxcImlzc3VlZEF0XCI6MTU4NjcwNDkzMTUzMSxcIm5hbWVcIjpcIkd1ZXN0IFVzZXJcIixcInBJZFwiOlwiNTQ1ZmQzNmE1NWM4NGExNWFkOTE3OGNlYWFhZmI0YTBcIixcInByb2ZpbGVcIjpcIkFEVUxUXCIsXCJzdWJzY3JpcHRpb25zXCI6e1wiaW5cIjp7fX0sXCJ0eXBlXCI6XCJkZXZpY2VcIixcInZlcnNpb25cIjpcInYyXCJ9IiwidmVyc2lvbiI6IjFfMCJ9.X1uJowi4-4eVquBDdTis76pbH44gso1y16i5zKTwRfg"
+                db["token"] = guestToken()
                 db["isGuest"] = True
                 db.flush()
                 return func(*args, **kwargs)
@@ -26,3 +27,11 @@ def isLoggedIn(func):
                     "RunPlugin(plugin://plugin.video.botallen.hotstar/resources/lib/main/login/)")
                 return False
     return login_wrapper
+
+
+def guestToken():
+    resp = urlquick.post(url_constructor("/in/aadhar/v2/firetv/in/user/guest-signup"), json={
+        "idType": "device",
+        "id": uuid4(),
+    }).json()
+    return deep_get(resp, "description.userIdentity")
