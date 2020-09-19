@@ -9,6 +9,7 @@ import inputstreamhelper
 from .contants import url_constructor, IMG_THUMB_H_URL, IMG_POSTER_V_URL, IMG_FANART_H_URL, MEDIA_TYPE, BASE_HEADERS
 from .api import deep_get, HotstarAPI
 from urllib import urlencode
+import urlquick
 import re
 import json
 
@@ -113,14 +114,18 @@ class Builder:
                     Script.log("Using subtag from subscription: %s" %
                                subtag, lvl=Script.DEBUG)
                 else:
-                    if item.get("labels"):
-                        subtag = "Hotstar%s" % item.get("labels")[0]
-                    # elif item.get("badges"):
-                    #     subtag = "Hotstar%s" % item.get("badges")[0]
+                    resp = urlquick.get(
+                        item.get("uri"), headers=BASE_HEADERS).json()
+                    item = deep_get(resp, "body.results.item")
+                    if item.get("features", [{}])[0].get("subType"):
+                        subtag = item.get("features", [{}])[
+                            0].get("subType")
+                        Script.log("Using subtag %s" %
+                                   subtag, lvl=Script.DEBUG)
                     else:
                         subtag = "HotstarPremium"
-                    Script.log("Using subtag from labels: %s" %
-                               subtag, lvl=Script.DEBUG)
+                        Script.log("No subType found.Using subtag %s as default" %
+                                   subtag, lvl=Script.DEBUG)
             callback = self.callbackRefs.get("play_vod")
             params = {
                 "contentId": item.get("contentId"),
@@ -159,10 +164,10 @@ class Builder:
                 "IsPlayable": False
             },
             "stream": {
-                "video_codec": "h264",
+                # "video_codec": "h264",
                 "width": "1920",
                 "height": "1080",
-                "audio_codec": "aac"
+                # "audio_codec": "aac"
             },
             "callback": callback,
             "params": params
