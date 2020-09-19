@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.30">
+<addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="0.0.31">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.codequick" version="0.9.10"/>

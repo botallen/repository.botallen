@@ -140,7 +140,7 @@ class HotstarAPI:
                             "RunPlugin(plugin://plugin.video.botallen.hotstar/resources/lib/main/login/)")
                     else:
                         Script.notify(
-                            "Subscription Error", "You don't have valid subscription to watch this content")
+                            "Subscription Error", "You don't have valid subscription to watch this content", display_time=2000)
             elif e.code == 401:
                 new_token = self._refreshToken()
                 if new_token:
@@ -191,7 +191,7 @@ class HotstarAPI:
             parsed_url = urlparse(playbackUrl)
             qs = parse_qs(parsed_url.query)
             hdnea = "hdnea=%s;" % qs.get("hdnea")[0]
-            Script.log("hdnea=%s" % hdnea, lvl=Script.DEBUG)
+            Script.log(hdnea, lvl=Script.DEBUG)
         return {
             "hotstarauth": auth,
             "X-Country-Code": "in",
@@ -227,14 +227,22 @@ class HotstarAPI:
     @staticmethod
     def _findPlayback(playBackSets, encryption="widevine"):
         for each in playBackSets:
-            Script.log("Checking combination: %s" %
-                       each.get("tagsCombination"), lvl=Script.DEBUG)
-            if re.search(".*encryption:%s.*?ladder:tv.*?package:dash.*" % encryption, each.get("tagsCombination")):
-                Script.log("Found Stream! URL : %s LicenceURL: %s" %
-                           (each.get("playbackUrl"), each.get("licenceUrl")), lvl=Script.DEBUG)
+            Script.log("Checking combination %s for encryption %s" %
+                       (each.get("tagsCombination"), encryption), lvl=Script.DEBUG)
+            if re.match(".*?encryption:%s.*?ladder:tv.*?package:dash.*" % encryption, each.get("tagsCombination")):
+                Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
+                           (each.get("playbackUrl"), each.get("licenceUrl"), encryption), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
+            elif re.match(".*?encryption:plain.*?ladder:tv.*?package:dash.*", each.get("tagsCombination")):
+                Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
+                           (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
+                return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
+            elif re.match(".*?encryption:plain.*?ladder:tv.*?package:hls.*", each.get("tagsCombination")):
+                Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
+                           (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
+                return (each.get("playbackUrl"), each.get("licenceUrl"), "hls")
         playbackUrl = playBackSets[0].get("playbackUrl")
         licenceUrl = playBackSets[0].get("licenceUrl")
         Script.log("No stream found for desired config. Using %s" %
                    playbackUrl, lvl=Script.INFO)
-        return (playbackUrl, licenceUrl, "hls" if "master.m3u8" in playbackUrl else "mpd")
+        return (playbackUrl, licenceUrl, "hls" if ".m3u8" in playbackUrl else "mpd")
