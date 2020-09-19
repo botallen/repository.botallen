@@ -100,15 +100,14 @@
 ## Support
 
 <p align="center">
-<span style="display: inline-block;">
-  <a href="https://paytm.me/G-uA8La" target="_blank">
-    <img width="165px" height="55px" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png?download" alt="Paytm" >
+  <a href="https://raw.githubusercontent.com/botallen/botallen.github.io/master/media/Offline%20Merchant.png" target="_blank">
+    <img width="347px" height="620px" src="media/Offline Merchant.png" alt="Paytm" >
   </a>
-</span>
-
-<span style="display: inline-block;">
-  <a href="https://paypal.me/botallen" target="_blank">
-    <img width="200px" height="51px" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Paypal" >
-  </a>
-</span>
+</p>
+<p align="center">
+  <span style="display: inline-block;">
+    <a href="https://paypal.me/botallen" target="_blank">
+      <img width="200px" height="51px" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Paypal" >
+    </a>
+  </span>
 </p>
