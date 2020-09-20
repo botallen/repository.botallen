@@ -229,15 +229,15 @@ class HotstarAPI:
         for each in playBackSets:
             Script.log("Checking combination %s for encryption %s" %
                        (each.get("tagsCombination"), encryption), lvl=Script.DEBUG)
-            if re.match(".*?encryption:%s.*?ladder:tv.*?package:dash.*" % encryption, each.get("tagsCombination")):
+            if re.match(".*?encryption:%s.*?(ladder:tv)?.*?package:dash.*" % encryption, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), encryption), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
-            elif re.match(".*?encryption:plain.*?ladder:tv.*?package:dash.*", each.get("tagsCombination")):
+            elif re.match(".*?encryption:plain.*?(ladder:tv)?.*?package:dash.*", each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
-            elif re.match(".*?encryption:plain.*?ladder:tv.*?package:hls.*", each.get("tagsCombination")):
+            elif re.match(".*?encryption:plain.*?(ladder:tv)?.*?package:hls.*", each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
                 return (each.get("playbackUrl"), each.get("licenceUrl"), "hls")
