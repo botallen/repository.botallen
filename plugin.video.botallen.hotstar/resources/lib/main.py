@@ -5,6 +5,7 @@ from codequick import Route, run, Script, Resolver
 
 import resources.lib.utils as U
 from xbmcgui import DialogProgress
+from xbmcplugin import SORT_METHOD_EPISODE
 import time
 import urlquick
 from .api import HotstarAPI
@@ -44,9 +45,9 @@ def tray_list(plugin, url, search_query=False):
 
 @Resolver.register
 @U.isLoggedIn
-def play_vod(plugin, contentId, subtag, label, drm=False):
+def play_vod(plugin, contentId, subtag, label, drm=False, lang=None):
     playbackUrl, licenceUrl, playbackProto = api.getPlay(
-        contentId, subtag, drm)
+        contentId, subtag, drm, lang)
     if playbackUrl:
         return builder.buildPlay(playbackUrl, licenceUrl, playbackProto, label, drm)
     return False

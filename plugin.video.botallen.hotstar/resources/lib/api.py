@@ -35,7 +35,8 @@ class HotstarAPI:
 
     def getPage(self, url):
         results = deep_get(self.get(url), "body.results")
-        itmes = deep_get(results, "trays.items")
+        itmes = deep_get(results, "trays.items", []
+                         ) or results.get("items", [])
         nextPageUrl = results.get("nextOffsetURL") or deep_get(
             results, "trays.nextOffsetURL")
         return itmes, nextPageUrl
@@ -58,7 +59,7 @@ class HotstarAPI:
             results, "assets.nextOffsetURL") or results.get("nextOffsetURL")
         return items, nextPageUrl
 
-    def getPlay(self, contentId, subtag, drm=False):
+    def getPlay(self, contentId, subtag, drm=False, lang=None):
         url = url_constructor("/play/v1/playback/content/%s" % contentId)
         encryption = "widevine" if drm else "plain"
         resp = self.get(
@@ -67,7 +68,7 @@ class HotstarAPI:
         if playBackSets is None:
             return None, None, None
         playbackUrl, licenceUrl, playbackProto = HotstarAPI._findPlayback(
-            playBackSets, encryption)
+            playBackSets, encryption, lang)
         return playbackUrl, licenceUrl, playbackProto
 
     def getExtItem(self, contentId):
@@ -225,24 +226,40 @@ class HotstarAPI:
         }
 
     @staticmethod
-    def _findPlayback(playBackSets, encryption="widevine"):
+    def _findPlayback(playBackSets, encryption="widevine", lang=None):
+        selected = None
+        defaultRe = ".*?encryption:%s.*?(ladder:tv)?.*?package:dash.*" % encryption
+        plainDashRe = ".*?encryption:plain.*?(ladder:tv)?.*?package:dash.*"
+        plainHlsRe = ".*?encryption:plain.*?(ladder:tv)?.*?package:hls.*"
+        if lang:
+            defaultRe = ".*?encryption:%s.*language:%s.*?(ladder:tv)?.*?package:dash.*" % (
+                encryption, lang)
+            plainDashRe = ".*?encryption:plain.*language:%s.*?(ladder:tv)?.*?package:dash.*" % lang
+            plainHlsRe = ".*?encryption:plain.*language:%s.*?(ladder:tv)?.*?package:hls.*" % lang
         for each in playBackSets:
             Script.log("Checking combination %s for encryption %s" %
                        (each.get("tagsCombination"), encryption), lvl=Script.DEBUG)
-            if re.match(".*?encryption:%s.*?(ladder:tv)?.*?package:dash.*" % encryption, each.get("tagsCombination")):
+            if re.match(defaultRe, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), encryption), lvl=Script.DEBUG)
-                return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
-            elif re.match(".*?encryption:plain.*?(ladder:tv)?.*?package:dash.*", each.get("tagsCombination")):
+                selected = (each.get("playbackUrl"),
+                            each.get("licenceUrl"), "mpd")
+                break
+            elif re.match(plainDashRe, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
-                return (each.get("playbackUrl"), each.get("licenceUrl"), "mpd")
-            elif re.match(".*?encryption:plain.*?(ladder:tv)?.*?package:hls.*", each.get("tagsCombination")):
+                selected = (each.get("playbackUrl"),
+                            each.get("licenceUrl"), "mpd")
+                break
+            elif re.match(plainHlsRe, each.get("tagsCombination")):
                 Script.log("Found Stream! URL : %s LicenceURL: %s Encryption: %s" %
                            (each.get("playbackUrl"), each.get("licenceUrl"), "plain"), lvl=Script.DEBUG)
-                return (each.get("playbackUrl"), each.get("licenceUrl"), "hls")
-        playbackUrl = playBackSets[0].get("playbackUrl")
-        licenceUrl = playBackSets[0].get("licenceUrl")
-        Script.log("No stream found for desired config. Using %s" %
-                   playbackUrl, lvl=Script.INFO)
-        return (playbackUrl, licenceUrl, "hls" if ".m3u8" in playbackUrl else "mpd")
+                selected = (each.get("playbackUrl"),
+                            each.get("licenceUrl"), "hls")
+                break
+        if selected is None:
+            selected = (playBackSets[0].get("playbackUrl"), playBackSets[0].get(
+                "licenceUrl"), "hls" if ".m3u8" in playBackSets[0].get("playbackUrl") else "mpd")
+            Script.log("No stream found for desired config. Using %s" %
+                       playBackSets[0].get("playbackUrl"), lvl=Script.INFO)
+        return selected
