@@ -9,6 +9,8 @@ import inputstreamhelper
 from .contants import url_constructor, IMG_THUMB_H_URL, IMG_POSTER_V_URL, IMG_FANART_H_URL, MEDIA_TYPE, BASE_HEADERS
 from .api import deep_get, HotstarAPI
 from urllib import urlencode
+from pickle import dumps
+from binascii import hexlify
 import urlquick
 import re
 import json
@@ -99,7 +101,7 @@ class Builder:
         return False
 
     def _buildItem(self, item):
-
+        context = None
         if item.get("assetType") in ["CHANNEL", "GENRE", "GAME", "LANGUAGE", "SHOW", "SEASON"]:
             callback = self.callbackRefs.get("menu_list") if item.get("assetType") == "GAME" or item.get(
                 "pageType") == "HERO_LANDING_PAGE" else self.callbackRefs.get("tray_list")
@@ -133,6 +135,9 @@ class Builder:
                 "label": item.get("title"),
                 "drm": "com.widevine.alpha" if item.get("encrypted") else False
             }
+            if item.get("langObjs"):
+                context = list(map(lambda x: ("Play in %s" % x.get("name"), "PlayMedia(plugin://plugin.video.botallen.hotstar/resources/lib/main/play_vod/?_pickle_=%s)" %
+                                              hexlify(dumps(dict({"lang": x.get("iso3code")}, **params)))), item.get("langObjs", [])))
 
         return {
             "label": "Season %d (%d) " % (
@@ -170,5 +175,6 @@ class Builder:
                 # "audio_codec": "aac"
             },
             "callback": callback,
+            "context": context,
             "params": params
         }
