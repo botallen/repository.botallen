@@ -39,15 +39,15 @@ def create_zip(zip_name, root_dir, addon_name):
             filenames = [f for f in filenames if not f[0] == '.']
             dirnames[:] = [d for d in dirnames if not d[0] == '.']
             for name in sorted(dirnames):
-                if name == "extra":
-                    continue
+                # if name == "extra":
+                #     continue
                 path = os.path.normpath(os.path.join(dirpath, name))
                 print("+ <%s>" % path)
                 zf.write(path, os.path.join(
                     addon_name, os.path.relpath(path, base_path)))
             for name in filenames:
                 path = os.path.normpath(os.path.join(dirpath, name))
-                if os.path.isfile(path) and not path.endswith(".zip") and not path.endswith("deploy_addon.py") and not path.endswith("channels.json") and not path.endswith(".m3u"):
+                if os.path.isfile(path) and not path.endswith(".zip") and not path.endswith("deploy_addon.py") and not path.endswith(".m3u"):
                     print("+ <%s>" % path)
                     zf.write(path, os.path.join(
                         addon_name, os.path.relpath(path, base_path)))
