@@ -5,6 +5,9 @@ import os
 import urlquick
 import json
 from uuid import uuid4
+import base64
+import hashlib
+import time
 from functools import wraps
 from distutils.version import LooseVersion
 from codequick import Script
@@ -35,7 +38,7 @@ def isLoggedIn(func):
             return func(*args, **kwargs)
         else:
             Script.notify(
-                'Login Error', 'You need to login with Jio Username and password to use this add-on')
+                "Login Error", "You need to login with Jio Username and password to use this add-on")
             executebuiltin(
                 "RunPlugin(plugin://plugin.video.jiotv/resources/lib/main/login/)")
             return False
@@ -43,14 +46,32 @@ def isLoggedIn(func):
 
 
 def login(username, password):
-    body = {"identifier": username if '@' in username else "+91"+username, "password": password, "rememberUser": "T", "upgradeAuth": "Y", "returnSessionDetails": "T",
-            "deviceInfo": {"consumptionDeviceName": "Jio", "info": {"type": "android", "platform": {"name": "vbox86p", "version": "8.0.0"}, "androidId": "6fcadeb7b4b10d77"}}}
-    resp = urlquick.post(
-        "https://api.jio.com/v3/dip/user/unpw/verify", headers={"x-api-key": "l7xx938b6684ee9e4bbe8831a9a682b8e19f"}, json=body, verify=False)
-    if resp.status_code == 200 and resp.json()['ssoToken']:
-        data = resp.json()
-        _CREDS = {"ssotoken": data['ssoToken'], "userId": data['sessionAttributes']['user']['uid'],
-                  "uniqueId": data['sessionAttributes']['user']['unique'], "crmid": data['sessionAttributes']['user']['subscriberId']}
+    body = {
+        "identifier": username if '@' in username else "+91" + username,
+        "password": password,
+        "rememberUser": "T",
+        "upgradeAuth": "Y",
+        "returnSessionDetails": "T",
+        "deviceInfo": {
+            "consumptionDeviceName": "unknown sdk_google_atv_x86",
+            "info": {
+                "type": "android",
+                "platform": {
+                    "name": "generic_x86",
+                    "version": "8.1.0"
+                },
+                "androidId": ""
+            }
+        }
+    }
+    resp = urlquick.post("https://api.jio.com/v3/dip/user/unpw/verify", json=body, headers={"User-Agent": "JioTV Kodi", "x-api-key": "l7xx75e822925f184370b2e25170c5d5820a"}, max_age=-1, verify=False).json()
+    if resp.get("ssoToken", "") != "":
+        _CREDS = {
+            "ssotoken": resp.get("ssoToken"),
+            "userId": resp.get("sessionAttributes", {}).get("user", {}).get("uid"),
+            "uniqueId": resp.get("sessionAttributes", {}).get("user", {}).get("unique"),
+            "crmid": resp.get("sessionAttributes", {}).get("user", {}).get("subscriberId"),
+        }
         headers = {
             "User-Agent": "JioTV Kodi",
             "os": "Kodi",
@@ -66,18 +87,34 @@ def login(username, password):
         headers.update(_CREDS)
         with PersistentDict("headers", ttl=432000) as db:
             db["headers"] = headers
+            db["username"] = username
+            db["password"] = password
+        Script.notify("Login Success", "")
+        return None
     else:
-        Script.notify('Login Failed', 'Invalid credentials')
+        Script.log(resp, lvl=Script.INFO)
+        msg = resp.get("message", "Unknow Error")
+        Script.notify("Login Failed", msg)
+        return msg
 
 
 def logout():
     with PersistentDict("headers") as db:
         del db["headers"]
+    Script.notify("You\'ve been logged out", "")
 
 
 def getHeaders():
     with PersistentDict("headers") as db:
         return db.get("headers", False)
+
+
+def getTokenParams():
+    def magic(x): return base64.b64encode(hashlib.md5(x.encode()).digest()).decode().replace(
+        '=', '').replace('+', '-').replace('/', '_').replace('\r', '').replace('\n', '')
+    pxe = str(int(time.time()+(3600*9.2)))
+    jct = magic("cutibeau2ic9p-O_v1qIyd6E-rf8_gEOQ"+pxe)
+    return {"jct": jct, "pxe": pxe, "st": "9p-O_v1qIyd6E-rf8_gEOQ"}
 
 
 def check_addon(addonid, minVersion=False):

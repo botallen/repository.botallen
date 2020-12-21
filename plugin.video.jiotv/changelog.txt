@@ -1,3 +1,11 @@
+[- 2.0.14 -]
+
+[added] Featured Content
+
+[- 2.0.13 -]
+
+[added] Web login
+
 [- 2.0.0 -]
 
 [fixed] All major issues related to playback almost solved
