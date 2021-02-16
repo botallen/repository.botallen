@@ -99,15 +99,4 @@
 
 ## Support
 
-<p align="center">
-  <a href="https://raw.githubusercontent.com/botallen/botallen.github.io/master/media/Offline%20Merchant.png" target="_blank">
-    <img width="347px" height="620px" src="media/Offline Merchant.png" alt="Paytm" >
-  </a>
-</p>
-<p align="center">
-  <span style="display: inline-block;">
-    <a href="https://paypal.me/botallen" target="_blank">
-      <img width="200px" height="51px" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Paypal" >
-    </a>
-  </span>
-</p>
+<a href="https://botallen.com/#donate" target="_blank" >https://botallen.com/#donate</a>
