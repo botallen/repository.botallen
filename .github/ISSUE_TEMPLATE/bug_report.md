@@ -10,6 +10,7 @@ assignees: ''
 **Your Environment**
 - Add-on name: [e.g. Jiotv]
 - Add-on version: [e.g. 2.0.0]
+- Kodi version: [e.g. Kodi 19]
 - Operating system version/name: [e.g. Windows 10, LibreElec 9.0, etc...]
 
 **Describe the bug**
