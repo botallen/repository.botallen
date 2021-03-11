@@ -16,7 +16,7 @@
   </a>
   
   <!-- Discord -->
-  <a href="https://discord.com/invite/bUDYtFP">
+  <a href="https://botallen.com/discord">
     <img src="https://img.shields.io/discord/701304820530937954?color=%237289da&label=discord&style=for-the-badge&logo=discord">
   </a>
   
