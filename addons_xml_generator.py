@@ -1,7 +1,14 @@
 """ addons.xml generator """
 
 import os
+import gzip
+import requests
 from hashlib import md5
+
+GITHUB_USERNAME = "botallen"
+ADDONS = [
+    "plugin.video.botallen.hotstar"
+]
 
 
 class Generator:
@@ -19,22 +26,19 @@ class Generator:
         print("Finished updating addons xml and md5 files")
 
     def _generate_addons_file(self):
-        # addon list
-        addons = os.listdir(".")
+        global ADDONS, GITHUB_USERNAME
         # final addons text
         addons_xml = u"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<addons>\n"
         # loop thru and add each addons addon.xml file
-        for addon in addons:
-            # try:
-            # skip any file or .svn folder
-            if (not os.path.isdir(addon) or addon == ".svn" or addon == ".git" or addon == ".github" or addon == "media"):
+        for addon in ADDONS:
+            print(addon)
+            resp = requests.get(
+                f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{addon}/main/addon.xml")
+            if resp.status_code != 200:
+                print(f"Invalid status code: {addon} - {resp.status_code}")
                 continue
-            # create path
-            # print(addon)
-            _path = os.path.join(addon, "addon.xml")
             # split lines for stripping
-            xml_file = open(_path, "r").read()
-            xml_lines = xml_file.splitlines()
+            xml_lines = resp.text.splitlines()
             # new addon
             addon_xml = ""
             # loop thru cleaning each line
@@ -53,6 +57,8 @@ class Generator:
         addons_xml = addons_xml.strip() + u"\n</addons>\n"
         # save file
         self._save_file(addons_xml, file="addons.xml")
+        with gzip.open("addons.xml.gz", "wb") as f:
+            f.write(bytes(addons_xml, encoding="utf-8"))
 
     def _generate_md5_file(self):
         try:
