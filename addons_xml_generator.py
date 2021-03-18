@@ -3,7 +3,7 @@
 import os
 import gzip
 import requests
-from hashlib import md5
+import hashlib
 
 GITHUB_USERNAME = "botallen"
 ADDONS = [
@@ -63,12 +63,15 @@ class Generator:
     def _generate_md5_file(self):
         try:
             # create a new md5 hash
-            m = md5(open("addons.xml").read().encode('utf-8')).hexdigest()
+            md5 = hashlib.md5()
+            with open("addons.xml.gz", 'rb') as f:
+                for chunk in iter(lambda: f.read(4096), b''):
+                    md5.update(chunk)
             # save file
-            self._save_file(m, file="addons.xml.md5")
+            self._save_file(md5.hexdigest(), file="addons.xml.gz.md5")
         except Exception as e:
             # oops
-            print(f"An error occurred creating addons.xml.md5 file!\n{e}")
+            print(f"An error occurred creating addons.xml.gz.md5 file!\n{e}")
 
     def _save_file(self, data, file):
         try:
