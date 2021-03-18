@@ -19,6 +19,7 @@
         <website>https://botallen.com</website>
         <email>kodi@botallen.com</email>
         <platform>all</platform>
+        <path>archive/v1.0.0.zip</path>
         <language>en</language>
         <assets>
             <icon>resources/icon.jpg</icon>
