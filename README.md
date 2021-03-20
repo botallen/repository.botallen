@@ -58,7 +58,7 @@
 </span>
 
 <span style="display: inline-block;">
-  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv">
+  <a href="https://github.com/botallen/plugin.video.jiotv">
     <img src="https://raw.githubusercontent.com/botallen/plugin.video.jiotv/main/resources/icon.png" width="100" height="100">
   </a>
 </span>
