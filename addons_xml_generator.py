@@ -7,6 +7,7 @@ import hashlib
 
 GITHUB_USERNAME = "botallen"
 ADDONS = [
+    "repository.botallen",
     "plugin.video.botallen.hotstar",
     "plugin.video.jiotv"
 ]
@@ -32,14 +33,19 @@ class Generator:
         addons_xml = u"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<addons>\n"
         # loop thru and add each addons addon.xml file
         for addon in ADDONS:
-            print(addon)
-            resp = requests.get(
-                f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{addon}/main/addon.xml")
-            if resp.status_code != 200:
-                print(f"Invalid status code: {addon} - {resp.status_code}")
-                continue
-            # split lines for stripping
-            xml_lines = resp.text.splitlines()
+            if os.path.isdir(addon):
+                print(addon, "local")
+                _path = os.path.join(addon, "addon.xml")
+                xml_file = open(_path, "r").read()
+                xml_lines = xml_file.splitlines()
+            else:
+                print(addon, "remote")
+                resp = requests.get(
+                    f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{addon}/main/addon.xml")
+                if resp.status_code != 200:
+                    print(f"Invalid status code: {addon} - {resp.status_code}")
+                    continue
+                xml_lines = resp.text.splitlines()
             # new addon
             addon_xml = ""
             # loop thru cleaning each line

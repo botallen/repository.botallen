@@ -44,35 +44,22 @@
   </a>
   
  </p>
-  
-
 
 <br>
 
 <h2 align="center">Add-ons</h2>
 
 <p align="center">
-<span style="display: inline-block;">
-  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotvplus">
-    <img src="plugin.video.jiotvplus/resources/icon.png" width="175" height="100">
-  </a>
-</span>
   
 <span style="display: inline-block;">
-  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.botallen.hotstar">
-    <img src="plugin.video.botallen.hotstar/resources/icon.jpg" width="100" height="100">
-  </a>
-</span>
-
-<span style="display: inline-block;">
-  <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.tvfplay">
-    <img src="plugin.video.tvfplay/resources/icon.png" width="100" height="100">
+  <a href="https://github.com/botallen/plugin.video.botallen.hotstar">
+    <img src="https://raw.githubusercontent.com/botallen/plugin.video.botallen.hotstar/main/resources/icon.jpg" width="100" height="100">
   </a>
 </span>
 
 <span style="display: inline-block;">
   <a href="https://github.com/botallen/repository.botallen/tree/master/plugin.video.jiotv">
-    <img src="plugin.video.jiotv/resources/icon.png" width="100" height="100">
+    <img src="https://raw.githubusercontent.com/botallen/plugin.video.jiotv/main/resources/icon.png" width="100" height="100">
   </a>
 </span>
 </p>
@@ -83,7 +70,7 @@
 
 - Add this file source in file manager : https://kodi.botallen.com
 - Click on Install From zip file
-- Select repository.botallen-1.0.0.zip
+- Select repository.botallen-2.0.0.zip
 - Done
 
 <br/>
@@ -93,7 +80,7 @@
 
 ## Download
 
-[**Download**](https://github.com/botallen/repository.botallen/releases/download/v1.0.0/repository.botallen-1.0.0.zip) the `.zip` file.
+[**Download**](https://github.com/botallen/repository.botallen/archive/refs/tags/v2.0.0.zip) the `.zip` file.
 <br/>
 <br/>
 

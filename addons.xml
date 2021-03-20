@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="repository.botallen" name="BotAllen Repository" version="2.0.0" provider-name="botallen">
+    <extension point="xbmc.addon.repository" name="BotAllen Repository">
+        <dir minversion="18.0" maxversion="18.9">
+            <info compressed="false">https://raw.githubusercontent.com/botallen/repository.botallen/v1.0.0/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/botallen/repository.botallen/v1.0.0/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/botallen/repository.botallen/v1.0.0/</datadir>
+        </dir>
+        <dir minversion="19.0">
+            <info compressed="true">https://raw.githubusercontent.com/botallen/repository.botallen/v2.0.0/addons.xml.gz</info>
+            <checksum>https://raw.githubusercontent.com/botallen/repository.botallen/v2.0.0/addons.xml.gz.md5</checksum>
+            <datadir zip="true">https://botallen.com/dl/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>BotAllen Repository for Kodi</summary>
+        <description>A Repository for Streaming Add-ons of Indian OTT Providers</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <clearlogo>icon.png</clearlogo>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.botallen.hotstar" name="Disney+ Hotstar" provider-name="botallen" version="1.0.0">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
