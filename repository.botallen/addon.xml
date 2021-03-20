@@ -9,7 +9,7 @@
         <dir minversion="19.0">
             <info compressed="true">https://raw.githubusercontent.com/botallen/repository.botallen/v2.0.0/addons.xml.gz</info>
             <checksum>https://raw.githubusercontent.com/botallen/repository.botallen/v2.0.0/addons.xml.gz.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/botallen/</datadir>
+            <datadir zip="true">https://kodi.botallen.com/dl/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

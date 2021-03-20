@@ -7,7 +7,8 @@ import hashlib
 
 GITHUB_USERNAME = "botallen"
 ADDONS = [
-    "plugin.video.botallen.hotstar"
+    "plugin.video.botallen.hotstar",
+    "plugin.video.jiotv"
 ]
 
 
