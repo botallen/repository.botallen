@@ -80,7 +80,7 @@
 
 ## Download
 
-[**Download**](https://github.com/botallen/repository.botallen/archive/refs/tags/v2.0.0.zip) the `.zip` file.
+[**Download**](https://github.com/botallen/repository.botallen/releases/download/v2.0.0/repository.botallen-2.0.0.zip) the `.zip` file.
 <br/>
 <br/>
 
