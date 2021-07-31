@@ -56,7 +56,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.jiotv" name="JioTV" version="2.1.3" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="2.2.0" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.codequick" version="1.0.2"/>
@@ -78,6 +78,10 @@
         <email>kodi@botallen.com</email>
         <source>https://github.com/botallen/plugin.video.jiotv</source>
         <news>
+[- 2.2.0 -]
+[fixed] Bugs related to playback
+[added] Login with OTP
+
 [- 2.1.0 -]
 
 [added] Kodi Matrix support
@@ -100,7 +104,7 @@
         <disclaimer>This plugin is not officially commissioned/supported by Jio. The trademark "Jio" is registered by "Reliance Corporate IT Park Limited (RCITPL)"</disclaimer>
         <assets>
             <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <fanart>resources/fanart.png</fanart>
         </assets>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
