@@ -3,7 +3,7 @@ name: Bug report
 about: If something doesn't work
 title: ''
 labels: bug
-assignees: ''
+assignees: iMro0t
 
 ---
 
@@ -12,6 +12,7 @@ assignees: ''
 - Add-on version: [e.g. 2.0.0]
 - Kodi version: [e.g. Kodi 19]
 - Operating system version/name: [e.g. Windows 10, LibreElec 9.0, etc...]
+- Using from country: [eg. India, USA, etc...]
 
 **Describe the bug**
 A clear and concise description of what the bug is.
@@ -21,7 +22,7 @@ Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
-4. See error
+4. See an error
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
@@ -41,5 +42,6 @@ RESPECT THE RULES!
 - DO NOT PASTE THE CONTENT OF THE LOG HERE
 - DO NOT CUT THE LOG
 - If the log file is really huge (more 1Mb) in Kodi settings disable "Component-specific logging" then create a new log
--->
+--->
+
 The debug log can be found from this link:
