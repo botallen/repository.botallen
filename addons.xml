@@ -69,7 +69,7 @@
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
-        <description lang="en_GB">Enjoy Live TV expreince in Kodi.</description>
+        <description lang="en_GB">Enjoy Live TV experience in Kodi.</description>
         <language>en</language>
         <platform>all</platform>
         <license>MIT</license>
