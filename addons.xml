@@ -56,7 +56,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.jiotv" name="JioTV" version="2.2.1" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="2.2.11" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.codequick" version="1.0.2"/>
@@ -69,7 +69,7 @@
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Stream Live Indian Channels From JioTV on Kodi</summary>
-        <description lang="en_GB">Enjoy Live TV expreince in Kodi.</description>
+        <description lang="en_GB">Enjoy Live TV experience in Kodi.</description>
         <language>en</language>
         <platform>all</platform>
         <license>MIT</license>
