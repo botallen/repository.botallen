@@ -56,11 +56,12 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.jiotv" name="JioTV" version="2.2.2" provider-name="botallen">
+<addon id="plugin.video.jiotv" name="JioTV" version="2.3.0" provider-name="botallen">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.codequick" version="1.0.2"/>
-        <import addon="script.module.inputstreamhelper" version="0.5.2"/>
+        <import addon="script.module.inputstreamhelper" version="0.5.10"/>
+        <import addon="inputstream.adaptive" minversion="2.6.6"/>
         <import addon="repository.botallen" version="2.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
@@ -78,6 +79,10 @@
         <email>kodi@botallen.com</email>
         <source>https://github.com/botallen/plugin.video.jiotv</source>
         <news>
+[- 2.3.0 -]
+[added] more extra channels
+[added] inputstream adaptive as a dependency
+
 [- 2.2.0 -]
 [fixed] Bugs related to playback
 [added] Login with OTP
@@ -105,6 +110,9 @@
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.png</fanart>
+            <screenshot>resources/screenshots/screenshot000.png</screenshot>
+            <screenshot>resources/screenshots/screenshot001.png</screenshot>
+            <screenshot>resources/screenshots/screenshot002.png</screenshot>
         </assets>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
