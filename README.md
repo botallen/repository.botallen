@@ -16,11 +16,6 @@
     <img src="https://img.shields.io/github/v/release/botallen/repository.botallen?style=for-the-badge">
   </a>
   
-  <!-- Discord -->
-  <a href="https://botallen.com/discord">
-    <img src="https://img.shields.io/discord/701304820530937954?color=%237289da&label=discord&style=for-the-badge&logo=discord">
-  </a>
-  
   <!-- Downloads -->
   <a href="https://github.com/botallen/repository.botallen/releases/latest">
     <img src="https://img.shields.io/github/downloads/botallen/repository.botallen/total?style=for-the-badge&logo=kodi&color=17B2E7">
